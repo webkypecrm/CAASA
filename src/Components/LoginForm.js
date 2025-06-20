@@ -39,7 +39,7 @@ function LoginForm() {
 
 
       if (responseData.status === "success") {
-    
+
         toast.success("Login successful");
         localStorage.setItem("Token", responseData.data.Token);
         // Navigate to the next page
@@ -53,7 +53,7 @@ function LoginForm() {
   };
 
 
-  
+
   return (
     <>
 
@@ -91,7 +91,8 @@ function LoginForm() {
                     <div className="row row-sm">
                       <div className="card-body mt-2 mb-2">
                         <img
-                          src="../assets/img/brand/logo.png"
+                          src="https://webkype.com/frontend/assets/images/logo/webkype-logo.png"
+                          // src="../assets/img/brand/logo.png"
                           className=" d-lg-none header-brand-img text-start float-start mb-4"
                           alt="logo"
                         />
