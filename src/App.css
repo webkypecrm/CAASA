@@ -1,0 +1,35 @@
+/* Apply scrollbar globally */
+* {
+  scrollbar-width: auto; /* Firefox: 'thin' se 'auto' kar diya for better visibility */
+  scrollbar-color: #007bff #f1f1f1; /* Thumb | Track */
+}
+
+/* Webkit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 14px; /* Mota scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007bff; /* Blue scrollbar */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; /* Space between scrollbar & track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+/* tracking attendance */
+.black-header {
+  background-color: black !important;
+  color: white !important;
+}
+.black-header1 {
+  background-color: blue !important;
+  color: blue !important;
+}

@@ -1,0 +1,48 @@
+/* DropdownMenu.css */
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f2f2f2
+  }
+  
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.modal-dialog {
+  width: 800px !important; /* Ya jo bhi width chahiye */
+}
+
+.custom-modal-width {
+  width: 800px; /* ya kisi aur size ka */
+}
+.modal {
+  z-index: 1050 !important; /* Ya koi bhi value */
+}
+
+.modal-backdrop {
+  z-index: 1040; /* Thoda kam z-index compared to modal */
+}
+.modal-backdrop {
+  z-index: 1040; /* Modal ke z-index se thoda kam */
+  opacity: 0.5; /* Ya koi appropriate opacity value */
+}

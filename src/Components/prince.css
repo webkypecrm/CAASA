@@ -1,0 +1,68 @@
+/* Global styles */
+.nav-item {
+    color: inherit; /* Set default color */
+}
+@media (min-width: 998px) {
+    .nav-item {
+        
+        height: 50px; 
+        align-items: center;/* Hide nav items for small screens */
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+    .menu-item{
+        grid-column: 2/4;
+        position: relative;
+        z-index: 99;
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 800px) {
+    .nav-item {
+        display: none;
+        height: 40px; 
+        /* Hide nav items for small screens */
+    }
+    .hamburger-menu{
+        display: block;
+
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .nav-item {
+        width: 50%;
+        height: 50px;
+        text-align: left;
+        padding: 10px 0;
+        color: red; /* Color specific to medium screens */
+    }
+}
+
+/* YourComponent.css */
+/* Default styles for the collapsed navbar */
+.navbar-collapse {
+    display: none;
+    /* Other default styles */
+  }
+  
+  /* Media query for screens with a maximum width of 768px */
+  @media screen and (max-width: 768px) {
+    /* Styles for the toggler button at smaller screen sizes */
+    .navbar-toggler {
+      /* Your styles for the toggler button at smaller screen sizes */
+      /* Example: You can set styles like padding, color, background, etc. */
+    }
+  
+    /* Styles for the collapsed navbar when responsive mode is on */
+    .responsive-navbar.responsive-on .navbar-collapse {
+      display: block;
+      /* Other styles for the responsive mode */
+      /* Example: You can set styles like adjusting padding, margin, font-size, etc. */
+    }
+  }
+  

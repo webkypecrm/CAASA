@@ -1,0 +1,74 @@
+
+
+/* Main profile menu container */
+.main-profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button for profile image */
+.main-img-user {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Profile image style */
+.main-img-user img {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Dropdown menu container */
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 160px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+/* Show the dropdown menu when open */
+.main-profile-menu:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 20px; 
+    text-decoration: none;
+    display: block;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item.border-top {
+    border-top: 1px solid #ccc;
+}
+
+.dropdown-item:hover {
+    background-color: #f5f5f5;
+}
+
+/* Header text style */
+.header-navheading {
+    padding: 10px 20px; 
+    background-color: #f5f5f5; 
+    border-bottom: 1px solid #ccc;
+}
+
+/* User name style */
+.main-notification-title {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+/* User role style */
+.main-notification-text {
+    font-size: 14px;
+    margin: 0;
+    color: #777;
+}
