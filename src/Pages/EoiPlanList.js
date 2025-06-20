@@ -9,7 +9,7 @@ const EoiPlanList = () => {
     const [users, setUsers] = useState([]);
     const [search, setSearch] = useState('');
     const [loading, setLoading] = useState(true);
-    const navigation = useNavigate() 
+    const navigation = useNavigate()
     const navigate = useNavigate()
     const apiUrl = process.env.REACT_APP_URL;
     const Token = localStorage.getItem("Token");
@@ -30,7 +30,7 @@ const EoiPlanList = () => {
 
 
     //list plan data
-    const fetchDataFromApi = async () => { 
+    const fetchDataFromApi = async () => {
         setLoading(true);
         try {
             const response = await fetch(`${apiUrl}/plan/plans?isEoi=true`, {
@@ -146,11 +146,11 @@ const EoiPlanList = () => {
                             <div className="page-header">
                                 <div>
                                     <h2 className="main-content-title tx-24 mg-b-5">
-                                       EOI Plan List
+                                        EOI Plan List
                                     </h2>
 
                                 </div>
-                               
+
                             </div>
                             {/* End Page Header */}
                             <div className="row">
@@ -197,7 +197,7 @@ const EoiPlanList = () => {
                                                                 <th>Plan Name</th>
 
                                                                 <th >Project</th>
-                                                                
+
 
                                                                 <th >Created date</th>
                                                                 <th >Updated Date</th>
@@ -215,7 +215,7 @@ const EoiPlanList = () => {
                                                                     <td>
                                                                         <p className="mb-0">{user.projectId}</p>
                                                                     </td>
-                                                                    
+
                                                                     <td>{user.formattedDate}</td>
                                                                     <td>{user.formattedDate2}</td>
                                                                     <td  >
@@ -274,7 +274,7 @@ const EoiPlanList = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

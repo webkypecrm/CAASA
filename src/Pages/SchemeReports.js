@@ -43,28 +43,28 @@ const SchemeReports = () => {
     };
 
 
-    
- // scame type
- useEffect(() => {
-    const Token = localStorage.getItem('Token');
 
-    fetch(`${apiUrl}/master/getAllMasterData/18`, {
-        headers: {
-            Authorization: `Bearer ${Token}`
-        }
-    })
-        .then(response => response.json())
-        .then(data => {
-            if (data && Array.isArray(data.data)) {
-                setDisplayStatus(data.data);
-            } else {
-                console.error('API response does not contain an array:', data);
+    // scame type
+    useEffect(() => {
+        const Token = localStorage.getItem('Token');
+
+        fetch(`${apiUrl}/master/getAllMasterData/18`, {
+            headers: {
+                Authorization: `Bearer ${Token}`
             }
         })
-        .catch(error => {
-            console.error('Error fetching gender options:', error);
-        });
-}, []);
+            .then(response => response.json())
+            .then(data => {
+                if (data && Array.isArray(data.data)) {
+                    setDisplayStatus(data.data);
+                } else {
+                    console.error('API response does not contain an array:', data);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching gender options:', error);
+            });
+    }, []);
 
     //project api 
     useEffect(() => {
@@ -84,7 +84,7 @@ const SchemeReports = () => {
     }, []);
 
     useEffect(() => {
-       
+
         const url = `${apiUrl}/scheme/schemeDropdown`;
         fetch(url)
             .then((response) => response.json())
@@ -366,7 +366,7 @@ const SchemeReports = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -689,7 +689,7 @@ const WldCustomer = () => {
                                                                                         <br />
                                                                                         <strong style={{ color: '#007bff' }}>Registration Amount:</strong> Rs. <span>{user.registrationAmount}</span>
                                                                                         <br />
-                                                                                       
+
                                                                                         <strong style={{ color: '#007bff' }}>Date:</strong> {new Date(user.createdAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })} &nbsp;
                                                                                         <br />
                                                                                         <strong style={{ color: '#007bff' }}>Time:</strong> {new Date(user.createdAt).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}
@@ -804,7 +804,7 @@ const WldCustomer = () => {
                                                                                             <strong style={{ color: '#007bff' }}>Scheme:</strong>{' '}
                                                                                             <span dangerouslySetInnerHTML={{ __html: breakContent(user.schemeId, 40) }} />
                                                                                         </div> */}
-                                                                                       
+
                                                                                         <strong style={{ color: '#007bff' }}>Payment Plan:</strong> {user.paymentPlan || 'N/A'}
                                                                                         <br />
                                                                                         <strong style={{ color: '#007bff' }}> Advisor:</strong>  {user.advisorName || 'N/A'}
@@ -998,7 +998,7 @@ const WldCustomer = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

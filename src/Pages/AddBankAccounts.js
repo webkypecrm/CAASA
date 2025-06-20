@@ -149,14 +149,14 @@ const AddBankAccounts = () => {
                                             </div>
                                             <div className="row row-sm">
 
-                                            <div className="col-lg-4 form-group">
+                                                <div className="col-lg-4 form-group">
                                                     <label className="form-label">
                                                         Company <span className="tx-danger">*</span>
                                                     </label>
                                                     <select className="form-control select2"
-                                                       name="companyId"
-                                                       value={formData.companyId}
-                                                       onChange={handleInputChange}
+                                                        name="companyId"
+                                                        value={formData.companyId}
+                                                        onChange={handleInputChange}
                                                     >
                                                         <option value=''>Select Company</option>
                                                         {company.map((option, index) => (
@@ -309,7 +309,7 @@ const AddBankAccounts = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -62,7 +62,7 @@ const SalesStaff = () => {
     const Token = localStorage.getItem("Token");
     const apiUrl = process.env.REACT_APP_URL;
 
-    
+
     const keyframes = `
     @keyframes bounce {
       0%, 100% {
@@ -675,7 +675,7 @@ const SalesStaff = () => {
     return (
         <>
             <div className="page">
-              
+
                 <TopHeader />
                 <Prince />
 
@@ -1129,7 +1129,7 @@ const SalesStaff = () => {
                                             >
                                                 <option value=''>Select Reason</option>
                                                 <option >Resigned</option>
-                                                <option >Fired by AMRS</option>
+                                                <option >Fired by Webkype</option>
                                                 <option >Un-Informed Absence</option>
                                                 <option >Legal Issues</option>
 
@@ -1424,7 +1424,7 @@ const SalesStaff = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

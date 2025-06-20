@@ -12,8 +12,8 @@ import toast1, { Toaster } from 'react-hot-toast';
 
 const RefundRequest = () => {
     const initialFormData = {
-       status: '',
-    
+        status: '',
+
 
     };
 
@@ -28,7 +28,7 @@ const RefundRequest = () => {
 
     });
 
-   
+
     const [users, setUsers] = useState([]);
     const [search, setSearch] = useState('');
     const [project, setProject] = useState([]);
@@ -87,7 +87,7 @@ const RefundRequest = () => {
                 toast.success(data.message);
                 handleCloseModal2();
                 fetchDataFromApi();
-                setFormData(initialFormData); 
+                setFormData(initialFormData);
                 toast.success(response.message);
             } else {
                 toast.error("Failed to update status");
@@ -96,7 +96,7 @@ const RefundRequest = () => {
             toast.error(`An error occurred while updating status: ${error.message}`);
         }
     };
-   
+
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -108,7 +108,7 @@ const RefundRequest = () => {
 
 
 
-   
+
 
     const notify2 = () => {
         toast.error('Applicant deleted successfully', {
@@ -656,7 +656,7 @@ const RefundRequest = () => {
                                                                                         <br />
                                                                                         Reason: {user.refundRequest[0]?.reason}
                                                                                         <br />
-                                                                                       Status: {user?.refundStatus}
+                                                                                        Status: {user?.refundStatus}
                                                                                     </td>
 
 
@@ -857,7 +857,7 @@ const RefundRequest = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

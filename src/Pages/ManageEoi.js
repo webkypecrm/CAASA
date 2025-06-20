@@ -9,7 +9,7 @@ import { faLess } from '@fortawesome/free-brands-svg-icons';
 
 const ManageEoi = () => {
     const initialFormData2 = {
-       
+
         applyCost: '',
     };
     const [formData2, setFormData2] = useState(initialFormData2);
@@ -39,29 +39,29 @@ const ManageEoi = () => {
     };
 
 
-    
+
 
     const handleToggle = async (userId) => {
         setIsModalOpen3(userId);
         const newState = !toggleStates[userId]; // Get the new state for the toggle
-    
+
         // If the new state is 'false', open the modal
         if (!newState) {
             handleOpenModal2(userId);
             return; // Exit if the toggle is being turned off
         }
-    
+
         // Update the toggle state and store it in local storage
         setToggleStates((prevStates) => {
             const newStates = { ...prevStates, [userId]: newState };
             localStorage.setItem('toggleStates', JSON.stringify(newStates)); // Persist state
             return newStates; // Return the new states
         });
-    
+
         // Call updateStatus API only if the toggle is turned 'on'
         await updateStatus(userId, newState);
     };
-    
+
     // Retrieve toggle states from local storage when the component mounts
     useEffect(() => {
         const savedToggleStates = localStorage.getItem('toggleStates');
@@ -69,11 +69,11 @@ const ManageEoi = () => {
             setToggleStates(JSON.parse(savedToggleStates));
         }
     }, []);
-    
+
     // Function to make the API call to update status
     const updateStatus = async (empId, status) => {
         const url = `${apiUrl}/project/withSubscription?projectId=${empId || isModalOpen3}&withSubscription=${status || false}`;
-        
+
         try {
             const response = await fetch(url, {
                 method: 'GET',
@@ -81,9 +81,9 @@ const ManageEoi = () => {
                     Authorization: `Bearer ${Token}`,
                 },
             });
-            
+
             const data = await response.json(); // Ensure the response data is assigned correctly
-    
+
             if (data.status === 'success') {
                 toast.success(data.message); // Use `data.message` for the success toast
                 fetchDataFromApi();
@@ -94,13 +94,13 @@ const ManageEoi = () => {
             toast.error("An error occurred while updating status");
         }
     };
-    
-    
-    
+
+
+
     // API Call on Modal Form Submission (updateData function)
     const updateData = async () => {
         const url = `${apiUrl}/project/applyCost?projectId=${isModalOpen3}&projectCost=${formData2.projectCost}&applyCost=${formData2.applyCost}`;
-        
+
         try {
             const response = await fetch(url, {
                 method: 'GET',
@@ -108,13 +108,13 @@ const ManageEoi = () => {
                     Authorization: `Bearer ${Token}`,
                 },
             });
-            
+
             const data = await response.json(); // Ensure you get the response data here
-    
+
             if (data.status === 'success') {
                 toast.success(data.message); // Use `data.message` here instead of `message`
                 updateStatus();
-    
+
                 // Close the modal and reset form data
                 handleCloseModal2();
                 setFormData2(initialFormData2);
@@ -125,7 +125,7 @@ const ManageEoi = () => {
             toast.error("An error occurred while updating status");
         }
     };
-    
+
 
 
     const handleInputChange2 = (event) => {
@@ -163,40 +163,40 @@ const ManageEoi = () => {
         return date.toLocaleString('en-IN', options);
     };
 
-  // Fetch user data from the API
-const fetchDataFromApi = async () => {
-    setLoading(true);
-    try {
-        const response = await fetch(`${apiUrl}/project/getAllProject?isEOI=true`, {
-            headers: {
-                'Authorization': `Bearer ${Token}`
-            }
-        });
-        const data = await response.json();
-
-        if (data.status === 'success' && Array.isArray(data.data)) {
-            const formattedData = data.data.map(item => ({
-                ...item,
-                createdAt: item.createdAt ? formatDateTimes(item.createdAt) : '',
-            }));
-            setUsers(formattedData);
-
-            // Initialize toggle states based on fetched user data
-            const initialToggleStates = {};
-            formattedData.forEach(user => {
-                initialToggleStates[user.id] = user.withSubscription; // Assuming this determines the toggle state
+    // Fetch user data from the API
+    const fetchDataFromApi = async () => {
+        setLoading(true);
+        try {
+            const response = await fetch(`${apiUrl}/project/getAllProject?isEOI=true`, {
+                headers: {
+                    'Authorization': `Bearer ${Token}`
+                }
             });
-            setToggleStates(initialToggleStates);
-            localStorage.setItem('toggleStates', JSON.stringify(initialToggleStates)); // Persist states
-        } else {
-            console.error('API response error:', data.message || 'Data array not found');
+            const data = await response.json();
+
+            if (data.status === 'success' && Array.isArray(data.data)) {
+                const formattedData = data.data.map(item => ({
+                    ...item,
+                    createdAt: item.createdAt ? formatDateTimes(item.createdAt) : '',
+                }));
+                setUsers(formattedData);
+
+                // Initialize toggle states based on fetched user data
+                const initialToggleStates = {};
+                formattedData.forEach(user => {
+                    initialToggleStates[user.id] = user.withSubscription; // Assuming this determines the toggle state
+                });
+                setToggleStates(initialToggleStates);
+                localStorage.setItem('toggleStates', JSON.stringify(initialToggleStates)); // Persist states
+            } else {
+                console.error('API response error:', data.message || 'Data array not found');
+            }
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        } finally {
+            setLoading(false); // Ensure loading state is reset in any case
         }
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    } finally {
-        setLoading(false); // Ensure loading state is reset in any case
-    }
-};
+    };
 
 
     useEffect(() => {
@@ -622,7 +622,7 @@ const fetchDataFromApi = async () => {
                                 <form>
                                     <div className="row row-sm">
 
-                                       
+
                                         <div className="col-sm-12 form-group">
                                             <label className="form-label">Booking Amount <span className="tx-danger">*</span></label>
                                             <input type="text" className="form-control"
@@ -652,7 +652,7 @@ const fetchDataFromApi = async () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

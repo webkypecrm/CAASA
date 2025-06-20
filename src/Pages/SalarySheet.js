@@ -571,7 +571,7 @@ const SalarySheet = () => {
                                                                             let InputComponent = Input; // Default input
                                                                             if (['totalPresent', 'totalLeave', 'monthlyLeave', 'unpaidLeave'].includes(field)) {
                                                                                 InputComponent = HighlightedInput; // Use special input for specific fields
-                                                                            } else if (['monthlySalery', 'salery', 'totalSalery','loan','balAdv'].includes(field)) {
+                                                                            } else if (['monthlySalery', 'salery', 'totalSalery', 'loan', 'balAdv'].includes(field)) {
                                                                                 InputComponent = WideInput; // Use WideInput for these fields
                                                                             }
 
@@ -704,7 +704,7 @@ const SalarySheet = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

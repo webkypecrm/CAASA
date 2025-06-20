@@ -262,7 +262,7 @@ const EoiSinglePaymentLadger = () => {
                             <div className="page-header">
                                 <div>
                                     <h2 className="main-content-title tx-24 mg-b-5">
-                                       Eoi Payment Ledger List
+                                        Eoi Payment Ledger List
                                     </h2>
                                 </div>
                                 {/* <div className="d-flex">
@@ -418,9 +418,9 @@ const EoiSinglePaymentLadger = () => {
                                                                                 <th >Client Name</th>
                                                                                 <th>Amount Entry</th>
                                                                                 <th>Payment Mode</th>
-                                                                               
+
                                                                                 <th>Bank Name</th>
-                                                                                <th>AMRS Account</th>
+                                                                                <th>Webkype Account</th>
                                                                                 <th>CHQ/TRN No</th>
                                                                                 <th>Cheque Date</th>
                                                                                 <th>Payment Date</th>
@@ -443,7 +443,7 @@ const EoiSinglePaymentLadger = () => {
                                                                                     </td>
                                                                                     <td>{user.amount}</td>
                                                                                     <td>{user.collectionMode}</td>
-                                                                                   
+
                                                                                     <td>{user.deposteToAmrs ? user.deposteToAmrs : 'N/A'}</td>
                                                                                     <td>{user?.amrsAccount?.accountNumber ?? 'N/A'}</td>
                                                                                     <td>{user.transactionNo ? user.transactionNo : 'N/A'} {user.chequeNo}</td>
@@ -475,7 +475,7 @@ const EoiSinglePaymentLadger = () => {
                                                                                                     </div>
                                                                                                 </>
                                                                                             )}
-                                                                                            
+
                                                                                         </div>
                                                                                     </td>
                                                                                 </tr>
@@ -506,7 +506,7 @@ const EoiSinglePaymentLadger = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

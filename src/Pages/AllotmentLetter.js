@@ -1116,7 +1116,7 @@ const AllotmentLetter = () => {
                         >
                           <tbody>
                             <tr>
-                              
+
 
                               <td>
                                 <span style={{ color: "#847f7f" }}>Area(
@@ -1261,14 +1261,14 @@ const AllotmentLetter = () => {
                                   }}
                                 />
                               </td>
-                              
+
                             </tr>
                             <tr>
                               <td style={{ height: 20 }} colSpan={3} />
                             </tr>
                             <tr>
 
-                            <td>
+                              <td>
                                 <span style={{ color: "#847f7f" }}>
                                   Mode Of Payment :
                                 </span>
@@ -1486,7 +1486,7 @@ const AllotmentLetter = () => {
                   <li>All allotments shall be made on free hold basis. However, the title shall be transferred only when Sale Deed/Registry is executed in favour of the allotee and is registered in the office of Sub-Registrar.</li>
                   <li>The Company reserves the right to alter/amend/modify any of the terms & conditions of application eligibility and allotment at its sole discretion or as desired/directed by the Govt. of the State/India. The consequences of such alteration/amendment/modification will be automatically binding on all applicants, without any further reference of them.</li>
                   <li>If any misrepresentation/concealment/suppression of material facts are found to be made by the applicant/allotee, then the allotment of the given Plot/Farmhouse/Shop will be cancelled at the immediate effect and the total amount of the Plot/Farm House will be refunded after deducting 50% of the total Cost.</li>
-                  <li>Cheque/DD/Payorder to be in the name of {formData?.project?.company?.companyBank[0]?.bankAccount?.accountName || 'AMRS'}.</li>
+                  <li>Cheque/DD/Payorder to be in the name of {formData?.project?.company?.companyBank[0]?.bankAccount?.accountName || 'Webkype'}.</li>
                   <li>Cheque bouncing will be charged Rs.1500/- as penalty, and delay in payment at 18% interest.</li>
                   <li>All provisional allotments under India’s Smart City and Tourism Development Plan is around 30-35% less cost than Original Price. In Case of Payment Delay in any payment plan for more than 45 days, the allotment will be cancelled from under India’s Smart City and Tourism Development Plan and Original price of Plot/Farmhouse/Shop shall be paid by the applicant/allotee.</li>
                   <li>Possession will be given within 24 months after booking. In case possession is not given, 18% interest will be paid to the buyer on the booking amount.</li>

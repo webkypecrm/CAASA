@@ -376,7 +376,7 @@ const SalesLead = () => {
                 }
             }
             const pageNumber = currentPage + 1;
-            const { to, from, clientName, clientNumber, status, employeeId, project, source, size, search, utmSource, vendor, assignedFrom, assignedTo,isSuffleLead  } = filterByObj;
+            const { to, from, clientName, clientNumber, status, employeeId, project, source, size, search, utmSource, vendor, assignedFrom, assignedTo, isSuffleLead } = filterByObj;
             const url = `${apiUrl}/lead/leadExcel?to=${to}&from=${from}&search=${search}&clientName=${clientName}&clientNumber=${clientNumber}&status=${status}&employeeId=${employeeId}&project=${project}&source=${source}&size=${size}&page=${pageNumber}&limit=${itemsPerPage}&leadIds=${selectedItems}&search=${search}&utmSource=${utmSource}&vendor=${vendor}&assignedFrom=${assignedFrom}&assignedTo=${assignedTo}&isSuffleLead=${isSuffleLead}`;
             const response = await fetch(url, {
                 method: "POST",
@@ -540,7 +540,7 @@ const SalesLead = () => {
     const fetchDataFromApi = async () => {
         setLoading(true);
         const pageNumber = currentPage + 1;
-        const { to, from, clientName, clientNumber, status, employeeId, project, source, size, search, utmSource, vendor, assignedFrom, assignedTo,isSuffleLead } = filterByObj;
+        const { to, from, clientName, clientNumber, status, employeeId, project, source, size, search, utmSource, vendor, assignedFrom, assignedTo, isSuffleLead } = filterByObj;
         const url = `${apiUrl}/lead/getAllLead?to=${to}&from=${from}&clientName=${clientName}&clientNumber=${clientNumber}&status=${status}&employeeId=${employeeId}&project=${project}&source=${source}&size=${size}&page=${pageNumber}&limit=${itemsPerPage}&search=${search}&utmSource=${utmSource}&vendor=${vendor}&assignedFrom=${assignedFrom}&assignedTo=${assignedTo}&isSuffleLead=${isSuffleLead}`;
 
         try {
@@ -1292,7 +1292,7 @@ const SalesLead = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

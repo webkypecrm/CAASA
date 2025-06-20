@@ -29,7 +29,7 @@ const Testimonial = () => {
     const Token = localStorage.getItem("Token");
 
 
-     useEffect(() => {
+    useEffect(() => {
         fetch(`${apiUrl}/master/getAllMasterData/28`, {
             headers: { 'Authorization': `Bearer ${Token}` }
         })
@@ -211,7 +211,7 @@ const Testimonial = () => {
 
                                                 </div>
 
-                                                 <div className="col-lg-4 form-group">
+                                                <div className="col-lg-4 form-group">
                                                     <label className="form-label">Source</label>
                                                     <select
                                                         className="form-control"
@@ -324,7 +324,7 @@ const Testimonial = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

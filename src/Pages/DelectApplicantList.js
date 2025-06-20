@@ -12,13 +12,13 @@ const DelectApplicantList = () => {
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndDate] = useState(null);
     const [formData2, setFormData2] = useState({
-       status: 2,
+        status: 2,
     })
     const [formData, setFormData] = useState({
         schemeType: '',
         projectId: '',
     })
-    
+
     const [filterByObj, setFilterByObj] = useState({
         from: '',
         to: '',
@@ -47,18 +47,18 @@ const DelectApplicantList = () => {
         const [start, end] = dates;
         setStartDate(start);
         setEndDate(end);
-    
+
         // Format the start and end dates if they are not null
         const formatDate = (date) => {
             if (date) {
                 const year = date.getFullYear();
                 const month = String(date.getMonth() + 1).padStart(2, '0');
                 const day = String(date.getDate()).padStart(2, '0');
-                return `${year}/${month}/${day}`; 
+                return `${year}/${month}/${day}`;
             }
             return '';
         };
-    
+
         // Update the filterByObj state with the formatted date range
         const formattedStartDate = formatDate(start);
         const formattedEndDate = formatDate(end);
@@ -70,7 +70,7 @@ const DelectApplicantList = () => {
             to: `${formattedEndDate}`
         }));
     };
-       
+
     // scame type
     useEffect(() => {
         const Token = localStorage.getItem('Token');
@@ -210,10 +210,10 @@ const DelectApplicantList = () => {
 
     const fetchDataFromApi = () => {
         const { status } = formData2;
-        const { projectId, schemeId, schemeType ,from,to} = filterByObj;
+        const { projectId, schemeId, schemeType, from, to } = filterByObj;
 
         const url = `${apiUrl}/applicant/applicants?id=&mobileNumber=&emailId=&projectId=${projectId}&schemeId=${schemeId}&schemeType=${schemeType}&from=${from}&to=${to}&status=${status}`;
-        
+
         fetch(url, {
             headers: {
                 'Authorization': `Bearer ${Token}`
@@ -248,7 +248,7 @@ const DelectApplicantList = () => {
         fetchDataFromApi()
     }, [filterByObj]);
 
-    
+
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setFormData({
@@ -296,7 +296,7 @@ const DelectApplicantList = () => {
         <>
 
             <div className="page">
-            {showLoader && (
+                {showLoader && (
                     <div id="global-loader">
                         <div className="spinner-border text-info loader-img" role="status">
                             <span className="sr-only">Loading...</span>
@@ -313,10 +313,10 @@ const DelectApplicantList = () => {
                             <div className="page-header">
                                 <div>
                                     <h2 className="main-content-title tx-24 mg-b-5">
-                                       Delete Applicant List
+                                        Delete Applicant List
                                     </h2>
 
-                                    
+
                                 </div>
                                 <div className="d-flex">
                                     <div className="justify-content-center">
@@ -390,9 +390,9 @@ const DelectApplicantList = () => {
                                                 </div>
                                                 <div className="col-sm-2">
                                                     <select className="form-control select2"
-                                                   name="schemeId"
-                                                   value={filterByObj.schemeId}
-                                                   onChange={handleInputChange2}
+                                                        name="schemeId"
+                                                        value={filterByObj.schemeId}
+                                                        onChange={handleInputChange2}
                                                     >
                                                         <option value=''>Select Scheme</option>
                                                         {scame.map((option, index) => (
@@ -711,7 +711,7 @@ const DelectApplicantList = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

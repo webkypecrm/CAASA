@@ -142,7 +142,7 @@ const PaymentSedu = () => {
 
     const handleCloseModal4 = () => {
         setIsModalOpen4(false);
-        setHoldActionId(null); 
+        setHoldActionId(null);
     };
 
     useEffect(() => {
@@ -674,7 +674,7 @@ const PaymentSedu = () => {
                                                 <div>
                                                     <h6>Total Received</h6>
                                                     <h6>
-                                                        <span className="fs-20 me-2" style={{ color: 'green' }}>{employee4.registrationAmount  || '0'}</span>
+                                                        <span className="fs-20 me-2" style={{ color: 'green' }}>{employee4.registrationAmount || '0'}</span>
 
                                                     </h6>
                                                     <span className="text-muted">
@@ -1323,9 +1323,9 @@ const PaymentSedu = () => {
                                                         <th style={{ border: "1px solid #ccc", textAlign: "center", width: "100px", whiteSpace: "nowrap" }}>Payment Mode</th>
                                                         <th style={{ padding: "2px 5px", border: "1px solid #ccc", textAlign: "center", width: "100px" }}>Method</th>
                                                         <th style={{ border: "1px solid #ccc", textAlign: "center", width: "100px", whiteSpace: "nowrap" }}>Bank Name</th>
-                                                        <th style={{ padding: "2px 35px", border: "1px solid #ccc", textAlign: "center", width: "150px", whiteSpace: "nowrap" }}>AMRS Account</th>
+                                                        <th style={{ padding: "2px 35px", border: "1px solid #ccc", textAlign: "center", width: "150px", whiteSpace: "nowrap" }}>Webkype Account</th>
                                                         <th style={{ padding: "2px 20px", border: "1px solid #ccc", textAlign: "center", width: "150px", whiteSpace: "nowrap" }}>CHQ/TRN No</th>
-                                                        <th style={{ padding: "2px 5px", border: "1px solid #ccc", textAlign: "center", width: "100px",whiteSpace: "nowrap" }}>Cheque Date</th>
+                                                        <th style={{ padding: "2px 5px", border: "1px solid #ccc", textAlign: "center", width: "100px", whiteSpace: "nowrap" }}>Cheque Date</th>
                                                         <th style={{ border: "1px solid #ccc", textAlign: "center", width: "100px" }}>Payment Date</th>
                                                         <th style={{ padding: "2px 4px", border: "1px solid #ccc", textAlign: "center", width: "200px" }}>Actions</th>
                                                         <th style={{ padding: "2px 1px", border: "1px solid #ccc", textAlign: "center", width: "150px" }}>Actions Performed By</th>
@@ -1499,7 +1499,7 @@ const PaymentSedu = () => {
                                                                 </select>
                                                             </div>
                                                             <div className="col-sm-6 form-group" >
-                                                                <label className="form-label">Deposit to AMRS</label>
+                                                                <label className="form-label">Deposit to Webkype</label>
                                                                 <input type="text" className="form-control"
                                                                     name="deposteToAmrs"
                                                                     value={formData.deposteToAmrs}
@@ -1550,7 +1550,7 @@ const PaymentSedu = () => {
                                                                 </select>
                                                             </div>
                                                             <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                                <label className="form-label">AMRS Account</label>
+                                                                <label className="form-label">Webkype Account</label>
                                                                 <select className="form-control select2"
                                                                     name="amrsAccount"
                                                                     value={formData.amrsAccount}
@@ -1654,7 +1654,7 @@ const PaymentSedu = () => {
                                                             <th style={{ padding: "10px 6px", border: "1px solid #ccc", textAlign: "center" }}>Payment Mode</th>
                                                             <th style={{ padding: "10px 6px", border: "1px solid #ccc", textAlign: "center" }}>Bank Name</th>
                                                             <th style={{ padding: "10px 4px", border: "1px solid #ccc", textAlign: "center" }}>Bank Cheque</th>
-                                                            <th style={{ padding: "10px 4px", border: "1px solid #ccc", textAlign: "center" }}>AMRS Account</th>
+                                                            <th style={{ padding: "10px 4px", border: "1px solid #ccc", textAlign: "center" }}>Webkype Account</th>
                                                             <th style={{ padding: "10px 4px", border: "1px solid #ccc", textAlign: "center" }}>CHQ/TRN No</th>
                                                             <th style={{ padding: "10px 4px", border: "1px solid #ccc", textAlign: "center" }}>Cheque Date</th>
                                                             <th style={{ padding: "10px 4px", border: "1px solid #ccc", textAlign: "center" }}>Payment Date</th>
@@ -1929,7 +1929,7 @@ const PaymentSedu = () => {
                                                                 </select>
                                                             </div>
                                                             <div className="col-sm-6 form-group" >
-                                                                <label className="form-label">Deposit to AMRS</label>
+                                                                <label className="form-label">Deposit to Webkype</label>
                                                                 <input type="text" className="form-control" name="chequeDate" />
                                                             </div>
                                                             <div className="col-sm-6 form-group" >
@@ -1968,7 +1968,7 @@ const PaymentSedu = () => {
                                                                 </select>
                                                             </div>
                                                             <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                                <label className="form-label">AMRS Account</label>
+                                                                <label className="form-label">Webkype Account</label>
                                                                 <select className="form-control select2"
 
                                                                 >
@@ -2093,9 +2093,9 @@ const PaymentSedu = () => {
                                                                 <td style={{ padding: "3px 48px", border: "1px solid #ccc", whiteSpace: "nowrap", width: '150px' }}>{user.status}</td>
                                                                 <td style={{ padding: "3px 40px", border: "1px solid #ccc", whiteSpace: "nowrap", width: '100px' }}>{user.amount}</td>
                                                                 <td style={{ padding: "3px 48px", border: "1px solid #ccc", whiteSpace: "nowrap", width: '100px' }}>
-                                                                Mode: {user.mode}
+                                                                    Mode: {user.mode}
                                                                     <br />
-                                                                     {user.mode}
+                                                                    {user.mode}
                                                                     {user.mode === 'Cash' && <span> Remark: {user.remark}</span>}
                                                                     {user.mode === 'Online' && <span> Transaction id: {user.transaction}</span>}
                                                                     {user.mode === 'Cheque' && (
@@ -2122,7 +2122,7 @@ const PaymentSedu = () => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             {/* End Row */}
                             <div
                                 className={`modal ${isModalOpen4 ? 'show' : ''}`}
@@ -2184,7 +2184,7 @@ const PaymentSedu = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

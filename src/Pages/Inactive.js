@@ -26,7 +26,7 @@ const Inactive = () => {
     };
     const initialFormData2 = {
         status: '',
-       
+
     };
 
     const [formData2, setFormData2] = useState(initialFormData2);
@@ -100,8 +100,8 @@ const Inactive = () => {
         document.body.classList.remove('modal-open');
     };
 
-     //departments
-     useEffect(() => {
+    //departments
+    useEffect(() => {
 
         const Token = localStorage.getItem('Token');
         fetch(`${apiUrl}/master/getAllMasterData/1`, {
@@ -145,22 +145,22 @@ const Inactive = () => {
     }, []);
 
     const formatDateTime = (dateTimeString) => {
-        const options = { year: 'numeric', month: '2-digit', day: '2-digit'};
+        const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
         const date = new Date(dateTimeString);
         return date.toLocaleString('en-IN', options);
     };
     const formatDateTime2 = (dateTimeString) => {
-        const options = { year: 'numeric', month: '2-digit', day: '2-digit'};
+        const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
         const date = new Date(dateTimeString);
         return date.toLocaleString('en-IN', options);
     };
-    
+
     const fetchDataFromApi = () => {
-        const {  department, designation } = filterByObj;
+        const { department, designation } = filterByObj;
         const url = `${apiUrl}/employee/employees?id=&mobileNumber=&emailId=&department=${department}&designation=${designation}`;
         const formDataToSend = new FormData();
         formDataToSend.append('status', formData2.status ? false : false);
-    
+
         fetch(url, {
             method: 'POST',
             headers: {
@@ -168,43 +168,43 @@ const Inactive = () => {
             },
             body: formDataToSend
         })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log('Fetched data:', data);
-            if (data.status === 'success') {
-                if (Array.isArray(data.data)) {
-                    const formattedData = data.data.map(item => ({
-                        ...item,
-                        formattedDate: item.dateOfJoining ? formatDateTime(item.dateOfJoining) : null,
-                        formattedDate2: item.dob ? formatDateTime2(item.dob) : null,
-                      
-                    }));
-                    setUsers(formattedData);
-                   
+            .then((response) => response.json())
+            .then((data) => {
+                console.log('Fetched data:', data);
+                if (data.status === 'success') {
+                    if (Array.isArray(data.data)) {
+                        const formattedData = data.data.map(item => ({
+                            ...item,
+                            formattedDate: item.dateOfJoining ? formatDateTime(item.dateOfJoining) : null,
+                            formattedDate2: item.dob ? formatDateTime2(item.dob) : null,
+
+                        }));
+                        setUsers(formattedData);
+
+                    } else {
+                        console.error('API response does not contain employeeList array:', data);
+                    }
                 } else {
-                    console.error('API response does not contain employeeList array:', data);
+                    console.error('API request was not successful:', data.message);
                 }
-            } else {
-                console.error('API request was not successful:', data.message);
-            }
-        })
-        .catch((error) => {
-            console.error('Error fetching data:', error);
-        });
+            })
+            .catch((error) => {
+                console.error('Error fetching data:', error);
+            });
     };
-    
+
     useEffect(() => {
         fetchDataFromApi()
     }, [filterByObj]);
 
     // Filtered users remain the same
     const filteredUsers = users.filter((user) => {
-        const searchLowerCase = search.toLowerCase(); 
-        const fullNameLowerCase = user.fullName.toLowerCase(); 
-    
+        const searchLowerCase = search.toLowerCase();
+        const fullNameLowerCase = user.fullName.toLowerCase();
+
         return user.id.toString().includes(searchLowerCase) || fullNameLowerCase.includes(searchLowerCase) || user.phoneNumber.includes(searchLowerCase);
     });
-    
+
 
 
     const extractFullNames = () => {
@@ -236,7 +236,7 @@ const Inactive = () => {
 
             {/* Page */}
             <div className="page">
-            {showLoader && (
+                {showLoader && (
                     <div id="global-loader">
                         <div className="spinner-border text-info loader-img" role="status">
                             <span className="sr-only">Loading...</span>
@@ -295,22 +295,22 @@ const Inactive = () => {
                                                     />
                                                 </div>
                                                 <div className="col-sm-3 form-group">
-                                                   
-                                                   <select className="form-control"
-                                                       name='department'
-                                                       value={filterByObj.department}
-                                                       onChange={handleInputChange2}
 
-                                                   >
-                                                       <option value="" >Select Department</option>
-                                                       {department.map((option, index) => (
-                                                           <option key={option.id} value={option.id}>
-                                                               {option.name}
-                                                           </option>
-                                                       ))}
-                                                   </select>
-                                               </div>
-                                               <div className="col-sm-3">
+                                                    <select className="form-control"
+                                                        name='department'
+                                                        value={filterByObj.department}
+                                                        onChange={handleInputChange2}
+
+                                                    >
+                                                        <option value="" >Select Department</option>
+                                                        {department.map((option, index) => (
+                                                            <option key={option.id} value={option.id}>
+                                                                {option.name}
+                                                            </option>
+                                                        ))}
+                                                    </select>
+                                                </div>
+                                                <div className="col-sm-3">
                                                     <select
                                                         className="form-control select2"
                                                         name="designation"
@@ -549,7 +549,7 @@ const Inactive = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

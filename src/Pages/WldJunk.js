@@ -891,7 +891,7 @@ const WldJunk = () => {
                                                                                         <br />
                                                                                         <strong style={{ color: '#007bff' }}>Time:</strong> {new Date(user.createdAt).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}
 
-                                                                   
+
 
 
 
@@ -1080,7 +1080,7 @@ const WldJunk = () => {
                                                                                         )}
                                                                                     </td>
                                                                                     <td>
-                                                                                    Unit no: <font color="red">{user.unitNo || 'N/A'}</font>
+                                                                                        Unit no: <font color="red">{user.unitNo || 'N/A'}</font>
                                                                                         <br />
                                                                                         Area: {" "}
                                                                                         <font color='red'>
@@ -1241,7 +1241,7 @@ const WldJunk = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

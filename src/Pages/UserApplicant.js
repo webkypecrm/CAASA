@@ -235,16 +235,16 @@ const UserApplicant = () => {
                                     </ol>
                                 </div>
                                 <div className="d-flex align-items-center gap-3">
-                            
-                                                                <Link to="/user-new-sign-up-opt-list" className="btn btn-primary btn-icon-text"
-                                                                    style={{ whiteSpace: 'nowrap' }}
-                                                                >
-                                                                     Sign Up OTP List
-                                                                </Link>
-                                                            </div>
+
+                                    <Link to="/user-new-sign-up-opt-list" className="btn btn-primary btn-icon-text"
+                                        style={{ whiteSpace: 'nowrap' }}
+                                    >
+                                        Sign Up OTP List
+                                    </Link>
+                                </div>
                             </div>
 
-                            
+
 
 
                             {!leadCounts === true &&
@@ -440,7 +440,7 @@ const UserApplicant = () => {
                                                                     </td>
 
 
-                                                                   
+
                                                                 </tr>
                                                             ))}
                                                         </tbody>
@@ -450,44 +450,44 @@ const UserApplicant = () => {
 
 
                                                 {!leadCounts === true &&
-                                                <>
-                                                <div className="d-flex align-items-center ">
-                                                    <div >
+                                                    <>
+                                                        <div className="d-flex align-items-center ">
+                                                            <div >
 
-                                                        <select
-                                                            id="itemsPerPage"
-                                                            className="form-select"
-                                                            value={itemsPerPage}
-                                                            onChange={handleItemsPerPageChange}
-                                                        >
-                                                            <option value={20}>20</option>
-                                                            <option value={50}>50</option>
-                                                            <option value={100}>100</option>
-                                                            <option value={200}>200</option>
-                                                            <option value={500}>500</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div className="pagination d-flex justify-content-center">
-                                                    <ReactPaginate
-                                                        previousLabel={'Previous'}
-                                                        nextLabel={'Next'}
-                                                        breakLabel={'...'}
-                                                        breakClassName={'break-me'}
-                                                        pageCount={Math.ceil(leadCount / itemsPerPage)}
-                                                        marginPagesDisplayed={2}
-                                                        pageRangeDisplayed={5}
-                                                        onPageChange={handlePageClick}
-                                                        containerClassName={'pagination'}
-                                                        activeClassName={'active'}
-                                                        previousLinkClassName={'page-link'}
-                                                        nextLinkClassName={'page-link'}
-                                                        disabledClassName={'disabled'}
-                                                        pageClassName={'page-item'}
-                                                        pageLinkClassName={'page-link'}
-                                                    />
-                                                </div>
-                                                </>
+                                                                <select
+                                                                    id="itemsPerPage"
+                                                                    className="form-select"
+                                                                    value={itemsPerPage}
+                                                                    onChange={handleItemsPerPageChange}
+                                                                >
+                                                                    <option value={20}>20</option>
+                                                                    <option value={50}>50</option>
+                                                                    <option value={100}>100</option>
+                                                                    <option value={200}>200</option>
+                                                                    <option value={500}>500</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div className="pagination d-flex justify-content-center">
+                                                            <ReactPaginate
+                                                                previousLabel={'Previous'}
+                                                                nextLabel={'Next'}
+                                                                breakLabel={'...'}
+                                                                breakClassName={'break-me'}
+                                                                pageCount={Math.ceil(leadCount / itemsPerPage)}
+                                                                marginPagesDisplayed={2}
+                                                                pageRangeDisplayed={5}
+                                                                onPageChange={handlePageClick}
+                                                                containerClassName={'pagination'}
+                                                                activeClassName={'active'}
+                                                                previousLinkClassName={'page-link'}
+                                                                nextLinkClassName={'page-link'}
+                                                                disabledClassName={'disabled'}
+                                                                pageClassName={'page-item'}
+                                                                pageLinkClassName={'page-link'}
+                                                            />
+                                                        </div>
+                                                    </>
                                                 }
 
                                             </div>
@@ -503,7 +503,7 @@ const UserApplicant = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

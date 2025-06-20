@@ -283,7 +283,7 @@ const UnitAllocationApplicant = () => {
                             <div className="page-header">
                                 <div>
                                     <h2 className="main-content-title tx-24 mg-b-5">
-                                    Unit Allocation List
+                                        Unit Allocation List
                                     </h2>
                                 </div>
                             </div>
@@ -541,8 +541,8 @@ const UnitAllocationApplicant = () => {
                                                                                             style={{
                                                                                                 backgroundColor: 'orange',
                                                                                                 color: 'white',
-                                                                                                width: '100%', 
-                                                                                                transition: 'all 0.3s ease-in-out', 
+                                                                                                width: '100%',
+                                                                                                transition: 'all 0.3s ease-in-out',
                                                                                             }}
                                                                                             onMouseOver={(e) => {
                                                                                                 e.target.style.transform = 'scale(1.05)';
@@ -576,30 +576,30 @@ const UnitAllocationApplicant = () => {
                                                                                         <Link to='/eoi-inventory' title="Proof" target="_blank">
                                                                                             <div
                                                                                                 style={{
-                                                                                                    width: '30px',           
-                                                                                                    height: '30px',          
-                                                                                                    borderRadius: '50%',     
-                                                                                                    backgroundColor: '#007bff', 
-                                                                                                    display: 'inline-flex',  
-                                                                                                    alignItems: 'center',    
-                                                                                                    justifyContent: 'center', 
+                                                                                                    width: '30px',
+                                                                                                    height: '30px',
+                                                                                                    borderRadius: '50%',
+                                                                                                    backgroundColor: '#007bff',
+                                                                                                    display: 'inline-flex',
+                                                                                                    alignItems: 'center',
+                                                                                                    justifyContent: 'center',
                                                                                                     cursor: 'pointer',
-                                                                                                    marginLeft: '25px',      
-                                                                                                    transition: 'all 0.3s ease-in-out', 
+                                                                                                    marginLeft: '25px',
+                                                                                                    transition: 'all 0.3s ease-in-out',
                                                                                                 }}
                                                                                                 onMouseOver={(e) => {
-                                                                                                    e.currentTarget.style.transform = 'scale(1.1)'; 
-                                                                                                    e.currentTarget.style.backgroundColor = 'green'; 
+                                                                                                    e.currentTarget.style.transform = 'scale(1.1)';
+                                                                                                    e.currentTarget.style.backgroundColor = 'green';
                                                                                                 }}
                                                                                                 onMouseOut={(e) => {
-                                                                                                    e.currentTarget.style.transform = 'scale(1)'; 
-                                                                                                    e.currentTarget.style.backgroundColor = '#007bff'; 
+                                                                                                    e.currentTarget.style.transform = 'scale(1)';
+                                                                                                    e.currentTarget.style.backgroundColor = '#007bff';
                                                                                                 }}
                                                                                             >
 
                                                                                                 <i
                                                                                                     className="fe fe-plus"
-                                                                                                    style={{ color: 'white', fontSize: '18px' }} 
+                                                                                                    style={{ color: 'white', fontSize: '18px' }}
                                                                                                 />
                                                                                             </div>
                                                                                         </Link>
@@ -669,7 +669,7 @@ const UnitAllocationApplicant = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

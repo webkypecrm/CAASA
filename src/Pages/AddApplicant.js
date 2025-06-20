@@ -176,14 +176,14 @@ const AddApplicant = () => {
         applicantIfsc: '',
         applicantUpiId: '',
         luckyDrawId: '',
-       
+
     };
 
     const initialFormData4 = {
 
-      
+
         advisor: '',
-       
+
         bp: '',
         coAdvisor: '',
     };
@@ -962,13 +962,13 @@ const AddApplicant = () => {
 
 
 
-       useEffect(() => {
-            setFormData(prevFormData => ({ ...prevFormData, advisorId: formData4.BP || formData4.advisor }));
-        }, [formData4.BP || formData4.advisor]);
+    useEffect(() => {
+        setFormData(prevFormData => ({ ...prevFormData, advisorId: formData4.BP || formData4.advisor }));
+    }, [formData4.BP || formData4.advisor]);
 
-        useEffect(() => {
-            setFormData(prevFormData => ({ ...prevFormData, coAdvisorId: formData4.coAdvisor }));
-        }, [formData4.coAdvisor]);
+    useEffect(() => {
+        setFormData(prevFormData => ({ ...prevFormData, coAdvisorId: formData4.coAdvisor }));
+    }, [formData4.coAdvisor]);
 
 
     const handleInputChange6 = (event) => {
@@ -1284,7 +1284,7 @@ const AddApplicant = () => {
 
                                                                         />
                                                                     </div>
-                                                                   
+
                                                                     <div className="col-lg-4 form-group">
                                                                         <label className="form-label">
                                                                             Applicant Father's Name:{" "}
@@ -1688,7 +1688,7 @@ const AddApplicant = () => {
 
                                                                         />
                                                                     </div>
-                                                                  
+
                                                                     <div className="col-lg-4 form-group">
                                                                         <label className="form-label">
                                                                             Co Applicant Father's Name:{" "}
@@ -2060,7 +2060,7 @@ const AddApplicant = () => {
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            
+
                                                             <div className="col-sm-3 mg-t-10">
                                                                 <div className="form-group mb-0">
                                                                     <label className="form-label">Type:</label>
@@ -2738,7 +2738,7 @@ const AddApplicant = () => {
                                                                                                                         </tbody>
                                                                                                                     </table>
                                                                                                                     <h4 className="mt-5 text-center mb-3" style={{ color: "#2e3192" }}>
-                                                                                                                    Applicable PLC
+                                                                                                                        Applicable PLC
                                                                                                                         {/* <span>-&gt; PLC/OTNER</span> */}
                                                                                                                     </h4>
 
@@ -3004,22 +3004,22 @@ const AddApplicant = () => {
                                                                     <div className="form-group mb-0">
                                                                         <label className="form-label">Advisor(VP)</label>
 
-                                                                        <select  
-                                                                        className="form-control select select2"
-                                                                        type="text"
-                                                                        name="BP"
-                                                                        value={formData4.BP}
-                                                                        onFocus={() => setActiveField("BP")}
-                                                                        onChange={handleInputChangeData}
+                                                                        <select
+                                                                            className="form-control select select2"
+                                                                            type="text"
+                                                                            name="BP"
+                                                                            value={formData4.BP}
+                                                                            onFocus={() => setActiveField("BP")}
+                                                                            onChange={handleInputChangeData}
                                                                         >
-                                                                        <option value="">Select VP</option>
-                                                                        {advisors.map((option) => (
-                                                                            <option key={option.id} value={option.id}>
-                                                                                {option.fullName}
-                                                                            </option>
-                                                                        ))}
-                                                                    </select>
-                                                                       
+                                                                            <option value="">Select VP</option>
+                                                                            {advisors.map((option) => (
+                                                                                <option key={option.id} value={option.id}>
+                                                                                    {option.fullName}
+                                                                                </option>
+                                                                            ))}
+                                                                        </select>
+
                                                                     </div>
                                                                 </div>
                                                             )}
@@ -3428,7 +3428,7 @@ const AddApplicant = () => {
                             <div className="row row-sm">
                                 <div className="col-md-12">
                                     <span>
-                                        Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                        Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                         by <a href="http://webkype.com/">Webkype.com</a> All rights
                                         reserved.
                                     </span>

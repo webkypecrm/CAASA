@@ -14,7 +14,7 @@ const AddMedia = () => {
 
     const initialFormData = {
         image: '',
-       
+
     };
 
     const [formData, setFormData] = useState(initialFormData);
@@ -82,9 +82,9 @@ const AddMedia = () => {
         }
     };
 
-   
-    
-     
+
+
+
 
     useEffect(() => {
         const token = localStorage.getItem('Token');
@@ -118,7 +118,7 @@ const AddMedia = () => {
                             {/* End Page Header */}
                             {/* Row */}
                             <div className="row row-sm">
-                               
+
                                 <div className="col-xl-4 col-lg-4 col-md-4">
                                     <div className="card custom-card">
                                         <div className="card-body">
@@ -186,7 +186,7 @@ const AddMedia = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

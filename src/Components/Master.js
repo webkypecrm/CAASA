@@ -12,7 +12,7 @@ function Master() {
         name: "",
 
     };
-    
+
     const [formData, setFormData] = useState(initialFormData);
     const [selectedUserId, setSelectedUserId] = useState(null);
     const [users, setUsers] = useState([]);
@@ -30,7 +30,7 @@ function Master() {
         setIsModalOpen2(true);
         document.body.classList.add('modal-open');
     };
-    const handleCloseModal2 = () => { 
+    const handleCloseModal2 = () => {
         setIsModalOpen2(false);
 
         document.body.classList.remove('modal-open');
@@ -115,7 +115,7 @@ function Master() {
         }
         setLoading(false);
     };
-    
+
     useEffect(() => {
         fetchDataFromApi();
     }, []);
@@ -448,7 +448,7 @@ function Master() {
                         </div>
                     </div>
                 </div>
-                
+
                 {/* End Main Content*/}
                 {/* Main Footer*/}
                 <div className="main-footer text-center">
@@ -456,7 +456,7 @@ function Master() {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

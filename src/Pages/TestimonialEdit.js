@@ -263,23 +263,23 @@ const TestimonialEdit = () => {
                                                         </div>
 
 
-                                                             <div className="col-lg-4 form-group">
-                                                    <label className="form-label">Source</label>
-                                                    <select
-                                                        className="form-control"
-                                                        name="source"
-                                                        value={formData.source}
-                                                        onChange={handleChange}
-                                                        required
-                                                    >
-                                                        <option value="">Select Source</option>
-                                                        {sourceType.map((src, index) => (
-                                                            <option key={index} value={src.name}>
-                                                                {src.name}
-                                                            </option>
-                                                        ))}
-                                                    </select>
-                                                </div>
+                                                        <div className="col-lg-4 form-group">
+                                                            <label className="form-label">Source</label>
+                                                            <select
+                                                                className="form-control"
+                                                                name="source"
+                                                                value={formData.source}
+                                                                onChange={handleChange}
+                                                                required
+                                                            >
+                                                                <option value="">Select Source</option>
+                                                                {sourceType.map((src, index) => (
+                                                                    <option key={index} value={src.name}>
+                                                                        {src.name}
+                                                                    </option>
+                                                                ))}
+                                                            </select>
+                                                        </div>
 
 
 
@@ -373,7 +373,7 @@ const TestimonialEdit = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

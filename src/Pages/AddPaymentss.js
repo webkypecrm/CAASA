@@ -221,7 +221,7 @@ const AddPaymentss = () => {
                                                                 <option >IMPS</option>
                                                                 <option >RTGS</option>
                                                                 <option>UPI</option>
-                                                               
+
 
 
                                                             </select>
@@ -344,7 +344,7 @@ const AddPaymentss = () => {
 
                                                     </>
                                                 )}
-                                                 {formData.paymentMethod === 'Cancelled' && (
+                                                {formData.paymentMethod === 'Cancelled' && (
                                                     <>
                                                         <div className="col-sm-3 mg-t-10">
                                                             <label className="form-label">Check List</label>
@@ -460,7 +460,7 @@ const AddPaymentss = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

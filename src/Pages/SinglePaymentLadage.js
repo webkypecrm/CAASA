@@ -305,7 +305,7 @@ const SinglePaymentLadage = () => {
                                                         onChange={(e) => setSearch(e.target.value)}
                                                     />
                                                 </div>
-                                                
+
                                                 <div className="col-sm-2">
                                                     <input
                                                         type="search"
@@ -421,7 +421,7 @@ const SinglePaymentLadage = () => {
                                                                                 <th>Payment Mode</th>
                                                                                 <th>Method</th>
                                                                                 <th>Bank Name</th>
-                                                                                <th>AMRS Account</th>
+                                                                                <th>Webkype Account</th>
                                                                                 <th>CHQ/TRN No</th>
                                                                                 <th>Cheque Date</th>
                                                                                 <th>Payment Date</th>
@@ -481,7 +481,7 @@ const SinglePaymentLadage = () => {
                                                                                                     </div>
                                                                                                 </>
                                                                                             )}
-                                                                                            
+
                                                                                         </div>
                                                                                     </td>
                                                                                 </tr>
@@ -512,7 +512,7 @@ const SinglePaymentLadage = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

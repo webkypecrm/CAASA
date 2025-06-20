@@ -798,7 +798,7 @@ const LuckyDrawList = () => {
                                                                                                                         <div key={project.projectId} style={{ minHeight: '40px', display: 'flex', flexDirection: 'column' }}>
                                                                                                                             {noInventory ? (
                                                                                                                                 <span
-                                                                                                                                    style={{ 
+                                                                                                                                    style={{
                                                                                                                                         fontSize: '16px',
                                                                                                                                         color: 'red',
                                                                                                                                         whiteSpace: 'nowrap',
@@ -868,7 +868,7 @@ const LuckyDrawList = () => {
                                                                                                                                     </button>
                                                                                                                                 </div>
                                                                                                                             ) : (
-                                                                                                                                <div style={{ minHeight: '30px' }}></div> 
+                                                                                                                                <div style={{ minHeight: '30px' }}></div>
                                                                                                                             )}
 
                                                                                                                             {/* हर row के नीचे line */}
@@ -1087,7 +1087,7 @@ const LuckyDrawList = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

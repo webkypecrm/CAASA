@@ -270,7 +270,7 @@ const AddVendor = () => {
             panNo: inputValue
         });
     };
-  
+
     useEffect(() => {
         const token = localStorage.getItem('Token');
 
@@ -282,7 +282,7 @@ const AddVendor = () => {
         <>
 
             <div className="page">
-          
+
 
                 <TopHeader />
                 <Prince />
@@ -330,7 +330,7 @@ const AddVendor = () => {
                                                         {/* col-4 */}
                                                         <div className="col-lg-6">
                                                             <label className="form-label">
-                                                            Select Sub Category: <span className="tx-danger">*</span>
+                                                                Select Sub Category: <span className="tx-danger">*</span>
                                                             </label>
                                                             <select className="form-control select2"
                                                                 name="subCategory"
@@ -596,7 +596,7 @@ const AddVendor = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

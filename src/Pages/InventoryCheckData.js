@@ -9,7 +9,7 @@ import { BiCaretRight } from 'react-icons/bi';
 const InventoryCheckData = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const { firstName, lastName, projectId, isLuckyDraw,unitNo } = location.state || {};
+    const { firstName, lastName, projectId, isLuckyDraw, unitNo } = location.state || {};
     const { empid, empid2, empid3, empid4 } = useParams();
     const dropdownRef = useRef(null);
 
@@ -114,7 +114,7 @@ const InventoryCheckData = () => {
     };
 
     const [formData12, setFormData12] = useState(initialFormData12);
-  
+
     const [users, setUsers] = useState([]);
     const [users2, setUsers2] = useState([]);
     const [users4, setUsers4] = useState([]);
@@ -1262,7 +1262,7 @@ const InventoryCheckData = () => {
 
     const fetchDataFromApi = async () => {
         const {
-            projectId, schemeId, schemeType,  plc, size, unitNos,
+            projectId, schemeId, schemeType, plc, size, unitNos,
             allocatedTo, availability, registry, luckyDrawStatus
         } = filterByObj;
 
@@ -1294,7 +1294,7 @@ const InventoryCheckData = () => {
 
     useEffect(() => {
         fetchDataFromApi()
-    }, [filterByObj, selectedOptions, selectedIds,unitNo]);
+    }, [filterByObj, selectedOptions, selectedIds, unitNo]);
 
 
     const fetchDataFromApiii = (id) => {
@@ -1619,12 +1619,12 @@ const InventoryCheckData = () => {
                                                             type="search"
                                                             className="form-control"
                                                             placeholder="Search Unit No.."
-                                                           
+
 
                                                             name="unitNos"
                                                             value={filterByObj.unitNos}
                                                             onChange={handleInputChange2}
-                                                            
+
                                                         />
                                                     </div>
                                                     {/* <div className="col-sm-3" >
@@ -3514,7 +3514,7 @@ const InventoryCheckData = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -67,12 +67,12 @@ function TeamManager() {
     const Token = localStorage.getItem("Token");
 
     const handleOpenModal2 = () => {
-        setIsModalOpen2(true); 
+        setIsModalOpen2(true);
         setFormData(initialFormData); // Reset form data when modal is opened
     };
-    
+
     const handleCloseModal2 = () => {
-        setIsModalOpen2(false); 
+        setIsModalOpen2(false);
     }
 
     const handleOpenModal3 = async (userId) => {
@@ -114,10 +114,10 @@ function TeamManager() {
         document.body.classList.remove('modal-open');
     };
 
-  
 
 
-   
+
+
 
     useEffect(() => {
         setFormData({ ...formData, teamCordinator: selectedUserIds10 });
@@ -155,9 +155,9 @@ function TeamManager() {
         setFormData({ ...formData, teamMamberIds: selectedUserIds9 });
     }, [selectedUserIds9]);
 
-   
 
-   
+
+
 
     useEffect(() => {
         setFormData({ ...formData, teamMamberIds: selectedUserIds });
@@ -245,7 +245,7 @@ function TeamManager() {
         };
     }, [dropdownRef]);
 
-  
+
 
 
 
@@ -264,8 +264,8 @@ function TeamManager() {
 
 
 
-      // Fetching data for dropdowns
-      const fetchData = async () => {
+    // Fetching data for dropdowns
+    const fetchData = async () => {
         try {
             const headers = Token ? { Authorization: `Bearer ${Token}` } : {};
 
@@ -361,7 +361,7 @@ function TeamManager() {
         }
     };
 
-  
+
 
 
     // Function to fetch data from the API
@@ -457,26 +457,26 @@ function TeamManager() {
                 try {
                     const Token = localStorage.getItem('Token');
                     const url = `${apiUrl}/team/getTeam?id=${selectedUserId}`;
-                    
+
                     const result = await fetch(url, {
                         headers: {
                             Authorization: `Bearer ${Token}`,
                             'Content-Type': 'application/json',
                         },
                     });
-    
+
                     const response = await result.json();
-    
+
                     if (response && response.count) {
                         // Update counts based on the response
                         setCounts(response.count.managerCount || 0);  // Handle undefined
                         setCountss(response.count.teleCallerCount || 0);  // Handle undefined
                     }
-    
+
                     const data = response.data;
                     if (data) {
                         setProfilePic(data.teamBanner || '');
-    
+
                         setFormData((prevFormData) => ({
                             ...prevFormData,
                             teamManagerA: data.teamManagerA || '',
@@ -485,11 +485,11 @@ function TeamManager() {
                             vicePresident: data.vicePresident || '',
                             teamCordinator: data.teamCordinator || '',
                         }));
-    
+
                         // Safely parse the teamMamberIds and teamCordinator
                         const selectedIds = data.teamMamberIds ? data.teamMamberIds.split(',').map(id => parseInt(id.trim(), 10)) : [];
                         setSelectedUserIds(selectedIds);
-    
+
                         const selectedCordinatorIds = data.teamCordinator ? data.teamCordinator.split(',').map(id => parseInt(id.trim(), 10)) : [];
                         setSelectedUserIds10(selectedCordinatorIds);
                     }
@@ -497,7 +497,7 @@ function TeamManager() {
                     console.error('Error fetching data:', error);
                 }
             };
-    
+
             fetchUser();
         }
     }, [selectedUserId]);
@@ -1013,7 +1013,7 @@ function TeamManager() {
                     </div>
                 </div>
 
-               
+
 
                 <div
                     className={`modal fade ${isModalOpen4 ? 'show d-block' : ''}`}
@@ -1197,7 +1197,7 @@ function TeamManager() {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

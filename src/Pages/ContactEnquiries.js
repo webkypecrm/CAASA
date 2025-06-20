@@ -42,7 +42,7 @@ const ContactEnquiries = () => {
             const data = await response.json();
 
             if (data.status === 'success' && Array.isArray(data.data)) {
-                
+
                 setUsers(data.data);
             } else {
                 console.error('API response error:', data.message || 'Data is not an array');
@@ -197,7 +197,7 @@ const ContactEnquiries = () => {
                                                                         ID: {user.id || 'N/A'}
                                                                         <br />
 
-                                                                       Date: {new Date(user.createdAt || 'N/A').toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' }) + ' at ' + new Date(user.createdAt || 'N/A').toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}
+                                                                        Date: {new Date(user.createdAt || 'N/A').toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' }) + ' at ' + new Date(user.createdAt || 'N/A').toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}
 
 
                                                                     </td>
@@ -233,7 +233,7 @@ const ContactEnquiries = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

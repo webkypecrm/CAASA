@@ -101,7 +101,7 @@ const RegistryReports = () => {
             });
     }, []);
 
-  
+
     //project api 
     useEffect(() => {
         fetch(`${apiUrl}/project/getAllProjectDropdown`)
@@ -151,9 +151,9 @@ const RegistryReports = () => {
             const response = await fetch(url, {
                 headers: { 'Authorization': `Bearer ${Token}` }
             });
-    
+
             const data = await response.json();
-    
+
             if (data.status === 'success') {
                 if (Array.isArray(data.data)) {
                     const formattedData = data.data.map(item => ({
@@ -184,7 +184,7 @@ const RegistryReports = () => {
     }, []);
 
 
-    
+
 
     const handleInputChange2 = (e) => {
         const { name, value } = e.target;
@@ -368,7 +368,7 @@ const RegistryReports = () => {
                                                     <div className="tab-content ">
                                                         <div className="tab-pane active" id="tab11">
                                                             <div className="table-responsive">
-                                                            <table className="table table-striped table-bordered mb-0 text-nowrap">
+                                                                <table className="table table-striped table-bordered mb-0 text-nowrap">
                                                                     <thead>
                                                                         <tr>
                                                                             <th>
@@ -479,7 +479,7 @@ const RegistryReports = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

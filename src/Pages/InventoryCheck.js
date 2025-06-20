@@ -1367,19 +1367,19 @@ const InventoryCheck = () => {
 
 
 
-     useEffect(() => {
-            // Calculate the payment value based on paymentPlan and update the state
-            const value =
-                employee2.paymentPlan === 'FPP'
-                    ? employee2?.plan?.basicPriceFPP || 'N/A'
-                    : employee2.paymentPlan === 'PLP'
+    useEffect(() => {
+        // Calculate the payment value based on paymentPlan and update the state
+        const value =
+            employee2.paymentPlan === 'FPP'
+                ? employee2?.plan?.basicPriceFPP || 'N/A'
+                : employee2.paymentPlan === 'PLP'
                     ? employee2?.plan?.basicPricePLP || 'N/A'
                     : employee2.paymentPlan === 'DLP'
-                    ? employee2?.plan?.basicPriceDLP || 'N/A'
-                    : 'N/A';
-    
-            setPaymentValue(value);
-        }, [employee2]); 
+                        ? employee2?.plan?.basicPriceDLP || 'N/A'
+                        : 'N/A';
+
+        setPaymentValue(value);
+    }, [employee2]);
 
 
     const keyframes = `
@@ -3478,7 +3478,7 @@ const InventoryCheck = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

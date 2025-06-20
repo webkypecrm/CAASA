@@ -217,11 +217,11 @@ const ApplicantList = () => {
                                                                                 </a>
                                                                             </td>
                                                                         </tr>
-                                                                       
-                                                                       
-                                                                        
-                                                                       
-                                                                       
+
+
+
+
+
                                                                     </tbody>
                                                                 </table>
                                                             </div>
@@ -244,7 +244,7 @@ const ApplicantList = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2023 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2023 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>
@@ -254,8 +254,8 @@ const ApplicantList = () => {
                 </div>
                 {/*End Footer*/}
             </div>
-         
-           
+
+
         </>
 
     )

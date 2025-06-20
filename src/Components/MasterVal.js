@@ -112,7 +112,7 @@ function MasterVal() {
   };
 
   useEffect(() => {
-  
+
     fetch(`${apiUrl}/master/getAllMaster`, {
       headers: {
         'Authorization': `Bearer ${Token}`,
@@ -125,12 +125,12 @@ function MasterVal() {
         } else {
           console.error('API response does not contain an array:', data);
         }
-       
+
       })
       .catch(error => {
         console.error('Error fetching masters data:', error);
       });
-    
+
   }, [])
 
   const handleSubmit = async (event) => {
@@ -211,7 +211,7 @@ function MasterVal() {
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-      setLoading(false);
+    setLoading(false);
   }
   useEffect(() => {
     fetchDataFromApi()
@@ -442,7 +442,7 @@ function MasterVal() {
                               ))}
                             </tbody>
                           </table>
-                           )}
+                        )}
                       </div>
                     </div>
                   </div>
@@ -459,7 +459,7 @@ function MasterVal() {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">AMRS</a>.
+                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
                   Designed by <a href="http://webkype.com/">Webkype.com</a> All
                   rights reserved.
                 </span>

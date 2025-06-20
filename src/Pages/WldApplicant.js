@@ -110,7 +110,7 @@ const WldApplicant = () => {
         applicantPanImage: "",
         applicantNationality: "",
         applicantProfession: "",
-      
+
         coApplicantFatherName: " ",
         coApplicantEmail: "",
         coApplicantMobile: "",
@@ -180,16 +180,16 @@ const WldApplicant = () => {
 
     const initialFormData4 = {
 
-      
+
         advisor: '',
-       
+
         bp: '',
         coAdvisor: '',
     };
 
     const [formData, setFormData] = useState(initialFormData);
     const [formData3, setFormData3] = useState(initialFormData3);
-  const [formData4, setFormData4] = useState(initialFormData4);
+    const [formData4, setFormData4] = useState(initialFormData4);
     const [profilePicFile, setProfilePicFile] = useState(null);
     const [profilePicFile1, setProfilePicFile1] = useState(null);
     const [countryOptions, setCountryOptions] = useState([]);
@@ -230,7 +230,7 @@ const WldApplicant = () => {
     const [showLoader, setShowLoader] = useState(true);
     const [gat, setGat] = useState(from.type);
     const [lucky, setLucky] = useState([]);
-     const [activeField, setActiveField] = useState("");
+    const [activeField, setActiveField] = useState("");
     const apiUrl = process.env.REACT_APP_URL;
     const Token = localStorage.getItem('Token');
 
@@ -674,7 +674,7 @@ const WldApplicant = () => {
             });
     }, []);
 
-  
+
     useEffect(() => {
         if (formData.luckyDrawId) {
             const url = `${apiUrl}/scheme/schemeDropdownApplication?&luckyDrawId=${formData.luckyDrawId}`;
@@ -735,38 +735,38 @@ const WldApplicant = () => {
 
 
 
-   useEffect(() => {
-          fetch(`${apiUrl}/employee/allEmpDesig?designation=167`)
-              .then((response) => response.json())
-              .then((data) => {
-                  if (data.data && Array.isArray(data.data)) {
-                      setAdvisor(data.data);
-                  } else {
-                      console.error('API response is not in the expected format for countries.');
-                  }
-  
-              })
-              .catch((error) => {
-                  console.error('Error fetching country data:', error);
-              });
-      }, []);
-  
-  
-      useEffect(() => {
-          fetch(`${apiUrl}/employee/allEmpDesig?designation=173`)
-              .then((response) => response.json())
-              .then((data) => {
-                  if (data.data && Array.isArray(data.data)) {
-                      setAdvisors(data.data);
-                  } else {
-                      console.error('API response is not in the expected format for countries.');
-                  }
-  
-              })
-              .catch((error) => {
-                  console.error('Error fetching country data:', error);
-              });
-      }, []);
+    useEffect(() => {
+        fetch(`${apiUrl}/employee/allEmpDesig?designation=167`)
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.data && Array.isArray(data.data)) {
+                    setAdvisor(data.data);
+                } else {
+                    console.error('API response is not in the expected format for countries.');
+                }
+
+            })
+            .catch((error) => {
+                console.error('Error fetching country data:', error);
+            });
+    }, []);
+
+
+    useEffect(() => {
+        fetch(`${apiUrl}/employee/allEmpDesig?designation=173`)
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.data && Array.isArray(data.data)) {
+                    setAdvisors(data.data);
+                } else {
+                    console.error('API response is not in the expected format for countries.');
+                }
+
+            })
+            .catch((error) => {
+                console.error('Error fetching country data:', error);
+            });
+    }, []);
 
 
 
@@ -1266,8 +1266,8 @@ const WldApplicant = () => {
 
                                                                         />
                                                                     </div>
-                                                                    
-                                                                    
+
+
                                                                     <div className="col-lg-4 form-group">
                                                                         <label className="form-label">
                                                                             Applicant Father's Name:{" "}
@@ -2751,7 +2751,7 @@ const WldApplicant = () => {
                                                                                                                         </tbody>
                                                                                                                     </table>
                                                                                                                     <h4 className="mt-5 text-center mb-3" style={{ color: "#2e3192" }}>
-                                                                                                                    Applicable PLC
+                                                                                                                        Applicable PLC
                                                                                                                         {/* <span>-&gt; PLC/OTNER</span> */}
                                                                                                                     </h4>
 
@@ -3015,22 +3015,22 @@ const WldApplicant = () => {
                                                                     <div className="form-group mb-0">
                                                                         <label className="form-label">Advisor(VP)</label>
 
-                                                                        <select  
-                                                                        className="form-control select select2"
-                                                                        type="text"
-                                                                        name="BP"
-                                                                        value={formData4.BP}
-                                                                        onFocus={() => setActiveField("BP")}
-                                                                        onChange={handleInputChangeData}
+                                                                        <select
+                                                                            className="form-control select select2"
+                                                                            type="text"
+                                                                            name="BP"
+                                                                            value={formData4.BP}
+                                                                            onFocus={() => setActiveField("BP")}
+                                                                            onChange={handleInputChangeData}
                                                                         >
-                                                                        <option value="">Select VP</option>
-                                                                        {advisors.map((option) => (
-                                                                            <option key={option.id} value={option.id}>
-                                                                                {option.fullName}
-                                                                            </option>
-                                                                        ))}
-                                                                    </select>
-                                                                       
+                                                                            <option value="">Select VP</option>
+                                                                            {advisors.map((option) => (
+                                                                                <option key={option.id} value={option.id}>
+                                                                                    {option.fullName}
+                                                                                </option>
+                                                                            ))}
+                                                                        </select>
+
                                                                     </div>
                                                                 </div>
                                                             )}
@@ -3438,7 +3438,7 @@ const WldApplicant = () => {
                             <div className="row row-sm">
                                 <div className="col-md-12">
                                     <span>
-                                        Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                        Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                         by <a href="http://webkype.com/">Webkype.com</a> All rights
                                         reserved.
                                     </span>

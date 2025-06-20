@@ -23,14 +23,14 @@ const Gift = () => {
     const [profilePicFile, setProfilePicFile] = useState(null);
     const [category, setCategory] = useState([])
     const [subCategory, setSubCategory] = useState([]);
-    const[ven, setVen] = useState([]);
+    const [ven, setVen] = useState([]);
 
     const navigate = useNavigate();
     const apiUrl = process.env.REACT_APP_URL;
     const Token = localStorage.getItem("Token");
 
     useEffect(() => {
-       
+
         const url = `${apiUrl}/vendor/vendorDropdown?&categoryId=${formData.vendorCategory}&subCategory=${formData.vendorSubCategory}`;
         fetch(url)
             .then((response) => response.json())
@@ -162,7 +162,7 @@ const Gift = () => {
     return (
         <>
             <div className="page">
-          
+
                 <TopHeader />
                 <Prince />
 
@@ -217,10 +217,10 @@ const Gift = () => {
                                                             </option>
                                                         ))}
                                                     </select>
-                                                </div> 
+                                                </div>
                                                 <div className="col-lg-4 form-group">
                                                     <label className="form-label">
-                                                        Vendor 
+                                                        Vendor
                                                     </label>
                                                     <select className="form-control select2"
                                                         name="vendorId"
@@ -236,7 +236,7 @@ const Gift = () => {
                                                 </div>
                                                 <div className="col-lg-4 form-group">
                                                     <label className="form-label">
-                                                        Gift Name 
+                                                        Gift Name
                                                     </label>
                                                     <input
                                                         className="form-control"
@@ -250,7 +250,7 @@ const Gift = () => {
                                                 </div>
                                                 <div className="col-lg-4 form-group">
                                                     <label className="form-label">
-                                                        Brand 
+                                                        Brand
                                                     </label>
                                                     <input
                                                         className="form-control"
@@ -264,7 +264,7 @@ const Gift = () => {
                                                 </div>
                                                 <div className="col-lg-4 form-group">
                                                     <label className="form-label">
-                                                        Gift Value 
+                                                        Gift Value
                                                     </label>
                                                     <input
                                                         className="form-control"
@@ -276,12 +276,12 @@ const Gift = () => {
                                                         type="text"
                                                     />
                                                 </div>
-                                               
+
 
 
                                                 <div className="col-sm-12 mg-t-10">
                                                     <label className="form-label">
-                                                        Gift Description 
+                                                        Gift Description
                                                     </label>
                                                     <textarea
                                                         className="form-control"
@@ -295,7 +295,7 @@ const Gift = () => {
                                                 </div>
                                                 <div className="col-lg-4 form-group">
                                                     <label className="form-label">
-                                                        Stock 
+                                                        Stock
                                                     </label>
                                                     <input
                                                         className="form-control"
@@ -353,7 +353,7 @@ const Gift = () => {
                             <div className="row row-sm">
                                 <div className="col-12 mb-3">
                                     <button
-                                       
+
                                         className="btn btn-primary"
                                         type="submit"
                                         onClick={handleSubmit}
@@ -372,7 +372,7 @@ const Gift = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

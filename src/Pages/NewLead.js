@@ -762,7 +762,7 @@ const NewLead = () => {
                                                         onChange={(e) => setSearch(e.target.value)}
                                                     />
                                                 </div>
-                                               
+
                                                 <div className="col-sm-3 form-group">
                                                     <label className="form-label">Assigned:</label>
                                                     <select
@@ -815,7 +815,7 @@ const NewLead = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                               
+
                                                 <div className="col-sm-3 form-group" style={{ marginTop: '3px' }}>
                                                     <label className="form-label">Project</label>
                                                     <select
@@ -1003,7 +1003,7 @@ const NewLead = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

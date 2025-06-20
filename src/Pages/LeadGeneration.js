@@ -13,9 +13,9 @@ const LeadGeneration = () => {
     const [reportingBossA, setReportingBossA] = useState([])
     const [status, setStatus] = useState([]);
     const [project, setProject] = useState([]);
-    const [source, setSource] = useState([]); 
+    const [source, setSource] = useState([]);
     const [sources, setSources] = useState([]);
-    const [vendor, setVendor] = useState([]); 
+    const [vendor, setVendor] = useState([]);
     const [users, setUsers] = useState([]);
     const [leadCount, setLeadCount] = useState({});
     const [loading, setLoading] = useState(true);
@@ -235,26 +235,26 @@ const LeadGeneration = () => {
     }, [filterByObj]);
 
 
-    const handleDownload = async () => {   
+    const handleDownload = async () => {
         try {
             const { to, from, status, empId, project, source, size, utmSource, vendor } = filterByObj;
             const urls = `${apiUrl}/lead/downloadLeadAllocation?empId=${empId}&to=${to}&from=${from}&status=${status}&project=${project}&source=${source}&size=${size}&utmSource=${utmSource}&vendor=${vendor}`;
-    
+
             const response = await fetch(urls, {
                 method: 'GET',
                 headers: { 'Authorization': `Bearer ${Token}` }
             });
-    
+
             // Check if the response status is OK (200-299)
             if (!response.ok) {
                 const errorData = await response.json();
                 const errorMessage = errorData.message || 'Error occurred while fetching the file.';
                 throw new Error(errorMessage);
             }
-    
+
             // Parse the response JSON to get the download URL
             const result = await response.json();
-            
+
             if (result.status === 'success' && result.data) {
                 // Use the direct file URL from the API response to download
                 const downloadUrl = result.data;
@@ -264,7 +264,7 @@ const LeadGeneration = () => {
                 document.body.appendChild(link);
                 link.click();
                 link.remove();
-                
+
                 // Display success message
                 toast.success('File downloaded successfully!');
             } else {
@@ -447,21 +447,21 @@ const LeadGeneration = () => {
                                 </div>
                                 <div className="d-flex">
                                     <div className="justify-content-center" style={{ marginTop: '-75px' }}>
-                                       
+
                                         <button
-                                          onClick={handleDownload}
+                                            onClick={handleDownload}
                                             download
                                             type="button"
                                             className="btn btn-primary my-2 btn-icon-text me-2"
                                         >
-                                            Download 
+                                            Download
                                         </button>
                                     </div>
                                 </div>
                             </div>
 
 
-                    
+
 
                             <div className="row row-sm" >
                                 <div className="col-lg-12 col-md-12">
@@ -620,7 +620,7 @@ const LeadGeneration = () => {
                                                     </tbody>
 
 
-                                                    <tfoot style={{ backgroundColor: '#f4f4f4', color: '#333', borderTop: '2px solid #ddd' }}> 
+                                                    <tfoot style={{ backgroundColor: '#f4f4f4', color: '#333', borderTop: '2px solid #ddd' }}>
 
                                                         <tr>
                                                             <td className="fixed-width" style={{ padding: '10px', color: '#032852', fontWeight: 'bold' }}>Total Lead</td>
@@ -666,7 +666,7 @@ const LeadGeneration = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

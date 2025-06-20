@@ -2679,7 +2679,7 @@ const EoiInventory = () => {
                                                     />
                                                 </div>
                                                 <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                    <label className="form-label">Deposit to AMRS</label>
+                                                    <label className="form-label">Deposit to Webkype</label>
                                                     <select className="form-control select2"
                                                         name="amrsAccount"
                                                         value={formData10.amrsAccount}
@@ -2736,7 +2736,7 @@ const EoiInventory = () => {
                                                     </select>
                                                 </div>
                                                 <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                    <label className="form-label">AMRS Account</label>
+                                                    <label className="form-label">Webkype Account</label>
                                                     <select className="form-control select2"
                                                         name="amrsAccount"
                                                         value={formData10.amrsAccount}
@@ -3173,7 +3173,7 @@ const EoiInventory = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

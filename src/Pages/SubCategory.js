@@ -83,15 +83,15 @@ const SubCategory = () => {
 
     const handleCountryChange = (event) => {
         const selectedCountry = event.target.value;
-       
+
         setFormData({
-          ...formData,
-          categoryId: selectedCountry,
+            ...formData,
+            categoryId: selectedCountry,
         });
-        
-      };
-     
-    
+
+    };
+
+
     useEffect(() => {
         const token = localStorage.getItem('Token');
 
@@ -104,7 +104,7 @@ const SubCategory = () => {
     return (
         <>
             <div className="page">
-          
+
                 <TopHeader />
                 <Prince />
 
@@ -188,7 +188,7 @@ const SubCategory = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

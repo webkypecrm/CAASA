@@ -116,7 +116,7 @@ function MediaList() {
     }, []);
 
 
-    
+
 
     useEffect(() => {
         const styleSheet = document.createElement("style");
@@ -229,20 +229,20 @@ function MediaList() {
                                                                 <th>Photo URL</th>
                                                                 <th> Action </th>
                                                             </tr>
-                                                        </thead> 
+                                                        </thead>
                                                         <tbody>
 
                                                             {users.map((user) => (
                                                                 <tr key={user.id}>
                                                                     <td>
-                                                                    <img
+                                                                        <img
                                                                             alt="avatar"
                                                                             className="rounded-circle me-3"
                                                                             src={user.image}
-                                                                            style={{ width: 80,height: 50 }}
+                                                                            style={{ width: 80, height: 50 }}
                                                                         />
                                                                     </td>
-                                                            
+
 
                                                                     <td>
                                                                         <Link to={user.image} title="Photo 1" target="__blank"><i className="fe fe-eye" style={{ cursor: 'pointer' }} /></Link>
@@ -278,7 +278,7 @@ function MediaList() {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>.
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
                                     Designed by <a href="http://webkype.com/">Webkype.com</a> All
                                     rights reserved.
                                 </span>

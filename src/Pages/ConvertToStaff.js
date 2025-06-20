@@ -183,7 +183,7 @@ const ConvertToStaff = () => {
                     return acc;
                 }, {});
                 // console.log('Fetched Data:', trimmedData);
-                let stateParam = trimmedData.currentAddressCountry || 0; 
+                let stateParam = trimmedData.currentAddressCountry || 0;
                 let stateParam2 = trimmedData.currentAddressState || 0;
                 let stateParam3 = trimmedData.permanentAddressCountry || 0;
                 let stateParam4 = trimmedData.permanentAddressState || 0;
@@ -215,7 +215,7 @@ const ConvertToStaff = () => {
                     ...prevFormData,
 
                     profilePhoto: trimmedData.profilePhoto,
-                   
+
                     fullName: trimmedData.fullName,
                     emailId: trimmedData.emailId,
                     password: trimmedData.password,
@@ -227,10 +227,10 @@ const ConvertToStaff = () => {
                     designation: trimmedData.designation,
                     department: trimmedData.department,
                     designation: trimmedData.designation,
-                    teamManager:trimmedData.teamManager,
-                   
-                   
-                   
+                    teamManager: trimmedData.teamManager,
+
+
+
                     currentAddressCountry: trimmedData.currentAddressCountry,
                     currentAddressState: trimmedData.currentAddressState,
                     currentAddressCity: trimmedData.currentAddressCity,
@@ -244,8 +244,8 @@ const ConvertToStaff = () => {
                     permanentAddressArea: trimmedData.permanentAddressArea,
                     permanentAddressLane: trimmedData.permanentAddressLane,
                     permanentAddressPinCode: trimmedData.permanentAddressPinCode,
-                   
-                
+
+
 
 
 
@@ -304,8 +304,8 @@ const ConvertToStaff = () => {
         const { name, value } = event.target;
         console.log(name, value); // Check if name and value are correct
         setFormData({ ...formData, [name]: value });
-      };
-      
+    };
+
     //country api 
     useEffect(() => {
         fetch(`${apiUrl}/employee/allCountries`)
@@ -1612,7 +1612,7 @@ const ConvertToStaff = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -1253,7 +1253,7 @@ const InventoryChecks = () => {
                                                                 }}>Size</th>
 
                                                                 {selectedOption !== 'false' && (
-                                                                    <th style={{  
+                                                                    <th style={{
                                                                         padding: '8px', border: '1px solid #ddd', backgroundColor: '#f2f2f2',
                                                                         fontWeight: 'bold', textAlign: 'left', minWidth: '100px'
                                                                     }}>Actual Size </th>
@@ -1262,12 +1262,12 @@ const InventoryChecks = () => {
                                                                     padding: '8px', border: '1px solid #ddd', backgroundColor: '#f2f2f2',
                                                                     fontWeight: 'bold', textAlign: 'left', minWidth: '100px'
                                                                 }}>PLC</th>
-                                                                 {selectedOption !== 'false' && (
-                                                                <th style={{
-                                                                    padding: '8px', border: '1px solid #ddd', backgroundColor: '#f2f2f2',
-                                                                    fontWeight: 'bold', textAlign: 'left', minWidth: '100px'
-                                                                }}>Actual PLC</th>
-                                                            )}
+                                                                {selectedOption !== 'false' && (
+                                                                    <th style={{
+                                                                        padding: '8px', border: '1px solid #ddd', backgroundColor: '#f2f2f2',
+                                                                        fontWeight: 'bold', textAlign: 'left', minWidth: '100px'
+                                                                    }}>Actual PLC</th>
+                                                                )}
 
                                                                 {/* <th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: '#f2f2f2',
                                                                  fontWeight: 'bold', textAlign: 'left', minWidth: '100px' }}>Super Ar</th>
@@ -1359,7 +1359,7 @@ const InventoryChecks = () => {
                                                                         </td>
                                                                     )}
                                                                     <td style={{ padding: '8px', border: '1px solid #ddd', minWidth: '100px' }}>
-                                                                    <input
+                                                                        <input
                                                                             className="form-control input-sm"
                                                                             type="text"
                                                                             name="row-1-age"
@@ -1368,20 +1368,20 @@ const InventoryChecks = () => {
                                                                                     ''
                                                                                 }`}
                                                                         />
-                                                                       
+
                                                                     </td>
                                                                     {selectedOption !== 'false' && (
                                                                         <td style={{ padding: '8px', border: '1px solid #ddd', minWidth: '100px' }}>
                                                                             <input
-                                                                            className="form-control input-sm"
-                                                                            type="text"
-                                                                            name="row-1-age"
-                                                                            defaultValue={`${user.ActualSize} ${(user.type === 'Plot' || user.type === 'Farmhouse') ? 'SQ YD' :
-                                                                                user.type === 'Shop' ? 'SQ FT' :
-                                                                                    ''
-                                                                                }`}
-                                                                        />
-                                                                            
+                                                                                className="form-control input-sm"
+                                                                                type="text"
+                                                                                name="row-1-age"
+                                                                                defaultValue={`${user.ActualSize} ${(user.type === 'Plot' || user.type === 'Farmhouse') ? 'SQ YD' :
+                                                                                    user.type === 'Shop' ? 'SQ FT' :
+                                                                                        ''
+                                                                                    }`}
+                                                                            />
+
                                                                         </td>
                                                                     )}
                                                                     <td style={{ padding: '8px', border: '1px solid #ddd', minWidth: '100px' }}>
@@ -2036,7 +2036,7 @@ const InventoryChecks = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

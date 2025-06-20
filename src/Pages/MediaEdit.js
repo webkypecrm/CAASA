@@ -25,7 +25,7 @@ const MediaEdit = () => {
 
 
 
-   
+
     useEffect(() => {
         const fetchUser = async () => {
 
@@ -49,7 +49,7 @@ const MediaEdit = () => {
                     ...prevFormData,
 
                     image: data.image,
-                    
+
                 }));
 
             } catch (error) {
@@ -119,7 +119,7 @@ const MediaEdit = () => {
 
 
 
-   
+
     useEffect(() => {
         const token = localStorage.getItem('Token');
 
@@ -150,9 +150,9 @@ const MediaEdit = () => {
                                     <h2 className="main-content-title tx-24 mg-b-5">Media Update</h2>
                                 </div>
                             </div>
-                           
+
                             <div className="row row-sm">
-                                
+
                                 <div className="col-xl-4 col-lg-4 col-md-4">
                                     <div className="card custom-card">
                                         <div className="card-body">
@@ -209,7 +209,7 @@ const MediaEdit = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

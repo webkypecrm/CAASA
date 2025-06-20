@@ -12,12 +12,12 @@ const AllCustomersss = () => {
 
     const [startDate, setStartDate] = useState(null);
     const [endDate, setEndDate] = useState(null);
-    
+
     const [formData, setFormData] = useState({
         schemeType: '',
         projectId: '',
     })
-    
+
     const [filterByObj, setFilterByObj] = useState({
         from: '',
         to: '',
@@ -54,18 +54,18 @@ const AllCustomersss = () => {
         const [start, end] = dates;
         setStartDate(start);
         setEndDate(end);
-    
+
         // Format the start and end dates if they are not null
         const formatDate = (date) => {
             if (date) {
                 const year = date.getFullYear();
                 const month = String(date.getMonth() + 1).padStart(2, '0');
                 const day = String(date.getDate()).padStart(2, '0');
-                return `${year}/${month}/${day}`; 
+                return `${year}/${month}/${day}`;
             }
             return '';
         };
-    
+
         // Update the filterByObj state with the formatted date range
         const formattedStartDate = formatDate(start);
         const formattedEndDate = formatDate(end);
@@ -77,7 +77,7 @@ const AllCustomersss = () => {
             to: `${formattedEndDate}`
         }));
     };
-       
+
     // scame type
     useEffect(() => {
         const Token = localStorage.getItem('Token');
@@ -100,7 +100,7 @@ const AllCustomersss = () => {
             });
     }, []);
 
-  
+
     //project api 
     useEffect(() => {
         fetch(`${apiUrl}/project/getAllProjectDropdown`)
@@ -165,23 +165,23 @@ const AllCustomersss = () => {
         const date = new Date(dateTimeString);
         return date.toLocaleString('en-IN', options);
     };
-    
+
 
     const fetchDataFromApi = async () => {
         try {
-            
-            const { projectId, schemeId, schemeType, from, to,result } = filterByObj;
-            
+
+            const { projectId, schemeId, schemeType, from, to, result } = filterByObj;
+
             const url = `${apiUrl}/applicant/applicants?id=&mobileNumber=&emailId=&projectId=${projectId}&schemeId=${schemeId}&schemeType=${schemeType}&from=${from}&to=${to}&result=${result}`;
-            
+
             const response = await fetch(url, {
                 headers: {
                     'Authorization': `Bearer ${Token}`
                 }
             });
-            
+
             const data = await response.json();
-            
+
             if (data.status === 'success' && Array.isArray(data.data)) {
                 const formattedData = data.data.map(item => ({
                     ...item,
@@ -197,13 +197,13 @@ const AllCustomersss = () => {
             console.error('Error fetching data:', error);
         }
     };
-    
+
 
     useEffect(() => {
         fetchDataFromApi()
     }, [filterByObj]);
-  
-  
+
+
 
     const handleInputChange2 = (e) => {
         const { name, value } = e.target;
@@ -244,7 +244,7 @@ const AllCustomersss = () => {
         <>
 
             <div className="page">
-            {showLoader && (
+                {showLoader && (
                     <div id="global-loader">
                         <div className="spinner-border text-info loader-img" role="status">
                             <span className="sr-only">Loading...</span>
@@ -309,9 +309,9 @@ const AllCustomersss = () => {
                                                 </div>
                                                 <div className="col-sm-2">
                                                     <select className="form-control select2"
-                                                   name="schemeId"
-                                                   value={filterByObj.schemeId}
-                                                   onChange={handleInputChange2}
+                                                        name="schemeId"
+                                                        value={filterByObj.schemeId}
+                                                        onChange={handleInputChange2}
                                                     >
                                                         <option value=''>Select Scheme</option>
                                                         {scame.map((option, index) => (
@@ -586,50 +586,50 @@ const AllCustomersss = () => {
 
                                                                                 </td>
                                                                                 <td style={{ textAlign: "center" }}>
-                                                                                        <a onClick={() => loadcontent(user.id)} className="btn ripple btn-dark btn-xs">
-                                                                                            <i className="fa fa-edit" title="Enable" />
-                                                                                        </a>
-                                                                                        {" "}
-                                                                                        <a
-                                                                                            className="btn ripple btn-danger btn-xs"
-                                                                                            onClick={() => deletecontent(user.id)}
-                                                                                        >
-                                                                                            <i
-                                                                                                className="fa fa-trash"
-                                                                                                title="Delete"
-                                                                                            />
-                                                                                        </a>
-                                                                                        <br />
-                                                                                        <br />
-                                                                                        <a
-                                                                                            onClick={() => loadcontent2(user.id)}
+                                                                                    <a onClick={() => loadcontent(user.id)} className="btn ripple btn-dark btn-xs">
+                                                                                        <i className="fa fa-edit" title="Enable" />
+                                                                                    </a>
+                                                                                    {" "}
+                                                                                    <a
+                                                                                        className="btn ripple btn-danger btn-xs"
+                                                                                        onClick={() => deletecontent(user.id)}
+                                                                                    >
+                                                                                        <i
+                                                                                            className="fa fa-trash"
+                                                                                            title="Delete"
+                                                                                        />
+                                                                                    </a>
+                                                                                    <br />
+                                                                                    <br />
+                                                                                    <a
+                                                                                        onClick={() => loadcontent2(user.id)}
 
-                                                                                            className="btn ripple btn-info btn-xs w-100 mb-1"
-                                                                                        >
-                                                                                            Allotment Letter
-                                                                                        </a>
-                                                                                        <br />
-                                                                                        <Link
-                                                                                            to="/demand-letter"
-                                                                                            className="btn ripple btn-info btn-xs w-100 mb-1"
-                                                                                        >
-                                                                                            Demand Letter
-                                                                                        </Link>
-                                                                                        <br />
-                                                                                        <Link
-                                                                                            to="/tax-invoice"
-                                                                                            className="btn ripple btn-info btn-xs w-100 mb-1"
-                                                                                        >
-                                                                                            Tax Invoice
-                                                                                        </Link>
-                                                                                        <br />
-                                                                                        <a
-                                                                                            onClick={() => loadcontent3(user.id)}
-                                                                                            className="btn ripple btn-info btn-xs w-100 mb-1"
-                                                                                        >
-                                                                                            Welcome Letter
-                                                                                        </a>
-                                                                                    </td>
+                                                                                        className="btn ripple btn-info btn-xs w-100 mb-1"
+                                                                                    >
+                                                                                        Allotment Letter
+                                                                                    </a>
+                                                                                    <br />
+                                                                                    <Link
+                                                                                        to="/demand-letter"
+                                                                                        className="btn ripple btn-info btn-xs w-100 mb-1"
+                                                                                    >
+                                                                                        Demand Letter
+                                                                                    </Link>
+                                                                                    <br />
+                                                                                    <Link
+                                                                                        to="/tax-invoice"
+                                                                                        className="btn ripple btn-info btn-xs w-100 mb-1"
+                                                                                    >
+                                                                                        Tax Invoice
+                                                                                    </Link>
+                                                                                    <br />
+                                                                                    <a
+                                                                                        onClick={() => loadcontent3(user.id)}
+                                                                                        className="btn ripple btn-info btn-xs w-100 mb-1"
+                                                                                    >
+                                                                                        Welcome Letter
+                                                                                    </a>
+                                                                                </td>
                                                                             </tr>
 
 
@@ -658,7 +658,7 @@ const AllCustomersss = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

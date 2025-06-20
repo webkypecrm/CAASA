@@ -405,7 +405,7 @@ const NotEoiApplication = () => {
                             <div className="page-header">
                                 <div>
                                     <h2 className="main-content-title tx-24 mg-b-5">
-                                    Not Eoi Application({count})
+                                        Not Eoi Application({count})
                                     </h2>
                                 </div>
                             </div>
@@ -503,7 +503,7 @@ const NotEoiApplication = () => {
                                                                                 <th>Applicant Address</th>
                                                                                 <th>Applicant Details</th>
 
-                                                                               
+
                                                                                 <th>Payments status</th>
                                                                                 <th>Verification</th>
 
@@ -570,8 +570,8 @@ const NotEoiApplication = () => {
                                                                                         </Link>
                                                                                     </td>
 
-                                                                                    
-                                                                                    
+
+
 
                                                                                     <td >
                                                                                         Amount: {user.amountReceived || 'N/A'}
@@ -685,7 +685,7 @@ const NotEoiApplication = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

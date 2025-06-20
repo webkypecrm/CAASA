@@ -470,13 +470,13 @@ const ODSPage = () => {
                                       Start_D/T:{" "}
                                       {user.camStartDate
                                         ? new Intl.DateTimeFormat("en-US", {
-                                            day: "2-digit",
-                                            month: "long",
-                                            year: "numeric",
-                                            hour: "2-digit",
-                                            minute: "2-digit",
-                                            hour12: true,
-                                          }).format(new Date(user.camStartDate))
+                                          day: "2-digit",
+                                          month: "long",
+                                          year: "numeric",
+                                          hour: "2-digit",
+                                          minute: "2-digit",
+                                          hour12: true,
+                                        }).format(new Date(user.camStartDate))
                                         : "N/A"}
                                     </span>
                                     <br />
@@ -484,13 +484,13 @@ const ODSPage = () => {
                                       End_D/T::{" "}
                                       {user.createdAt
                                         ? new Intl.DateTimeFormat("en-US", {
-                                            day: "2-digit",
-                                            month: "long",
-                                            year: "numeric",
-                                            hour: "2-digit",
-                                            minute: "2-digit",
-                                            hour12: true,
-                                          }).format(new Date(user.camEndDate))
+                                          day: "2-digit",
+                                          month: "long",
+                                          year: "numeric",
+                                          hour: "2-digit",
+                                          minute: "2-digit",
+                                          hour12: true,
+                                        }).format(new Date(user.camEndDate))
                                         : "N/A"}
                                     </span>
                                     <br />
@@ -526,8 +526,8 @@ const ODSPage = () => {
                                           user.status === "Approved"
                                             ? "green"
                                             : user.status === "Rejected"
-                                            ? "red"
-                                            : "yellow",
+                                              ? "red"
+                                              : "yellow",
                                       }}
                                     >
                                       {" "}
@@ -612,7 +612,7 @@ const ODSPage = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">AMRS</a>.
+                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
                   Designed by <a href="http://webkype.com/">Webkype.com</a> All
                   rights reserved.
                 </span>
@@ -696,36 +696,34 @@ const ODSPage = () => {
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Project: {userDetails?.applicant?.projectName}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Unit Number:{" "}
-                        {`${userDetails?.applicant?.unitNo} / ${
-                          userDetails?.applicant?.schemeType
-                        } / ${userDetails?.applicant?.size} (${
-                          ["plot", "farmhouse"].includes(
+                        {`${userDetails?.applicant?.unitNo} / ${userDetails?.applicant?.schemeType
+                          } / ${userDetails?.applicant?.size} (${["plot", "farmhouse"].includes(
                             userDetails?.applicant?.schemeType?.toLowerCase()
                           )
                             ? "SQ YD"
                             : "SQ FT"
-                        })`}
-                        {}
+                          })`}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Total Cost: Rs. ₹{userDetails?.applicant?.totalCost}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Discount: Rs. {userDetails?.applicant?.discountAmount}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Received: Rs. {userDetails?.totolReceived}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
@@ -733,7 +731,7 @@ const ODSPage = () => {
                         {userDetails?.applicant?.totalCost -
                           (userDetails?.discountAmount +
                             userDetails?.totolReceived)}
-                        {}
+                        { }
                       </p>
                       -----------------------------------------------------------------------------------------------------
                       {/* <p className="mb-0 tx-13 text-dark">
@@ -747,13 +745,13 @@ const ODSPage = () => {
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Name on Registry: {userDetails?.nameOnRegistry || ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Name Change Charges: Rs.{" "}
                         {userDetails?.nameChangeCharges || ""}
-                        {}
+                        { }
                       </p>
                       -----------------------------------------------------------------------------------------------------
                       <p className="mb-0 tx-13 text-dark">
@@ -763,35 +761,35 @@ const ODSPage = () => {
                           // comment?.maintenanceCharges[0]?.camStartDate || ''
                           userDetails?.camStartDate
                             ? new Date(
-                                userDetails?.camStartDate
-                              ).toLocaleString("en-US", {
-                                day: "numeric",
-                                month: "short",
-                                year: "numeric",
-                              })
+                              userDetails?.camStartDate
+                            ).toLocaleString("en-US", {
+                              day: "numeric",
+                              month: "short",
+                              year: "numeric",
+                            })
                             : ""
                         }
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Total Month: {userDetails?.totalMonth || ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         CAM End Date:{" "}
                         {userDetails?.camEndDate
                           ? new Date(userDetails?.camEndDate).toLocaleString(
-                              "en-US",
-                              {
-                                day: "numeric",
-                                month: "short",
-                                year: "numeric",
-                              }
-                            )
+                            "en-US",
+                            {
+                              day: "numeric",
+                              month: "short",
+                              year: "numeric",
+                            }
+                          )
                           : ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
@@ -799,14 +797,14 @@ const ODSPage = () => {
                         {userDetails?.schemeType === "Shop"
                           ? " SQFT"
                           : " SQ YD"}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         CAM Rate (per{" "}
                         {userDetails?.schemeType === "Shop" ? "SQFT" : "SQ YD"}
                         ): {userDetails?.camRate || ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
@@ -814,22 +812,22 @@ const ODSPage = () => {
                         <strong>
                           {Math.floor(
                             +userDetails?.camRate *
-                              +userDetails?.unitSize *
-                              +userDetails?.totalMonth
+                            +userDetails?.unitSize *
+                            +userDetails?.totalMonth
                           ) || ""}{" "}
                         </strong>
-                        {}
+                        { }
                       </p>
                       -----------------------------------------------------------------------------------------------------
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Reference Given: {userDetails?.refrenceGiven || ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Months Waiver : {userDetails?.waveOffMonth || ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
@@ -841,51 +839,51 @@ const ODSPage = () => {
                         >
                           {Math.floor(userDetails?.discountCam) || ""}
                         </span>
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Gst : {userDetails?.gst || ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Payable CAM : Rs. {userDetails?.payableCam || ""}
-                        {}
+                        { }
                       </p>
                       -----------------------------------------------------------------------------------------------------
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         No of Cheque Bounce: {userDetails?.chequeBounce || ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Change Bounce Penalty: Rs.{" "}
                         {userDetails?.chequePenalty || ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Change Bounce Charges: Rs.{" "}
                         {userDetails?.chequeBounceCharges || ""}
-                        {}
+                        { }
                       </p>
                       -----------------------------------------------------------------------------------------------------
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Stamp Duty : Rs. {userDetails?.stampDuty || ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Lawyer Changes : Rs. {userDetails?.lawyerFees || ""}
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Interest Amount: Rs. {userDetails?.intrestAmount || ""}
-                        {}
+                        { }
                       </p>
                       -----------------------------------------------------------------------------------------------------
                       <p className="mb-0 tx-13 text-dark">
@@ -899,12 +897,12 @@ const ODSPage = () => {
                           {" "}
                           {userDetails?.waiverCharges || ""}
                         </span>
-                        {}
+                        { }
                       </p>
                       <p className="mb-0 tx-13 text-dark">
                         <i className="fe fe-chevrons-right me-1" />
                         Remark ( Waiver) : {userDetails?.remark || ""}
-                        {}
+                        { }
                       </p>
                       -----------------------------------------------------------------------------------------------------
                       <p className="mb-0 tx-13 text-dark">
@@ -914,10 +912,10 @@ const ODSPage = () => {
                           {" "}
                           {Math.floor(
                             +userDetails?.finalNocAmount -
-                              +userDetails?.waiverCharges
+                            +userDetails?.waiverCharges
                           ) || ""}{" "}
                         </strong>
-                        {}
+                        { }
                       </p>
                     </div>
                   </div>

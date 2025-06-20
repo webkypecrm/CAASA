@@ -1,4 +1,4 @@
-import React, { useState, useEffect ,useRef} from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import TopHeader from '../Components/TopHeader';
 import Prince from '../Components/Prince';
@@ -7,7 +7,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 
 const AllCustomer = () => {
- const dropdownRef = useRef(null);
+    const dropdownRef = useRef(null);
     const [users, setUsers] = useState([]);
     const [search, setSearch] = useState('');
     const [loading, setLoading] = useState(true);
@@ -43,24 +43,24 @@ const AllCustomer = () => {
     };
 
 
-     const [isOpen, setIsOpen] = useState(false);
-        const [selectedIds, setSelectedIds] = useState("");
-    
-    
-    
-    
-        useEffect(() => {
-            const handleClickOutside = (event) => {
-                if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                    setIsOpen(false);
-                }
-            };
-            document.addEventListener("mousedown", handleClickOutside);
-    
-            return () => {
-                document.removeEventListener("mousedown", handleClickOutside);
-            };
-        }, []);
+    const [isOpen, setIsOpen] = useState(false);
+    const [selectedIds, setSelectedIds] = useState("");
+
+
+
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
 
     const formatDateTime = (dateTimeString) => {
         const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true };
@@ -169,7 +169,7 @@ const AllCustomer = () => {
     //list plan data
     const fetchDataFromApi = async () => {
         setLoading(true);
-        const { search, schemeId, projectId, schemeType,from,to } = filterByObj;
+        const { search, schemeId, projectId, schemeType, from, to } = filterByObj;
         try {
             const response = await fetch(`${apiUrl}/plan/plans?isEoi=false&schemeId=${schemeId}&projectId=${projectId}&schemeType=${schemeType}&search=${search}&from=${from}&to=${to}`, {
                 headers: {
@@ -344,7 +344,7 @@ const AllCustomer = () => {
                                                     <div ref={dropdownRef} style={{ position: "relative", width: "200px" }}>
                                                         {/* Dropdown Header */}
                                                         <div
-                                                        className="form-control select2"
+                                                            className="form-control select2"
                                                             style={{
                                                                 height: "35px",
                                                                 border: "1px solid #ccc",
@@ -450,7 +450,7 @@ const AllCustomer = () => {
                                                 </div>
 
                                                 <div className="col-sm-3">
-                                                   
+
                                                     <div className="input-group">
                                                         <div className="input-group-text border-end-0">
                                                             <i className="fe fe-calendar lh--9 op-6" />
@@ -588,7 +588,7 @@ const AllCustomer = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -464,8 +464,8 @@ const AllocatedList = () => {
                                 >
                                   {selectedIdss
                                     ? lucky.find(
-                                        (item) => item.id === selectedIdss
-                                      )?.name || " Select Lucky Draw"
+                                      (item) => item.id === selectedIdss
+                                    )?.name || " Select Lucky Draw"
                                     : " Select Lucky Draw"}
                                 </span>
 
@@ -549,14 +549,14 @@ const AllocatedList = () => {
                                           setIsOpens(false); // Close dropdown after selection
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.backgroundColor =
-                                            "#f1f1f1")
+                                        (e.target.style.backgroundColor =
+                                          "#f1f1f1")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.backgroundColor =
-                                            selectedIdss === option.id
-                                              ? "#f1f1f1"
-                                              : "#fff")
+                                        (e.target.style.backgroundColor =
+                                          selectedIdss === option.id
+                                            ? "#f1f1f1"
+                                            : "#fff")
                                         }
                                       >
                                         {option.name}
@@ -612,8 +612,8 @@ const AllocatedList = () => {
                                 <span>
                                   {selectedIds
                                     ? project.find(
-                                        (item) => item.id === selectedIds
-                                      )?.projectName || "Select project"
+                                      (item) => item.id === selectedIds
+                                    )?.projectName || "Select project"
                                     : "Select project"}
                                 </span>
                               </div>
@@ -685,14 +685,14 @@ const AllocatedList = () => {
                                           setIsOpen(false); // Close dropdown after selection
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.backgroundColor =
-                                            "#f1f1f1")
+                                        (e.target.style.backgroundColor =
+                                          "#f1f1f1")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.backgroundColor =
-                                            selectedIds === option.id
-                                              ? "#f1f1f1"
-                                              : "#fff")
+                                        (e.target.style.backgroundColor =
+                                          selectedIds === option.id
+                                            ? "#f1f1f1"
+                                            : "#fff")
                                         }
                                       >
                                         {option.projectName}
@@ -965,15 +965,15 @@ const AllocatedList = () => {
                                             Area:{" "}
                                             <font color="red">
                                               {user?.schemeType === "Plot" ||
-                                              user?.schemeType === "Farmhouse"
+                                                user?.schemeType === "Farmhouse"
                                                 ? user?.size
                                                   ? `${user.size} SQ YD`
                                                   : "N/A"
                                                 : user?.schemeType === "Shop"
-                                                ? user?.size
-                                                  ? `${user.size} SQ FT`
-                                                  : "N/A"
-                                                : "N/A"}
+                                                  ? user?.size
+                                                    ? `${user.size} SQ FT`
+                                                    : "N/A"
+                                                  : "N/A"}
                                             </font>
                                             <br />
                                             Gift:{" "}
@@ -1031,9 +1031,9 @@ const AllocatedList = () => {
                                               >
                                                 {user.applicantMobile
                                                   ? user.applicantMobile.slice(
-                                                      0,
-                                                      -4
-                                                    ) + "****"
+                                                    0,
+                                                    -4
+                                                  ) + "****"
                                                   : "N/A"}
                                               </span>
                                               <br />
@@ -1055,9 +1055,9 @@ const AllocatedList = () => {
                                               >
                                                 {user.applicantAlternateNumber
                                                   ? user.applicantAlternateNumber.slice(
-                                                      0,
-                                                      -4
-                                                    ) + "****"
+                                                    0,
+                                                    -4
+                                                  ) + "****"
                                                   : "N/A"}
                                               </span>
                                             </div>
@@ -1295,16 +1295,16 @@ const AllocatedList = () => {
                                             </strong>
                                             {user.facing
                                               ? user.facing
-                                                  .split(",")
-                                                  .map((item, index) => (
-                                                    <React.Fragment key={index}>
-                                                      {item.trim()}
-                                                      {index !==
-                                                        user.facing.split(",")
-                                                          .length -
-                                                          1 && <br />}
-                                                    </React.Fragment>
-                                                  ))
+                                                .split(",")
+                                                .map((item, index) => (
+                                                  <React.Fragment key={index}>
+                                                    {item.trim()}
+                                                    {index !==
+                                                      user.facing.split(",")
+                                                        .length -
+                                                      1 && <br />}
+                                                  </React.Fragment>
+                                                ))
                                               : "N/A"}
                                           </td>
                                           <td style={{ padding: "10px" }}>
@@ -1329,15 +1329,15 @@ const AllocatedList = () => {
                                             </strong>
                                             <font>
                                               {user?.schemeType === "Plot" ||
-                                              user?.schemeType === "Farmhouse"
+                                                user?.schemeType === "Farmhouse"
                                                 ? user?.size
                                                   ? `${user.size} SQ YD`
                                                   : "N/A"
                                                 : user?.schemeType === "Shop"
-                                                ? user?.size
-                                                  ? `${user.size} SQ FT`
-                                                  : "N/A"
-                                                : "N/A"}
+                                                  ? user?.size
+                                                    ? `${user.size} SQ FT`
+                                                    : "N/A"
+                                                  : "N/A"}
                                             </font>
                                             <br />
                                             <strong
@@ -1418,29 +1418,29 @@ const AllocatedList = () => {
                                             <br />
                                             {user.paymentMethod ===
                                               "Cheque" && (
-                                              <>
-                                                <strong
-                                                  style={{ color: "#007bff" }}
-                                                >
-                                                  Cheque No:
-                                                </strong>{" "}
-                                                {user.chequeNo || "N/A"}
-                                                <br />
-                                                <strong
-                                                  style={{ color: "#007bff" }}
-                                                >
-                                                  Cheque Details:
-                                                </strong>{" "}
-                                                {user.chequeDetails || "N/A"}
-                                                <br />
-                                                <strong
-                                                  style={{ color: "#007bff" }}
-                                                >
-                                                  Cheque Date:
-                                                </strong>{" "}
-                                                {user.formattedDate3 || "N/A"}
-                                              </>
-                                            )}
+                                                <>
+                                                  <strong
+                                                    style={{ color: "#007bff" }}
+                                                  >
+                                                    Cheque No:
+                                                  </strong>{" "}
+                                                  {user.chequeNo || "N/A"}
+                                                  <br />
+                                                  <strong
+                                                    style={{ color: "#007bff" }}
+                                                  >
+                                                    Cheque Details:
+                                                  </strong>{" "}
+                                                  {user.chequeDetails || "N/A"}
+                                                  <br />
+                                                  <strong
+                                                    style={{ color: "#007bff" }}
+                                                  >
+                                                    Cheque Date:
+                                                  </strong>{" "}
+                                                  {user.formattedDate3 || "N/A"}
+                                                </>
+                                              )}
                                             {user.paymentMethod === "Cash" && (
                                               <>
                                                 <strong
@@ -1453,15 +1453,15 @@ const AllocatedList = () => {
                                             )}
                                             {user.paymentMethod ===
                                               "Online" && (
-                                              <>
-                                                <strong
-                                                  style={{ color: "#007bff" }}
-                                                >
-                                                  Transaction ID:
-                                                </strong>{" "}
-                                                {user.transactionID || "N/A"}
-                                              </>
-                                            )}
+                                                <>
+                                                  <strong
+                                                    style={{ color: "#007bff" }}
+                                                  >
+                                                    Transaction ID:
+                                                  </strong>{" "}
+                                                  {user.transactionID || "N/A"}
+                                                </>
+                                              )}
                                             {user.paymentMethod === "POS" && (
                                               <>
                                                 <strong
@@ -1486,17 +1486,16 @@ const AllocatedList = () => {
                                                   ? () => loadcontent(user.id)
                                                   : undefined
                                               }
-                                              className={`btn ripple btn-dark btn-xs ${
-                                                leadCounts === true
+                                              className={`btn ripple btn-dark btn-xs ${leadCounts === true
                                                   ? "disabled"
                                                   : ""
-                                              }`}
+                                                }`}
                                               style={
                                                 leadCounts === true
                                                   ? {
-                                                      pointerEvents: "none",
-                                                      opacity: 0.5,
-                                                    }
+                                                    pointerEvents: "none",
+                                                    opacity: 0.5,
+                                                  }
                                                   : {}
                                               }
                                             >
@@ -1684,9 +1683,8 @@ const AllocatedList = () => {
                       >
                         {label}
                         <i
-                          className={`fas fa-${
-                            status === "fail" ? "times" : "check"
-                          }-circle`}
+                          className={`fas fa-${status === "fail" ? "times" : "check"
+                            }-circle`}
                           style={{ fontSize: "16px" }}
                         ></i>
                       </div>
@@ -1720,7 +1718,7 @@ const AllocatedList = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">AMRS</a>.
+                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
                   Designed by <a href="http://webkype.com/">Webkype.com</a> All
                   rights reserved.
                 </span>

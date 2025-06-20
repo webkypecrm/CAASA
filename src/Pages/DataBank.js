@@ -908,112 +908,112 @@ const DataBank = () => {
                                                         </div>
                                                     </div>
                                                 ) : (
-                                                    
-                                                 
-                                                
+
+
+
                                                     <div style={{
-                                                        maxHeight: '80vh', 
+                                                        maxHeight: '80vh',
                                                         overflowY: 'auto',
                                                         border: '1px solid #ddd',
                                                         padding: '10px'
-                                                      }}>
+                                                    }}>
                                                         <table className="table table-striped table-bordered" style={{ width: '100%', borderCollapse: 'collapse' }}>
-                                                          <thead>
-                                                            <tr>
-                                                              <th>
-                                                                <label className="ckbox">
-                                                                  <input
-                                                                    type="checkbox"
-                                                                    checked={selectedItems.length === currentPageData.length}
-                                                                    onChange={toggleSelectAll}
-                                                                  />
-                                                                  <span />
-                                                                </label>
-                                                              </th>
-                                                              <th className="col-3">Lead IP</th>
-                                                              <th className="col-3">Assigned Info</th>
-                                                              <th className="col-3">Lead Info</th>
-                                                              <th className="col-3">Assign to</th>
-                                                              <th className="col-1" style={{ whiteSpace: 'nowrap' }}>Last Status</th>
-                                                              <th className="col-2">Actions</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            {currentPageData.map((user) => (
-                                                              <tr key={user.id}>
-                                                                <td>
-                                                                  <label className="ckbox">
-                                                                    <input
-                                                                      type="checkbox"
-                                                                      checked={selectedItems.includes(user.id)}
-                                                                      onChange={() => toggleCheckbox(user.id)}
-                                                                    />
-                                                                    <span />
-                                                                  </label>
-                                                                </td>
-                                                                <td style={{ whiteSpace: 'nowrap' }}>
-                                                                  ID: {user.id}
-                                                                  <br />
-                                                                  Created At: {user.createdAt}
-                                                                  <br />
-                                                                  UTM Source: {user.utmSource || 'N/A'}
-                                                                  <br />
-                                                                  Flag: {user.previousInfo || 'N/A'}
-                                                                </td>
-                                                                <td style={{ whiteSpace: 'nowrap' }}>
-                                                                  Project: {user.project || 'N/A'}
-                                                                  <br />
-                                                                  Unit Size: {user.size || 'N/A'}
-                                                                  <br />
-                                                                  Client Budget: {user.clientBudget || 'N/A'}
-                                                                  <br />
-                                                                  Source: {user.source || 'N/A'}
-                                                                  <br />
-                                                                  Vendor: {user.vendor || 'N/A'}
-                                                                </td>
-                                                                <td style={{ whiteSpace: 'nowrap' }}>
-                                                                  Name: {user.clientName || 'N/A'}
-                                                                  <br />
-                                                                  Email: {user.emailAddress || 'N/A'}
-                                                                  <br />
-                                                                  Number: {user.clientNumber || 'N/A'}
-                                                                  <br />
-                                                                  Address: {user.address || 'N/A'}
-                                                                  <br />
-                                                                  Pin Code: {user.pincode || 'N/A'}
-                                                                </td>
-                                                                <td style={{ whiteSpace: 'nowrap' }}>
-                                                                  Assign to: {user.employeeId || 'N/A'}
-                                                                  <br />
-                                                                  Email: {user.emp?.emailId || 'N/A'}
-                                                                  <br />
-                                                                  Phone no: {user.emp?.phoneNumber || 'N/A'}
-                                                                  <br />
-                                                                  Designation: {user.emp?.designation || 'N/A'}
-                                                                  <br />
-                                                                  Assign Date: {user.assignedAt || 'N/A'}
-                                                                </td>
-                                                                <td style={{ whiteSpace: 'nowrap' }}>
-                                                                  Update Date: {user.updatedAt || 'N/A'}
-                                                                  <br />
-                                                                  Activeness Meter: {user.activenessMeter || 'N/A'}
-                                                                  <br />
-                                                                  Status: {user.status || 'N/A'}
-                                                                </td>
-                                                                <td style={{ whiteSpace: 'nowrap' }}>
-                                                                  <a onClick={() => loadcontent2(user.id)} title="View">
-                                                                    <i className="fe fe-eye me-3" style={{ cursor: 'pointer' }} />
-                                                                  </a>
-                                                                  <a onClick={() => loadcontent(user.id)}>
-                                                                    <i className="fa fa-edit me-3" style={{ cursor: 'pointer' }} />
-                                                                  </a>
-                                                                </td>
-                                                              </tr>
-                                                            ))}
-                                                          </tbody>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>
+                                                                        <label className="ckbox">
+                                                                            <input
+                                                                                type="checkbox"
+                                                                                checked={selectedItems.length === currentPageData.length}
+                                                                                onChange={toggleSelectAll}
+                                                                            />
+                                                                            <span />
+                                                                        </label>
+                                                                    </th>
+                                                                    <th className="col-3">Lead IP</th>
+                                                                    <th className="col-3">Assigned Info</th>
+                                                                    <th className="col-3">Lead Info</th>
+                                                                    <th className="col-3">Assign to</th>
+                                                                    <th className="col-1" style={{ whiteSpace: 'nowrap' }}>Last Status</th>
+                                                                    <th className="col-2">Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                {currentPageData.map((user) => (
+                                                                    <tr key={user.id}>
+                                                                        <td>
+                                                                            <label className="ckbox">
+                                                                                <input
+                                                                                    type="checkbox"
+                                                                                    checked={selectedItems.includes(user.id)}
+                                                                                    onChange={() => toggleCheckbox(user.id)}
+                                                                                />
+                                                                                <span />
+                                                                            </label>
+                                                                        </td>
+                                                                        <td style={{ whiteSpace: 'nowrap' }}>
+                                                                            ID: {user.id}
+                                                                            <br />
+                                                                            Created At: {user.createdAt}
+                                                                            <br />
+                                                                            UTM Source: {user.utmSource || 'N/A'}
+                                                                            <br />
+                                                                            Flag: {user.previousInfo || 'N/A'}
+                                                                        </td>
+                                                                        <td style={{ whiteSpace: 'nowrap' }}>
+                                                                            Project: {user.project || 'N/A'}
+                                                                            <br />
+                                                                            Unit Size: {user.size || 'N/A'}
+                                                                            <br />
+                                                                            Client Budget: {user.clientBudget || 'N/A'}
+                                                                            <br />
+                                                                            Source: {user.source || 'N/A'}
+                                                                            <br />
+                                                                            Vendor: {user.vendor || 'N/A'}
+                                                                        </td>
+                                                                        <td style={{ whiteSpace: 'nowrap' }}>
+                                                                            Name: {user.clientName || 'N/A'}
+                                                                            <br />
+                                                                            Email: {user.emailAddress || 'N/A'}
+                                                                            <br />
+                                                                            Number: {user.clientNumber || 'N/A'}
+                                                                            <br />
+                                                                            Address: {user.address || 'N/A'}
+                                                                            <br />
+                                                                            Pin Code: {user.pincode || 'N/A'}
+                                                                        </td>
+                                                                        <td style={{ whiteSpace: 'nowrap' }}>
+                                                                            Assign to: {user.employeeId || 'N/A'}
+                                                                            <br />
+                                                                            Email: {user.emp?.emailId || 'N/A'}
+                                                                            <br />
+                                                                            Phone no: {user.emp?.phoneNumber || 'N/A'}
+                                                                            <br />
+                                                                            Designation: {user.emp?.designation || 'N/A'}
+                                                                            <br />
+                                                                            Assign Date: {user.assignedAt || 'N/A'}
+                                                                        </td>
+                                                                        <td style={{ whiteSpace: 'nowrap' }}>
+                                                                            Update Date: {user.updatedAt || 'N/A'}
+                                                                            <br />
+                                                                            Activeness Meter: {user.activenessMeter || 'N/A'}
+                                                                            <br />
+                                                                            Status: {user.status || 'N/A'}
+                                                                        </td>
+                                                                        <td style={{ whiteSpace: 'nowrap' }}>
+                                                                            <a onClick={() => loadcontent2(user.id)} title="View">
+                                                                                <i className="fe fe-eye me-3" style={{ cursor: 'pointer' }} />
+                                                                            </a>
+                                                                            <a onClick={() => loadcontent(user.id)}>
+                                                                                <i className="fa fa-edit me-3" style={{ cursor: 'pointer' }} />
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                ))}
+                                                            </tbody>
                                                         </table>
                                                         <style>
-                                                          {`
+                                                            {`
                                                             /* WebKit-based browsers */
                                                             div::-webkit-scrollbar {
                                                               width: 16px; /* Width of the scrollbar */
@@ -1033,9 +1033,9 @@ const DataBank = () => {
                                                             }
                                                           `}
                                                         </style>
-                                                      </div>
-                                              
-                                                
+                                                    </div>
+
+
 
                                                 )}
                                                 <div className="d-flex align-items-center ">
@@ -1152,7 +1152,7 @@ const DataBank = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

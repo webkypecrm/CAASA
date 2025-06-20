@@ -76,7 +76,7 @@ const IncentivePayOut = () => {
                                                             <th style={{ padding: '15px', textAlign: 'center', borderRight: '1px solid #ddd' }}>Allotment(30%)</th>
                                                             <th style={{ padding: '15px', textAlign: 'center', borderRight: '1px solid #ddd' }}>Gift</th>
                                                             <th style={{ padding: '15px', textAlign: 'center' }}>Rank</th>
-                                                            
+
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -92,7 +92,7 @@ const IncentivePayOut = () => {
                                                             <td style={{ padding: '10px', textAlign: 'center', borderBottom: '1px solid #ddd', borderRight: '1px solid #ddd' }}>0<br />0<br />1</td>
                                                             <td style={{ padding: '10px', textAlign: 'center', borderBottom: '1px solid #ddd', borderRight: '1px solid #ddd' }}>NA<br />NA<br />NA</td>
                                                             <td style={{ padding: '10px', textAlign: 'center', borderBottom: '1px solid #ddd', borderRight: '1px solid #ddd' }}>1<br />3<br />4</td>
-                                                           
+
                                                         </tr>
                                                         <tr style={{ backgroundColor: '#d9edf7' }}>
                                                             <td style={{ padding: '10px', borderTop: '1px solid #ddd' }} colSpan="6">Total</td>
@@ -102,7 +102,7 @@ const IncentivePayOut = () => {
                                                             <td style={{ padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderLeft: '1px solid #ddd' }}>1</td>
                                                             <td style={{ padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderLeft: '1px solid #ddd' }}>iPad</td>
                                                             <td style={{ padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderLeft: '1px solid #ddd' }}>2</td>
-                                                           
+
                                                         </tr>
                                                     </tbody>
                                                     <tbody>
@@ -118,7 +118,7 @@ const IncentivePayOut = () => {
                                                             <td style={{ padding: '10px', textAlign: 'center', borderBottom: '1px solid #ddd', borderRight: '1px solid #ddd' }}>0<br />0<br />1</td>
                                                             <td style={{ padding: '10px', textAlign: 'center', borderBottom: '1px solid #ddd', borderRight: '1px solid #ddd' }}>NA<br />NA<br />NA</td>
                                                             <td style={{ padding: '10px', textAlign: 'center', borderBottom: '1px solid #ddd', borderRight: '1px solid #ddd' }}>1<br />3<br />4</td>
-                                                           
+
                                                         </tr>
                                                         <tr style={{ backgroundColor: '#d9edf7' }}>
                                                             <td style={{ padding: '10px', borderTop: '1px solid #ddd' }} colSpan="6">Total</td>
@@ -128,10 +128,10 @@ const IncentivePayOut = () => {
                                                             <td style={{ padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderLeft: '1px solid #ddd' }}>1</td>
                                                             <td style={{ padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderLeft: '1px solid #ddd' }}>iPad</td>
                                                             <td style={{ padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderLeft: '1px solid #ddd' }}>2</td>
-                                                           
+
                                                         </tr>
                                                     </tbody>
-                                                    
+
                                                 </table>
                                             </div>
                                         </div>
@@ -149,7 +149,7 @@ const IncentivePayOut = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -34,11 +34,11 @@ const AddCrmProject = () => {
         eoiPrice3: '',
         eoiTerms3: '',
 
-       
+
         areaAllocateToProject: '',
         areaAvailableForProject: '',
         size: '',
-       
+
 
     };
 
@@ -122,45 +122,45 @@ const AddCrmProject = () => {
     const handleInputChange2 = (e) => {
         const { name, value } = e.target;
         setFormData({
-          ...formData,
-          [name]: value,
+            ...formData,
+            [name]: value,
         });
-      };
-    
-      useEffect(() => {
+    };
+
+    useEffect(() => {
         const fetchUser = async () => {
-          if (!formData.locationId) return;
-    
-          try {
-            const url = `${apiUrl}/location/getLocation/${formData.locationId}`;
-            let result = await fetch(url, {
-              headers: {
-                Authorization: `Bearer ${Token}`,
-                'Content-Type': 'application/json',
-              },
-            });
-    
-            result = await result.json();
-            const { data } = result;
-    
-            setFormData((prevFormData) => ({
-              ...prevFormData,
-              
-              areaAllocateToProject: data.areaAllocateToProject || '',
-              areaAvailableForProject: data.areaAvailableForProject || '',
-              size: data.size || '',
-             
-              
-            }));
-          } catch (error) {
-            console.error('Error fetching data:', error);
-          }
+            if (!formData.locationId) return;
+
+            try {
+                const url = `${apiUrl}/location/getLocation/${formData.locationId}`;
+                let result = await fetch(url, {
+                    headers: {
+                        Authorization: `Bearer ${Token}`,
+                        'Content-Type': 'application/json',
+                    },
+                });
+
+                result = await result.json();
+                const { data } = result;
+
+                setFormData((prevFormData) => ({
+                    ...prevFormData,
+
+                    areaAllocateToProject: data.areaAllocateToProject || '',
+                    areaAvailableForProject: data.areaAvailableForProject || '',
+                    size: data.size || '',
+
+
+                }));
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
         };
-    
+
         fetchUser();
-      }, [formData.locationId, apiUrl, Token]);
-    
-    
+    }, [formData.locationId, apiUrl, Token]);
+
+
 
 
     //status master
@@ -217,8 +217,8 @@ const AddCrmProject = () => {
             isEOI: value === 'option1' ? 'false' : 'true',
         });
     }
-  
-   
+
+
     useEffect(() => {
         const timeout = setTimeout(() => {
             setShowLoader(false);
@@ -342,11 +342,11 @@ const AddCrmProject = () => {
                                                             </label>
                                                             <input
                                                                 className="form-control"
-                                                               
+
                                                                 name="areaAvailableForProject"
                                                                 value={formData.areaAvailableForProject}
                                                                 onChange={handleInputChange}
-                                                               
+
                                                                 placeholder="Enter "
                                                                 required=""
                                                                 type="text"
@@ -367,7 +367,7 @@ const AddCrmProject = () => {
                                                             />
                                                         </div>
 
-                                                      
+
                                                         <div className="col-lg-3 form-group">
                                                             <label className="form-label">
                                                                 Display Status:
@@ -701,7 +701,7 @@ const AddCrmProject = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

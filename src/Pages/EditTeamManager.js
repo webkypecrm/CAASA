@@ -34,7 +34,7 @@ const EditTeamManager = () => {
     const [vps13, setVps13] = useState([]);
     const [isOpen10, setIsOpen10] = useState(false);
     const dropdownRef10 = useRef(null);
-    
+
 
     const apiUrl = process.env.REACT_APP_URL;
     const Token = localStorage.getItem("Token");
@@ -90,7 +90,7 @@ const EditTeamManager = () => {
         setFormData({ ...formData, teamMamberIds: selectedUserIds });
     }, [selectedUserIds]);
 
-    
+
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -297,8 +297,8 @@ const EditTeamManager = () => {
             if (response2.status === "error") {
                 throw new Error(response2.message);
             }
-            
-           
+
+
             toast.success(response2.message);
             setFormData(initialFormData);
             navigate("/team-manager");
@@ -352,7 +352,7 @@ const EditTeamManager = () => {
                                 <div className="col-lg-8 col-md-8">
                                     <div className="card custom-card">
                                         <div className="card-body">
-                                           
+
                                             <div className="row row-sm">
                                                 <div className="col-sm-6 form-group">
                                                     <label className="form-label">Team Name</label>
@@ -520,25 +520,25 @@ const EditTeamManager = () => {
                                             <form action="form-validation.html" data-parsley-validate="">
                                                 <div className="">
                                                     <div className="row row-sm">
-                                                    <div className="col-sm-12 col-md-12">
-                                                    <input
-                                                        className="form-control"
-                                                        type="file"
-                                                        // name="profilePhoto"
-                                                        // value={formData.profilePhoto}
-                                                        onChange={handleFileChanges}
-                                                    />
-                                                    <div style={{ width: '350px', height: '180px', border: '1px solid #ccc', marginTop: '8px', display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '0 auto', maxWidth: '100%' }}>
-                                                        {profilePic && (
-                                                            <img src={profilePic} alt="Selected File" style={{ width: "100%", height: "100%" }} />
-                                                        )}
-                                                        {!profilePic && (
-                                                            <p style={{ textAlign: 'center', margin: 0 }}>No photo selected</p>
-                                                        )}
+                                                        <div className="col-sm-12 col-md-12">
+                                                            <input
+                                                                className="form-control"
+                                                                type="file"
+                                                                // name="profilePhoto"
+                                                                // value={formData.profilePhoto}
+                                                                onChange={handleFileChanges}
+                                                            />
+                                                            <div style={{ width: '350px', height: '180px', border: '1px solid #ccc', marginTop: '8px', display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '0 auto', maxWidth: '100%' }}>
+                                                                {profilePic && (
+                                                                    <img src={profilePic} alt="Selected File" style={{ width: "100%", height: "100%" }} />
+                                                                )}
+                                                                {!profilePic && (
+                                                                    <p style={{ textAlign: 'center', margin: 0 }}>No photo selected</p>
+                                                                )}
 
 
-                                                    </div>
-                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </form>
@@ -569,7 +569,7 @@ const EditTeamManager = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -77,7 +77,7 @@ const NotAllocated = () => {
     };
 
 
- 
+
 
 
     const handleOpenModal8 = (id) => {
@@ -92,7 +92,7 @@ const NotAllocated = () => {
         document.body.classList.remove('modal-open');
     };
 
-   
+
 
     useEffect(() => {
         async function getApplicant() {
@@ -200,7 +200,7 @@ const NotAllocated = () => {
             });
     }, []);
 
-   
+
     useEffect(() => {
         const { schemeType, projectId } = formData;
         const url = `${apiUrl}/scheme/schemeDropdown?&schemeType=${schemeType}&projectId=${projectId}`;
@@ -280,7 +280,7 @@ const NotAllocated = () => {
         }
     };
 
- 
+
 
     const handleInputChange2 = (e) => {
         const { name, value } = e.target;
@@ -324,7 +324,7 @@ const NotAllocated = () => {
         return chunks.join('<br />');
     };
 
-   
+
 
 
     useEffect(() => {
@@ -489,7 +489,7 @@ const NotAllocated = () => {
                                                                                 </td>
                                                                                 <td style={{ padding: '15px' }}>
                                                                                     <strong style={{ color: '#007bff' }}>UID:</strong> {user.id}
-                                                                                   
+
                                                                                     <br />
                                                                                     <button
                                                                                         type="button"
@@ -680,13 +680,13 @@ const NotAllocated = () => {
                                                                                 </td>
                                                                                 <td style={{ padding: '15px', textAlign: 'center' }}>
 
-                                                                                    <button className="btn btn-sm btn-info me-2"  onClick={() => loadcontent(user.id)}>
+                                                                                    <button className="btn btn-sm btn-info me-2" onClick={() => loadcontent(user.id)}>
                                                                                         <span className="fe fe-edit"></span>
                                                                                     </button>
-                                                                                    <button className="btn btn-sm btn-danger"  onClick={() => deletecontent(user.id)}>
+                                                                                    <button className="btn btn-sm btn-danger" onClick={() => deletecontent(user.id)}>
                                                                                         <span className="fe fe-trash-2"></span>
                                                                                     </button>
-                                                                                  
+
                                                                                     <br />
                                                                                     <br />
                                                                                     <button
@@ -842,7 +842,7 @@ const NotAllocated = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -190,8 +190,8 @@ const EditCustomer = () => {
         isCoAdvisor: '',
         luckyDrawId: '',
 
-        
-       
+
+
 
     };
 
@@ -700,7 +700,7 @@ const EditCustomer = () => {
         fetch(url)
             .then((response) => response.json())
             .then((data) => {
-                if (data.data && Array.isArray(data.data)) { 
+                if (data.data && Array.isArray(data.data)) {
                     setPlan(data.data);
                     // setIds(data.data.id)
                 } else {
@@ -1084,7 +1084,7 @@ const EditCustomer = () => {
                     coAdvisorId: trimmedData.coAdvisorId,
                     isCoAdvisor: trimmedData.isCoAdvisor,
                     luckyDrawId: trimmedData.luckyDrawId
-                   
+
 
                 }));
 
@@ -2068,7 +2068,7 @@ const EditCustomer = () => {
                                                                 <label className="form-label">
                                                                     Co Applicant PAN
                                                                 </label>
-                                                                <input 
+                                                                <input
                                                                     className="form-control"
                                                                     required=""
                                                                     type="text"
@@ -2236,22 +2236,22 @@ const EditCustomer = () => {
                                                         </div>
 
                                                         <div className="col-sm-3 mg-t-10">
-                                                                <div className="form-group mb-0">
-                                                                    <label className="form-label">
-                                                                        Payment Plan
-                                                                    </label>
-                                                                    <input
-                                                                        className="form-control"
-                                                                        required=""
-                                                                        type="text"
-                                                                        // name="paymentPlan"
-                                                                        value={formData.paymentPlan}
-                                                                        // onChange={handleInputChange}
-                                                                    />
-                                                                </div>
+                                                            <div className="form-group mb-0">
+                                                                <label className="form-label">
+                                                                    Payment Plan
+                                                                </label>
+                                                                <input
+                                                                    className="form-control"
+                                                                    required=""
+                                                                    type="text"
+                                                                    // name="paymentPlan"
+                                                                    value={formData.paymentPlan}
+                                                                // onChange={handleInputChange}
+                                                                />
                                                             </div>
+                                                        </div>
 
-                                                        
+
 
                                                         {!formData.isCoAdvisor && shouldShowBPField && (
                                                             <div className="col-sm-3 mg-t-10">
@@ -2501,7 +2501,7 @@ const EditCustomer = () => {
 
                                                             </>
                                                         )}
-                                                        
+
                                                         <div className="col-sm-3 mg-t-10">
                                                             <div className="form-group mb-0">
                                                                 <label className="form-label">
@@ -2694,7 +2694,7 @@ const EditCustomer = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

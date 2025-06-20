@@ -789,7 +789,7 @@ const LdubsApplication = () => {
                                                                                 <th>Co Applicant Details</th>
                                                                                 <th>PROPERTY</th>
                                                                                 <th>PREFERENCES</th>
-                                                                                
+
                                                                                 <th> Lucky Draw ALLOTMENT</th>
                                                                                 <th>Actions</th>
                                                                             </tr>
@@ -1054,7 +1054,7 @@ const LdubsApplication = () => {
 
 
                                                                                     </td>
-                                                                                   
+
                                                                                     <td>
                                                                                         Unit no: <font color="red">{user.unitNo || 'N/A'}</font>
                                                                                         <br />
@@ -1279,7 +1279,7 @@ const LdubsApplication = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

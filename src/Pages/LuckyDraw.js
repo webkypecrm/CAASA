@@ -338,7 +338,7 @@ const LuckyDraw = () => {
                                                         </div>
                                                         <div className="col-lg-2 form-group">
                                                             <label className="form-label">
-                                                            Lucky Draw Name For Admin
+                                                                Lucky Draw Name For Admin
                                                             </label>
                                                             <input
                                                                 className="form-control"
@@ -385,7 +385,7 @@ const LuckyDraw = () => {
                                                                 value={formData.startTime}
                                                                 onChange={handleInputChange}
 
-                                                                
+
                                                             />
                                                         </div>
 
@@ -398,7 +398,7 @@ const LuckyDraw = () => {
                                                                 type="date"
                                                                 name="endDate"
                                                                 value={formData.endDate}
-                                                                min={formData.startDate} 
+                                                                min={formData.startDate}
                                                                 onChange={handleInputChange}
                                                             />
                                                         </div>
@@ -777,7 +777,7 @@ const LuckyDraw = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

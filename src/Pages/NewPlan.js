@@ -101,7 +101,7 @@ const NewPlan = () => {
                             <div className="row row-sm">
                                 <div className="col-lg-12">
 
-                                    
+
                                     <div style={{ marginTop: '2px', width: '100%', backgroundColor: 'var(--primary-bg-color)', padding: '5px 20px' }}>
                                         <h5 style={{ textAlign: 'left', color: '#ffffff', fontSize: '-10rem', margin: '0' }}>Payment Schedule</h5>
                                     </div>
@@ -216,7 +216,7 @@ const NewPlan = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

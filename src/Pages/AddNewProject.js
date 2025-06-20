@@ -1853,7 +1853,7 @@ const AddNewProject = () => {
                                 </div>
 
 
-                                 <div className="col-xl-4 col-lg-4 col-md-4">
+                                <div className="col-xl-4 col-lg-4 col-md-4">
                                     <div className="card custom-card">
                                         <div className="card-body">
                                             <div>
@@ -1961,7 +1961,7 @@ const AddNewProject = () => {
                                     </div>
                                 </div>
 
-    
+
 
                                 <div className="col-xl-4 col-lg-4 col-md-4">
                                     <div className="card custom-card">
@@ -2252,7 +2252,7 @@ const AddNewProject = () => {
                                     </div>
                                 </div>
 
-                            {/*    <div className="col-xl-4 col-lg-4 col-md-4">
+                                {/*    <div className="col-xl-4 col-lg-4 col-md-4">
                                     <div className="card custom-card">
                                         <div className="card-body">
                                             <div>
@@ -2488,7 +2488,7 @@ const AddNewProject = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

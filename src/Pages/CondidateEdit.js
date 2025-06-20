@@ -70,7 +70,7 @@ const CondidateEdit = () => {
   const [workingShift, setWorkingShift] = useState([]);
   const [noticePeriod, setNoticePeriod] = useState([]);
   const [teamId, setTeamId] = useState('');
-  const [emai, setEmai] =useState('');
+  const [emai, setEmai] = useState('');
   const [countryOptions, setCountryOptions] = useState([]);
   const [countryOption, setCountryOption] = useState([]);
   const [cityOption, setCityOption] = useState([]);
@@ -173,7 +173,7 @@ const CondidateEdit = () => {
 
         result = await result.json();
         const { data } = result;
-       
+
 
         const trimmedData = Object.keys(data).reduce((acc, key) => {
           if (typeof data[key] === 'string') {
@@ -200,7 +200,7 @@ const CondidateEdit = () => {
 
         const oldSelectedDesiResponse = await fetch(`${apiUrl}/employee/allEmpDesig/${trimmedData.designation}`);
         oldSelectedDesi = await oldSelectedDesiResponse.json();
-       
+
 
         setTeamOptions(oldSelectedDesi.data);
         setCityOptions(oldSelectedCity.data);
@@ -212,7 +212,7 @@ const CondidateEdit = () => {
         const photo = data.profilePhoto;
         setProfilePic(photo)
         setEmai(data.emailId);
-      
+
         setFormData((prevFormData) => ({
           ...prevFormData,
           ...trimmedData,
@@ -222,7 +222,7 @@ const CondidateEdit = () => {
           fullName: trimmedData.fullName,
           emailId: trimmedData.emailId,
           password: trimmedData.password,
-          phoneNumber: trimmedData.phoneNumber,  
+          phoneNumber: trimmedData.phoneNumber,
           gender: trimmedData.gender,
           dob: trimmedData.dob,
           company: trimmedData.company,
@@ -247,7 +247,7 @@ const CondidateEdit = () => {
           currentAddressArea: trimmedData?.currentAddressArea,
           currentAddressLane: trimmedData?.currentAddressLane,
           currentAddressPinCode: trimmedData?.currentAddressPinCode,
-         
+
           permanentAddressCountry: trimmedData?.permanentAddressCountry,
           permanentAddressState: trimmedData?.permanentAddressState,
           permanentAddressCity: trimmedData?.permanentAddressCity,
@@ -519,7 +519,7 @@ const CondidateEdit = () => {
 
       if (profilePicFile.type.startsWith('image/')) {
         const imageUrl = URL.createObjectURL(profilePicFile);
-        setProfilePic(imageUrl); 
+        setProfilePic(imageUrl);
         setFormData((prevData) => ({
           ...prevData,
           profilePhoto: profilePicFile,
@@ -806,7 +806,7 @@ const CondidateEdit = () => {
   return (
     <>
       <div className="page">
-       
+
         <TopHeader />
         <Prince />
         {/* Main Content*/}
@@ -914,7 +914,7 @@ const CondidateEdit = () => {
                               />
                             </div>
 
-                            
+
                             <div className="col-lg-6 form-group">
                               <label className="form-label">
                                 Password: <span className="tx-danger">*</span>
@@ -1089,7 +1089,7 @@ const CondidateEdit = () => {
                           />
                         </div>
                       </div>
-                    </div> 
+                    </div>
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 ">
@@ -1755,7 +1755,7 @@ const CondidateEdit = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                   by <a href="http://webkype.com/">Webkype.com</a> All rights
                   reserved.
                 </span>

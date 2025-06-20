@@ -799,7 +799,7 @@ const LocationEdit = () => {
                                             <div>
                                                 <h6 className="main-content-label mb-1">Description</h6>
                                             </div>
-                                            <div className="row row-sm"  style={{ height: "300px" }}>
+                                            <div className="row row-sm" style={{ height: "300px" }}>
                                                 <div className="col-sm-12 mg-t-10">
                                                     <label className="form-label">
                                                         Description ( Land Details)
@@ -811,14 +811,14 @@ const LocationEdit = () => {
                                                         onChange={(value) =>
                                                             setFormData((prevState) => ({
                                                                 ...prevState,
-                                                            description: value,
+                                                                description: value,
                                                             }))
                                                         }
                                                         style={{ height: "200px" }}
                                                     />
 
 
-                                                   
+
                                                 </div>
                                             </div>
                                         </div>
@@ -991,7 +991,7 @@ const LocationEdit = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

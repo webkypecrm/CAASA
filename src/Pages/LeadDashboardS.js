@@ -494,7 +494,7 @@ const LeadDashboardS = () => {
                                                     borderColor: '#d9d9d9',
                                                     padding: '0 10px',
                                                 }}
-                                                disabledDate={disableFutureYears} 
+                                                disabledDate={disableFutureYears}
                                             />
                                         </Space>
                                         {"  "}
@@ -575,7 +575,7 @@ const LeadDashboardS = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

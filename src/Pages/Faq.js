@@ -119,7 +119,7 @@ const Faq = () => {
                                                         type="text"
                                                     />
                                                 </div>
-                                                <div className="col-lg-12 form-group" style={{height: '300px'}} >
+                                                <div className="col-lg-12 form-group" style={{ height: '300px' }} >
                                                     <label className="form-label">
                                                         Answer
                                                     </label>
@@ -131,7 +131,7 @@ const Faq = () => {
                                                         onChange={handleInputChangeTextAreas}
                                                         style={{ height: "200px" }}
                                                     />
-                                                   
+
 
                                                 </div>
 
@@ -167,7 +167,7 @@ const Faq = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

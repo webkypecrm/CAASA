@@ -1517,17 +1517,17 @@ const SingalPaymentLadger = () => {
     setSheduleRegistryLoading(true);
 
     const formData = new FormData();
-  formData.append("applicantId", formDataRegistry.applicantId);
-  formData.append("registryName", formDataRegistry.registryName);
-  formData.append("fatherName", formDataRegistry.fatherName);
-  formData.append("registyLocation", formDataRegistry.registyLocation);
-  formData.append("registryDate", formDataRegistry.registryDate);
-  formData.append("description", formDataRegistry.description || "");
-  formData.append("unitNo", formDataRegistry.unitNo || "");
+    formData.append("applicantId", formDataRegistry.applicantId);
+    formData.append("registryName", formDataRegistry.registryName);
+    formData.append("fatherName", formDataRegistry.fatherName);
+    formData.append("registyLocation", formDataRegistry.registyLocation);
+    formData.append("registryDate", formDataRegistry.registryDate);
+    formData.append("description", formDataRegistry.description || "");
+    formData.append("unitNo", formDataRegistry.unitNo || "");
 
-  if (formDataRegistry.registryImage) {
-    formData.append("registryImage", formDataRegistry.registryImage); // binary photo
-  }
+    if (formDataRegistry.registryImage) {
+      formData.append("registryImage", formDataRegistry.registryImage); // binary photo
+    }
 
     try {
       const response = await fetch(`${apiUrl}/registry/scheduleRegistry`, {
@@ -7214,7 +7214,7 @@ const SingalPaymentLadger = () => {
                           className="col-sm-6 form-group"
                           style={{ marginTop: "10px" }}
                         >
-                          <label className="form-label">Deposit to AMRS</label>
+                          <label className="form-label">Deposit to Webkype</label>
                           <select
                             className="form-control select2"
                             name="amrsAccount"
@@ -7261,7 +7261,7 @@ const SingalPaymentLadger = () => {
                           className="col-sm-6 form-group"
                           style={{ marginTop: "10px" }}
                         >
-                          <label className="form-label">AMRS Account</label>
+                          <label className="form-label">Webkype Account</label>
                           <select
                             className="form-control select2"
                             name="amrsAccount"
@@ -7605,7 +7605,7 @@ const SingalPaymentLadger = () => {
                           className="col-sm-6 form-group"
                           style={{ marginTop: "10px" }}
                         >
-                          <label className="form-label">Deposit to AMRS</label>
+                          <label className="form-label">Deposit to Webkype</label>
                           <select
                             className="form-control select2"
                             name="amrsAccount"
@@ -7652,7 +7652,7 @@ const SingalPaymentLadger = () => {
                           className="col-sm-6 form-group"
                           style={{ marginTop: "10px" }}
                         >
-                          <label className="form-label">AMRS Account</label>
+                          <label className="form-label">Webkype Account</label>
                           <select
                             className="form-control select2"
                             name="amrsAccount"
@@ -7974,7 +7974,7 @@ const SingalPaymentLadger = () => {
                           className="col-sm-6 form-group"
                           style={{ marginTop: "10px" }}
                         >
-                          <label className="form-label">Deposit to AMRS</label>
+                          <label className="form-label">Deposit to Webkype</label>
                           <select
                             className="form-control select2"
                             name="amrsAccount"
@@ -8021,7 +8021,7 @@ const SingalPaymentLadger = () => {
                           className="col-sm-6 form-group"
                           style={{ marginTop: "10px" }}
                         >
-                          <label className="form-label">AMRS Account</label>
+                          <label className="form-label">Webkype Account</label>
                           <select
                             className="form-control select2"
                             name="amrsAccount"
@@ -8212,7 +8212,7 @@ const SingalPaymentLadger = () => {
                         onChange={sheduleRegistryHandler}
                       />
                     </div>
-{/* 
+                    {/* 
                     <div className="col-sm-6 form-group">
                       <label className="form-label">Registry Date & Time</label>
                       <input
@@ -10147,7 +10147,7 @@ const SingalPaymentLadger = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">AMRS</a>.
+                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
                   Designed by <a href="http://webkype.com/">Webkype.com</a> All
                   rights reserved.
                 </span>

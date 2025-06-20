@@ -8,7 +8,7 @@ function NewCom() {
 
     const [allLeads, setAllLeads] = useState([])
     const [users, setUsers] = useState([]);
-const[statusOptions, setStatusOptions] = useState([])
+    const [statusOptions, setStatusOptions] = useState([])
     const [status3, setStatus3] = useState([]);
     const [isModalOpen4, setIsModalOpen4] = useState(false);
     const [reportingBossA, setReportingBossA] = useState([])
@@ -55,53 +55,53 @@ const[statusOptions, setStatusOptions] = useState([])
         setStatus3(event.target.value);
     };
 
- //status master
- useEffect(() => {
+    //status master
+    useEffect(() => {
 
-    const Token = localStorage.getItem('Token');
-    fetch(`${apiUrl}/master/getAllMasterData/5`, {
-        headers: {
-            Authorization: `Bearer ${Token}`
-        }
-    })
-        .then(response => response.json())
-        .then(data => {
-            if (data && Array.isArray(data.data)) {
-                setStatusOptions(data.data);
-            } else {
-                console.error('API response does not contain an array:', data);
+        const Token = localStorage.getItem('Token');
+        fetch(`${apiUrl}/master/getAllMasterData/5`, {
+            headers: {
+                Authorization: `Bearer ${Token}`
             }
         })
-        .catch(error => {
-            console.error('Error fetching gender options:', error);
-        });
-}, []);
+            .then(response => response.json())
+            .then(data => {
+                if (data && Array.isArray(data.data)) {
+                    setStatusOptions(data.data);
+                } else {
+                    console.error('API response does not contain an array:', data);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching gender options:', error);
+            });
+    }, []);
 
 
- //Boss a
+    //Boss a
 
- useEffect(() => {
-    const Token = localStorage.getItem('Token');
-    console.log('Token:', Token);
+    useEffect(() => {
+        const Token = localStorage.getItem('Token');
+        console.log('Token:', Token);
 
-    fetch(`${apiUrl}/employee/allEmpDesig`, {
-        headers: {
-            'Authorization': `Bearer ${Token}` // Assuming it's a Bearer token
-            // Add other headers if needed
-        }
-    })
-        .then(response => response.json())
-        .then(data => {
-            if (data && Array.isArray(data.data)) {
-                setReportingBossA(data.data);
-            } else {
-                console.error('API response does not contain an array:', data);
+        fetch(`${apiUrl}/employee/allEmpDesig`, {
+            headers: {
+                'Authorization': `Bearer ${Token}` // Assuming it's a Bearer token
+                // Add other headers if needed
             }
         })
-        .catch(error => {
-            console.error('Error fetching gender options:', error);
-        });
-}, []);
+            .then(response => response.json())
+            .then(data => {
+                if (data && Array.isArray(data.data)) {
+                    setReportingBossA(data.data);
+                } else {
+                    console.error('API response does not contain an array:', data);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching gender options:', error);
+            });
+    }, []);
 
     //delete lead
     const deletecontent = (id) => {
@@ -140,13 +140,13 @@ const[statusOptions, setStatusOptions] = useState([])
 
     const fetchDataFromApi = (status) => {
         // Assuming filterByObj is defined elsewhere or passed as a parameter
-        const { to, from, search, clientName, clientNumber, employeeId} = filterByObj;
+        const { to, from, search, clientName, clientNumber, employeeId } = filterByObj;
         const url = `${apiUrl}/lead/getAllLead?id=&mobileNumber=&emailId=&to=${to}&from=${from}&search=${search}&clientName=${clientName}&clientNumber=${clientNumber}&status=${status}&employeeId=${employeeId}`;
 
         fetch(url, {
             method: "POST",
             headers: {
-                'Authorization': `Bearer ${Token}` 
+                'Authorization': `Bearer ${Token}`
             }
         })
             .then(response => {
@@ -187,7 +187,7 @@ const[statusOptions, setStatusOptions] = useState([])
         const { name, value } = event.target;
         if (name === "search") {
             console.log("Search value:", value);
-           
+
             if (/^\d+$/.test(value)) {
                 setFilterByObj(prevState => ({
                     ...prevState,
@@ -227,7 +227,7 @@ const[statusOptions, setStatusOptions] = useState([])
         ? filteredUsers.filter((user) => user.status === status)
         : filteredUsers;
 
- 
+
 
 
 
@@ -255,7 +255,7 @@ const[statusOptions, setStatusOptions] = useState([])
                                 <div className="card custom-card">
                                     <div className="card-body py-3">
                                         <div className="row">
-                                           
+
                                             <div className="col-3">
                                                 <label className="form-label">From:</label>
                                                 <input type="date" className="form-control"
@@ -287,34 +287,34 @@ const[statusOptions, setStatusOptions] = useState([])
                                             <div className="col-sm-2 form-group">
                                                 <label className="form-label">Status:</label>
                                                 <select
-                    className="form-control"
-                    value={status}
-                    onChange={handleStatusChange}
-                >
-                    <option value="">Select</option>
-                    {statusOptions.map((option) => (
-                        <option key={option.id} value={option.name}>
-                            {option.name}
-                        </option>
-                    ))}
-                </select>
+                                                    className="form-control"
+                                                    value={status}
+                                                    onChange={handleStatusChange}
+                                                >
+                                                    <option value="">Select</option>
+                                                    {statusOptions.map((option) => (
+                                                        <option key={option.id} value={option.name}>
+                                                            {option.name}
+                                                        </option>
+                                                    ))}
+                                                </select>
                                             </div>
                                             <div className="col-sm-2 form-group">
-                                                    <label className="form-label">Assigned:</label>
-                                                    <select
-                                                        className="form-control select2"
-                                                        name="employeeId"
-                                                        value={filterByObj.employeeId}
-                                                        onChange={handleInputChange}
-                                                    >
-                                                        <option value="">Select</option>
-                                                        {reportingBossA.map((option, index) => (
-                                                            <option key={option.id} value={option.id}>
-                                                                {option.fullName}
-                                                            </option>
-                                                        ))}
-                                                    </select>
-                                                </div>
+                                                <label className="form-label">Assigned:</label>
+                                                <select
+                                                    className="form-control select2"
+                                                    name="employeeId"
+                                                    value={filterByObj.employeeId}
+                                                    onChange={handleInputChange}
+                                                >
+                                                    <option value="">Select</option>
+                                                    {reportingBossA.map((option, index) => (
+                                                        <option key={option.id} value={option.id}>
+                                                            {option.fullName}
+                                                        </option>
+                                                    ))}
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -411,7 +411,7 @@ const[statusOptions, setStatusOptions] = useState([])
                             <div className="row ">
                                 <div className="col-md-12">
                                     <span>
-                                        Copyright © 2024 <a href="">AMRS</a>. Designed
+                                        Copyright © 2024 <a href="">Webkype</a>. Designed
                                         by <a href="http://webkype.com/">Webkype.com</a> All rights
                                         reserved.
                                     </span>

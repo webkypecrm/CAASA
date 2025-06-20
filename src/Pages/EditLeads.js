@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 const EditLeads = () => {
   const { empid } = useParams();
   const navigate = useNavigate();
-  const initialFormData = {   
+  const initialFormData = {
 
     clientName: '',
     alternateNumber: '',
@@ -164,12 +164,12 @@ const EditLeads = () => {
         throw new Error(response2.message);
       }
 
-      setFormData(initialFormData); 
+      setFormData(initialFormData);
       toast.success(response2.message);
       navigate('/sales-lead');
     } catch (error) {
       toast.error(error.message);
-     
+
     }
   };
 
@@ -245,7 +245,7 @@ const EditLeads = () => {
   }, [countryId]);
 
   useEffect(() => {
-    if (stateId !== 0) { 
+    if (stateId !== 0) {
       fetchCities(stateId);
     }
   }, [stateId]);
@@ -257,8 +257,8 @@ const EditLeads = () => {
       ...formData,
       country: selectedCountry,
     });
-    setStateOptions([0]); 
-    setCityOptions([0]); 
+    setStateOptions([0]);
+    setCityOptions([0]);
   };
 
   const handleStateChange = (event) => {
@@ -268,7 +268,7 @@ const EditLeads = () => {
       ...formData,
       state: selectedState,
     });
-    setCityOptions([0]); 
+    setCityOptions([0]);
   };
 
   const handleInputChange = (event) => {
@@ -409,10 +409,10 @@ const EditLeads = () => {
 
   useEffect(() => {
     const Token = localStorage.getItem('Token');
-  
+
     fetch(`${apiUrl}/employee/allEmpDesig`, {
       headers: {
-        'Authorization': `Bearer ${Token}` 
+        'Authorization': `Bearer ${Token}`
       }
     })
       .then(response => response.json())
@@ -430,7 +430,7 @@ const EditLeads = () => {
 
   useEffect(() => {
     const Token = localStorage.getItem('Token');
-  
+
     fetch(`${apiUrl}/vendor/vendorDropdown`, {
       headers: {
         'Authorization': `Bearer ${Token}`
@@ -449,7 +449,7 @@ const EditLeads = () => {
       });
   }, []);
 
- 
+
 
 
   useEffect(() => {
@@ -466,7 +466,7 @@ const EditLeads = () => {
 
       {/* Page */}
       <div className="page">
-       
+
 
         <TopHeader />
         <Prince />
@@ -632,7 +632,7 @@ const EditLeads = () => {
                                     {`${country.name}`}
                                   </option>
                                 ))}
-                              </select> 
+                              </select>
                             </div>
                             <div className="col-lg-4 form-group">
                               <label className="form-label">
@@ -795,7 +795,7 @@ const EditLeads = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                   by <a href="http://webkype.com/">Webkype.com</a> All rights
                   reserved.
                 </span>

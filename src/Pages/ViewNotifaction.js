@@ -18,7 +18,7 @@ const ViewNotifaction = () => {
     const formatDateTime = (dateTimeString) => {
         const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
         const date = new Date(dateTimeString);
-        if (isNaN(date)) return "Invalid Date"; 
+        if (isNaN(date)) return "Invalid Date";
         return date.toLocaleString('en-IN', options);
     };
 
@@ -253,7 +253,7 @@ const ViewNotifaction = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

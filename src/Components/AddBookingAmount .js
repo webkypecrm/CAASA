@@ -2202,7 +2202,7 @@ const AddBookingAmount = () => {
                                                         <th>Amount Entry</th>
                                                         <th>Payment Mode</th>
                                                         <th>Bank/Mode</th>
-                                                        <th>AMRS Account</th>
+                                                        <th>Webkype Account</th>
                                                         <th>CHQ/TRN No</th>
                                                         <th>Cheque Date</th>
                                                         <th>Payment Date</th>
@@ -2469,7 +2469,7 @@ const AddBookingAmount = () => {
                                                         <th>Amount Entry</th>
                                                         <th>Payment Mode</th>
                                                         <th>Bank/Mode</th>
-                                                        <th>AMRS Account</th>
+                                                        <th>Webkype Account</th>
                                                         <th>CHQ/TRN No</th>
                                                         <th>Cheque Date</th>
                                                         <th>Payment Date</th>
@@ -2691,7 +2691,7 @@ const AddBookingAmount = () => {
                                                         <th>Amount Entry</th>
                                                         <th>Payment Mode</th>
                                                         <th>Bank/Mode</th>
-                                                        <th>AMRS Account</th>
+                                                        <th>Webkype Account</th>
                                                         <th>CHQ/TRN No</th>
                                                         <th>Cheque Date</th>
                                                         <th>Payment Date</th>
@@ -2966,7 +2966,7 @@ const AddBookingAmount = () => {
                                                         <th className="fixed-width">Payment Mode</th>
                                                         <th className="fixed-width">Method</th>
                                                         <th className="fixed-width">Bank Name</th>
-                                                        <th className="fixed-width-large">AMRS Account</th>
+                                                        <th className="fixed-width-large">Webkype Account</th>
                                                         <th className="fixed-width-large">CHQ/TRN No</th>
                                                         <th className="fixed-width">Cheque Date</th>
                                                         <th className="fixed-width">Payment Date</th>
@@ -4290,7 +4290,7 @@ const AddBookingAmount = () => {
                                                     />
                                                 </div>
                                                 <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                    <label className="form-label">Deposit to AMRS</label>
+                                                    <label className="form-label">Deposit to Webkype</label>
                                                     <select className="form-control select2"
                                                         name="amrsAccount"
                                                         value={formData.amrsAccount}
@@ -4335,7 +4335,7 @@ const AddBookingAmount = () => {
                                             <>
 
                                                 <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                    <label className="form-label">AMRS Account</label>
+                                                    <label className="form-label">Webkype Account</label>
                                                     <select className="form-control select2"
                                                         name="amrsAccount"
                                                         value={formData.amrsAccount}
@@ -4527,7 +4527,7 @@ const AddBookingAmount = () => {
                                                     />
                                                 </div>
                                                 <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                    <label className="form-label">Deposit to AMRS</label>
+                                                    <label className="form-label">Deposit to Webkype</label>
                                                     <select className="form-control select2"
                                                         name="amrsAccount"
                                                         value={formData10.amrsAccount}
@@ -4572,7 +4572,7 @@ const AddBookingAmount = () => {
                                             <>
 
                                                 <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                    <label className="form-label">AMRS Account</label>
+                                                    <label className="form-label">Webkype Account</label>
                                                     <select className="form-control select2"
                                                         name="amrsAccount"
                                                         value={formData10.amrsAccount}
@@ -4716,7 +4716,7 @@ const AddBookingAmount = () => {
                                                 <th>Amount Entry</th>
                                                 <th>Payment Mode</th>
                                                 <th>Bank/Mode</th>
-                                                <th>AMRS Account</th>
+                                                <th>Webkype Account</th>
                                                 <th>CHQ/TRN No</th>
                                                 <th>Cheque Date</th>
                                                 <th>Payment Date</th>
@@ -5218,7 +5218,7 @@ const AddBookingAmount = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

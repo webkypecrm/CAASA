@@ -108,14 +108,14 @@ const StaffPointSheet = () => {
                                                                 Ram Kumar
                                                             </td>
                                                             <td>
-                                                            Rakash Kumar
+                                                                Rakash Kumar
                                                             </td>
-                                                           
+
                                                             <td>
                                                                 10
                                                             </td>
                                                             <td>
-                                                            <Link to='/staff-point-sheet-view' title="View Staff Point Sheet">
+                                                                <Link to='/staff-point-sheet-view' title="View Staff Point Sheet">
                                                                     <i className="fe fe-eye me-3" style={{ cursor: 'pointer' }} />
                                                                 </Link>
 
@@ -140,9 +140,9 @@ const StaffPointSheet = () => {
                                                                 Ram Kumar
                                                             </td>
                                                             <td>
-                                                            Rakash Kumar
+                                                                Rakash Kumar
                                                             </td>
-                                                           
+
                                                             <td>
                                                                 10
                                                             </td>
@@ -178,7 +178,7 @@ const StaffPointSheet = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2023 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2023 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

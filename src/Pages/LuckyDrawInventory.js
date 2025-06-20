@@ -1391,13 +1391,13 @@ const LuckyDrawInventory = () => {
             employee2.paymentPlan === 'FPP'
                 ? employee2?.plan?.basicPriceFPP || 'N/A'
                 : employee2.paymentPlan === 'PLP'
-                ? employee2?.plan?.basicPricePLP || 'N/A'
-                : employee2.paymentPlan === 'DLP'
-                ? employee2?.plan?.basicPriceDLP || 'N/A'
-                : 'N/A';
+                    ? employee2?.plan?.basicPricePLP || 'N/A'
+                    : employee2.paymentPlan === 'DLP'
+                        ? employee2?.plan?.basicPriceDLP || 'N/A'
+                        : 'N/A';
 
         setPaymentValue(value);
-    }, [employee2]); 
+    }, [employee2]);
 
     const keyframes = `
     @keyframes bounce {
@@ -3394,7 +3394,7 @@ const LuckyDrawInventory = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -33,7 +33,7 @@ const Calendars = () => {
                 : new Date(2024, 10, 20, 20, 0),
         },
     ]);
-    
+
     const [showModal, setShowModal] = useState(false);
 
     const [newEvent, setNewEvent] = useState({
@@ -312,7 +312,7 @@ const Calendars = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

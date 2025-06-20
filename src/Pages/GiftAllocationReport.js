@@ -22,7 +22,7 @@ const GiftAllocationReport = () => {
         schemeType: '',
         projectId: '',
     })
-    
+
     const [filterByObj, setFilterByObj] = useState({
         from: '',
         to: '',
@@ -57,18 +57,18 @@ const GiftAllocationReport = () => {
         const [start, end] = dates;
         setStartDate(start);
         setEndDate(end);
-    
+
         // Format the start and end dates if they are not null
         const formatDate = (date) => {
             if (date) {
                 const year = date.getFullYear();
                 const month = String(date.getMonth() + 1).padStart(2, '0');
                 const day = String(date.getDate()).padStart(2, '0');
-                return `${year}/${month}/${day}`; 
+                return `${year}/${month}/${day}`;
             }
             return '';
         };
-    
+
         // Update the filterByObj state with the formatted date range
         const formattedStartDate = formatDate(start);
         const formattedEndDate = formatDate(end);
@@ -80,7 +80,7 @@ const GiftAllocationReport = () => {
             to: `${formattedEndDate}`
         }));
     };
-       
+
     // scame type
     useEffect(() => {
         const Token = localStorage.getItem('Token');
@@ -219,11 +219,11 @@ const GiftAllocationReport = () => {
 
 
     const fetchDataFromApi = () => {
-        const {  result } = formData2;
-        const { projectId, schemeId, schemeType ,from,to} = filterByObj;
+        const { result } = formData2;
+        const { projectId, schemeId, schemeType, from, to } = filterByObj;
 
         const url = `${apiUrl}/applicant/applicants?id=&mobileNumber=&emailId=&projectId=${projectId}&schemeId=${schemeId}&schemeType=${schemeType}&from=${from}&to=${to}&result=${result}`;
-        
+
         fetch(url, {
             headers: {
                 'Authorization': `Bearer ${Token}`
@@ -304,7 +304,7 @@ const GiftAllocationReport = () => {
         <>
 
             <div className="page">
-            {showLoader && (
+                {showLoader && (
                     <div id="global-loader">
                         <div className="spinner-border text-info loader-img" role="status">
                             <span className="sr-only">Loading...</span>
@@ -321,10 +321,10 @@ const GiftAllocationReport = () => {
                             <div className="page-header">
                                 <div>
                                     <h2 className="main-content-title tx-24 mg-b-5">
-                                    Gift Allocation Report
+                                        Gift Allocation Report
                                     </h2>
 
-                                    
+
                                 </div>
                                 <div className="d-flex">
                                     <div className="justify-content-center">
@@ -398,9 +398,9 @@ const GiftAllocationReport = () => {
                                                 </div>
                                                 <div className="col-sm-2">
                                                     <select className="form-control select2"
-                                                   name="schemeId"
-                                                   value={filterByObj.schemeId}
-                                                   onChange={handleInputChange2}
+                                                        name="schemeId"
+                                                        value={filterByObj.schemeId}
+                                                        onChange={handleInputChange2}
                                                     >
                                                         <option value=''>Select Scheme</option>
                                                         {scame.map((option, index) => (
@@ -431,7 +431,7 @@ const GiftAllocationReport = () => {
                                                     </div>
                                                 </div>
 
-                                               
+
                                             </div>{" "}
                                         </div>
                                     </div>
@@ -677,32 +677,32 @@ const GiftAllocationReport = () => {
 
                                                                                 </td>
                                                                                 <td style={{ textAlign: "center" }}>
-                                                                                        <a onClick={() => loadcontent(user.id)} className="btn ripple btn-dark btn-xs">
-                                                                                            <i className="fa fa-edit" title="Enable" />
-                                                                                        </a>
-                                                                                        {" "}
-                                                                                        <a
-                                                                                            className="btn ripple btn-danger btn-xs"
-                                                                                            onClick={() => deletecontent(user.id)}
-                                                                                        >
-                                                                                            <i
-                                                                                                className="fa fa-trash"
-                                                                                                title="Delete"
-                                                                                            />
-                                                                                        </a>
-                                                                                        <br />
-                                                                                        <br />
-                                                                                                              
-                                                                                       
-                                                                                        <a
-                                                                                            onClick={() => loadcontent2(user.id)}
-                                                                                            className="btn ripple btn-info btn-xs w-100 mb-1"
-                                                                                        >
-                                                                                            Manage 
-                                                                                        </a>
-                                                                                        
-                                                                                        
-                                                                                    </td>
+                                                                                    <a onClick={() => loadcontent(user.id)} className="btn ripple btn-dark btn-xs">
+                                                                                        <i className="fa fa-edit" title="Enable" />
+                                                                                    </a>
+                                                                                    {" "}
+                                                                                    <a
+                                                                                        className="btn ripple btn-danger btn-xs"
+                                                                                        onClick={() => deletecontent(user.id)}
+                                                                                    >
+                                                                                        <i
+                                                                                            className="fa fa-trash"
+                                                                                            title="Delete"
+                                                                                        />
+                                                                                    </a>
+                                                                                    <br />
+                                                                                    <br />
+
+
+                                                                                    <a
+                                                                                        onClick={() => loadcontent2(user.id)}
+                                                                                        className="btn ripple btn-info btn-xs w-100 mb-1"
+                                                                                    >
+                                                                                        Manage
+                                                                                    </a>
+
+
+                                                                                </td>
                                                                             </tr>
 
 
@@ -731,7 +731,7 @@ const GiftAllocationReport = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

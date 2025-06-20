@@ -36,7 +36,7 @@ const NotConnected = () => {
         clientName: '',
         clientNumber: '',
         search: '',
-        status: 'Not Connected',  
+        status: 'Not Connected',
         employeeId: '',
         project: '',
         source: '',
@@ -197,12 +197,12 @@ const NotConnected = () => {
         if (downloadUrl) {
             const link = document.createElement('a');
             link.href = downloadUrl;
-            link.download = 'leads_export.xlsx'; 
+            link.download = 'leads_export.xlsx';
             link.style.display = 'none';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-            setDownloadUrl(''); 
+            setDownloadUrl('');
         }
     }, [downloadUrl]);
 
@@ -237,11 +237,11 @@ const NotConnected = () => {
             handleCloseModal5();
             setFormData2(initialFormData2);
             toast.success(response2.message);
-            
+
             if (response2.status === "success" && response2.downloadUrl) {
                 setDownloadUrl(response2.downloadUrl);
             }
-        
+
         } catch (error) {
             toast.error(error.message);
         }
@@ -761,7 +761,7 @@ const NotConnected = () => {
                                                         onChange={(e) => setSearch(e.target.value)}
                                                     />
                                                 </div>
-                                              
+
                                                 <div className="col-sm-3 form-group">
                                                     <label className="form-label">Assigned:</label>
                                                     <select
@@ -814,7 +814,7 @@ const NotConnected = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                               
+
                                                 <div className="col-sm-3 form-group" style={{ marginTop: '3px' }}>
                                                     <label className="form-label">Project</label>
                                                     <select
@@ -845,7 +845,7 @@ const NotConnected = () => {
                                 </div>
                             </div>
 
-                            {/* Row */} 
+                            {/* Row */}
                             <div className="row-sm">
                                 <div className="col-lg-12">
                                     <div className="card custom-card">
@@ -1002,7 +1002,7 @@ const NotConnected = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

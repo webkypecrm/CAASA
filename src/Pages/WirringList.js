@@ -18,7 +18,7 @@ const WirringList = () => {
         schemeType: '',
         projectId: '',
     })
-    
+
     const [filterByObj, setFilterByObj] = useState({
         from: '',
         to: '',
@@ -46,7 +46,7 @@ const WirringList = () => {
     const loadcontent2 = (id) => {
         navigation(`/allotment-letter/${id}`);
     };
-    
+
     const loadcontent3 = (id) => {
         navigation(`/welcome-letter/${id}`);
     };
@@ -55,18 +55,18 @@ const WirringList = () => {
         const [start, end] = dates;
         setStartDate(start);
         setEndDate(end);
-    
+
         // Format the start and end dates if they are not null
         const formatDate = (date) => {
             if (date) {
                 const year = date.getFullYear();
                 const month = String(date.getMonth() + 1).padStart(2, '0');
                 const day = String(date.getDate()).padStart(2, '0');
-                return `${year}/${month}/${day}`; 
+                return `${year}/${month}/${day}`;
             }
             return '';
         };
-    
+
         // Update the filterByObj state with the formatted date range
         const formattedStartDate = formatDate(start);
         const formattedEndDate = formatDate(end);
@@ -78,7 +78,7 @@ const WirringList = () => {
             to: `${formattedEndDate}`
         }));
     };
-       
+
     // scame type
     useEffect(() => {
         const Token = localStorage.getItem('Token');
@@ -218,10 +218,10 @@ const WirringList = () => {
 
     const fetchDataFromApi = () => {
         const { result } = formData2;
-        const { projectId, schemeId, schemeType ,from,to} = filterByObj;
+        const { projectId, schemeId, schemeType, from, to } = filterByObj;
 
         const url = `${apiUrl}/applicant/applicants?id=&mobileNumber=&emailId=&projectId=${projectId}&schemeId=${schemeId}&schemeType=${schemeType}&from=${from}&to=${to}&result=${result}`;
-        
+
         fetch(url, {
             headers: {
                 'Authorization': `Bearer ${Token}`
@@ -302,7 +302,7 @@ const WirringList = () => {
         <>
 
             <div className="page">
-            {showLoader && (
+                {showLoader && (
                     <div id="global-loader">
                         <div className="spinner-border text-info loader-img" role="status">
                             <span className="sr-only">Loading...</span>
@@ -319,10 +319,10 @@ const WirringList = () => {
                             <div className="page-header">
                                 <div>
                                     <h2 className="main-content-title tx-24 mg-b-5">
-                                    Winners Applicant List
+                                        Winners Applicant List
                                     </h2>
 
-                                    
+
                                 </div>
                                 <div className="d-flex">
                                     <div className="justify-content-center">
@@ -396,9 +396,9 @@ const WirringList = () => {
                                                 </div>
                                                 <div className="col-sm-2">
                                                     <select className="form-control select2"
-                                                   name="schemeId"
-                                                   value={filterByObj.schemeId}
-                                                   onChange={handleInputChange2}
+                                                        name="schemeId"
+                                                        value={filterByObj.schemeId}
+                                                        onChange={handleInputChange2}
                                                     >
                                                         <option value=''>Select Scheme</option>
                                                         {scame.map((option, index) => (
@@ -689,35 +689,35 @@ const WirringList = () => {
                                                                                         />
                                                                                     </a>
                                                                                     <br />
-                                                                                        <br />
-                                                                                        <a
-                                                                                            onClick={() => loadcontent2(user.id)}
+                                                                                    <br />
+                                                                                    <a
+                                                                                        onClick={() => loadcontent2(user.id)}
 
-                                                                                            className="btn ripple btn-info btn-xs w-100 mb-1"
-                                                                                        >
-                                                                                            Allotment Letter
-                                                                                        </a>
-                                                                                        <br />
-                                                                                        <Link
-                                                                                            to="/demand-letter"
-                                                                                            className="btn ripple btn-info btn-xs w-100 mb-1"
-                                                                                        >
-                                                                                            Demand Letter
-                                                                                        </Link>
-                                                                                        <br />
-                                                                                        <Link
-                                                                                            to="/tax-invoice"
-                                                                                            className="btn ripple btn-info btn-xs w-100 mb-1"
-                                                                                        >
-                                                                                            Tax Invoice
-                                                                                        </Link>
-                                                                                        <br />
-                                                                                        <a
-                                                                                            onClick={() => loadcontent3(user.id)}
-                                                                                            className="btn ripple btn-info btn-xs w-100 mb-1"
-                                                                                        >
-                                                                                            Welcome Letter
-                                                                                        </a>
+                                                                                        className="btn ripple btn-info btn-xs w-100 mb-1"
+                                                                                    >
+                                                                                        Allotment Letter
+                                                                                    </a>
+                                                                                    <br />
+                                                                                    <Link
+                                                                                        to="/demand-letter"
+                                                                                        className="btn ripple btn-info btn-xs w-100 mb-1"
+                                                                                    >
+                                                                                        Demand Letter
+                                                                                    </Link>
+                                                                                    <br />
+                                                                                    <Link
+                                                                                        to="/tax-invoice"
+                                                                                        className="btn ripple btn-info btn-xs w-100 mb-1"
+                                                                                    >
+                                                                                        Tax Invoice
+                                                                                    </Link>
+                                                                                    <br />
+                                                                                    <a
+                                                                                        onClick={() => loadcontent3(user.id)}
+                                                                                        className="btn ripple btn-info btn-xs w-100 mb-1"
+                                                                                    >
+                                                                                        Welcome Letter
+                                                                                    </a>
                                                                                 </td>
                                                                             </tr>
 
@@ -747,7 +747,7 @@ const WirringList = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -70,13 +70,13 @@ const Monthss = () => {
     const extractFullNames = () => {
         const fullNames = filteredUsers.map(user => user.employee.fullName);
         setUserFullNames(fullNames);
-      };
-    
-      useEffect(() => {
-        extractFullNames();
-      }, [filteredUsers]);
+    };
 
-      useEffect(() => {
+    useEffect(() => {
+        extractFullNames();
+    }, [filteredUsers]);
+
+    useEffect(() => {
         const timeout = setTimeout(() => {
             setShowLoader(false);
         }, 800);
@@ -95,7 +95,7 @@ const Monthss = () => {
         <>
 
             <div className="page">
-            {showLoader && (
+                {showLoader && (
                     <div id="global-loader">
                         <div className="spinner-border text-info loader-img" role="status">
                             <span className="sr-only">Loading...</span>
@@ -124,11 +124,11 @@ const Monthss = () => {
                                         </li>
                                     </ol> */}
                                 </div>
-                                
-                               
+
+
                             </div>
                             {/* End Page Header */}
-                           
+
                             {/* Row */}
                             <div className="row row-sm">
                                 <div className="col-lg-12">
@@ -200,8 +200,8 @@ const Monthss = () => {
                                                                     </p>
                                                                 </td>
                                                                 <td>
-                                                                    <span style={{ color: user.checkIn  ? 'green' : 'red' }}>
-                                                                        {user.checkIn  ? 'Present' : 'Absent'}
+                                                                    <span style={{ color: user.checkIn ? 'green' : 'red' }}>
+                                                                        {user.checkIn ? 'Present' : 'Absent'}
                                                                     </span>
                                                                 </td>
                                                                 <td>
@@ -234,7 +234,7 @@ const Monthss = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

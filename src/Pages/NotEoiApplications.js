@@ -40,19 +40,19 @@ const NotEoiApplications = () => {
     const Token = localStorage.getItem("Token");
 
     const loadcontent9 = (id, user) => {
-        navigation(`/eoi-inventory-lists/${id}`, { 
+        navigation(`/eoi-inventory-lists/${id}`, {
             state: {
-               
+
                 firstName: user.applicantFirstName,
                 middleName: user.applicantMiddleName,
                 lastName: user.applicantLastName,
                 preferredInventoryId: user.preferredInventoryId,
-               
+
                 // add more properties here if needed
             },
         });
     };
-    
+
 
     const handleOpenModal2 = (id) => {
         setRefund(id)
@@ -429,7 +429,7 @@ const NotEoiApplications = () => {
                             <div className="page-header">
                                 <div>
                                     <h2 className="main-content-title tx-24 mg-b-5">
-                                      Not Approved Eoi Application List({count})
+                                        Not Approved Eoi Application List({count})
                                     </h2>
                                 </div>
                             </div>
@@ -600,7 +600,7 @@ const NotEoiApplications = () => {
 
                                                                                     </td>
 
-                                                                                
+
                                                                                     <td>
                                                                                         Amount: {user.amountReceived || 'N/A'}
                                                                                         <br />
@@ -663,7 +663,7 @@ const NotEoiApplications = () => {
                                                                                         <br />
                                                                                         {user?.stage === 'Applied' && (
                                                                                             <a
-                                                                                            onClick={() => loadcontent9(user.id, user)}
+                                                                                                onClick={() => loadcontent9(user.id, user)}
                                                                                             >
                                                                                                 <div
                                                                                                     style={{
@@ -871,7 +871,7 @@ const NotEoiApplications = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

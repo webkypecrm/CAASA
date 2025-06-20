@@ -22,7 +22,7 @@ const WelcomeLetterReports = () => {
         schemeType: '',
         projectId: '',
     })
-    
+
     const [filterByObj, setFilterByObj] = useState({
         from: '',
         to: '',
@@ -57,18 +57,18 @@ const WelcomeLetterReports = () => {
         const [start, end] = dates;
         setStartDate(start);
         setEndDate(end);
-    
+
         // Format the start and end dates if they are not null
         const formatDate = (date) => {
             if (date) {
                 const year = date.getFullYear();
                 const month = String(date.getMonth() + 1).padStart(2, '0');
                 const day = String(date.getDate()).padStart(2, '0');
-                return `${year}/${month}/${day}`; 
+                return `${year}/${month}/${day}`;
             }
             return '';
         };
-    
+
         // Update the filterByObj state with the formatted date range
         const formattedStartDate = formatDate(start);
         const formattedEndDate = formatDate(end);
@@ -80,7 +80,7 @@ const WelcomeLetterReports = () => {
             to: `${formattedEndDate}`
         }));
     };
-       
+
     // scame type
     useEffect(() => {
         const Token = localStorage.getItem('Token');
@@ -201,7 +201,7 @@ const WelcomeLetterReports = () => {
     };
 
 
-   
+
 
     const formatDateTimes = (dateTimeString) => {
         const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true };
@@ -228,7 +228,7 @@ const WelcomeLetterReports = () => {
                         const formattedData = data.data.map(item => ({
                             ...item,
                             createdAt: item.createdAt ? formatDateTimes(item.createdAt) : '',
-                            
+
                         }));
                         setUsers(formattedData);
                     } else {
@@ -246,7 +246,7 @@ const WelcomeLetterReports = () => {
     useEffect(() => {
         fetchDataFromApi()
     }, []);
-  
+
     const handleInputChange2 = (e) => {
         const { name, value } = e.target;
         setFilterByObj(prevState => ({
@@ -286,7 +286,7 @@ const WelcomeLetterReports = () => {
         <>
 
             <div className="page">
-            {showLoader && (
+                {showLoader && (
                     <div id="global-loader">
                         <div className="spinner-border text-info loader-img" role="status">
                             <span className="sr-only">Loading...</span>
@@ -303,10 +303,10 @@ const WelcomeLetterReports = () => {
                             <div className="page-header">
                                 <div>
                                     <h2 className="main-content-title tx-24 mg-b-5">
-                                    Welcome Letter Reports
+                                        Welcome Letter Reports
                                     </h2>
 
-                                    
+
                                 </div>
                                 <div className="d-flex">
                                     <div className="justify-content-center">
@@ -380,9 +380,9 @@ const WelcomeLetterReports = () => {
                                                 </div>
                                                 <div className="col-sm-2">
                                                     <select className="form-control select2"
-                                                   name="schemeId"
-                                                   value={filterByObj.schemeId}
-                                                   onChange={handleInputChange2}
+                                                        name="schemeId"
+                                                        value={filterByObj.schemeId}
+                                                        onChange={handleInputChange2}
                                                     >
                                                         <option value=''>Select Scheme</option>
                                                         {scame.map((option, index) => (
@@ -413,7 +413,7 @@ const WelcomeLetterReports = () => {
                                                     </div>
                                                 </div>
 
-                                               
+
                                             </div>{" "}
                                         </div>
                                     </div>
@@ -429,7 +429,7 @@ const WelcomeLetterReports = () => {
                                                     <div className="tab-content ">
                                                         <div className="tab-pane active" id="tab11">
                                                             <div className="table-responsive">
-                                                            <table className="table table-striped table-bordered mb-0 text-nowrap">
+                                                                <table className="table table-striped table-bordered mb-0 text-nowrap">
                                                                     <thead>
                                                                         <tr>
                                                                             <th>
@@ -505,7 +505,7 @@ const WelcomeLetterReports = () => {
                                                                                     <br />
 
                                                                                     <a
-                                                                                         onClick={() => loadcontent2(user && user.applicant && `${user.applicant.id}`)}
+                                                                                        onClick={() => loadcontent2(user && user.applicant && `${user.applicant.id}`)}
                                                                                         className="btn ripple btn-info btn-xs w-100 mb-1"
                                                                                     >
                                                                                         Manage
@@ -542,7 +542,7 @@ const WelcomeLetterReports = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -838,7 +838,7 @@ const ChequeLedger = () => {
                                                         <th style={{ textAlign: 'left' }}>Name</th>
                                                         <th style={{ textAlign: 'left' }}>Amount (Rs)</th>
                                                         <th style={{ textAlign: 'left' }}>Bank Cheque</th>
-                                                        <th style={{ textAlign: 'left' }}>AMRS Account</th>
+                                                        <th style={{ textAlign: 'left' }}>Webkype Account</th>
                                                         <th style={{ textAlign: 'left' }}>CHQ No</th>
                                                         <th style={{ textAlign: 'left' }}>Cheque Date</th>
                                                         <th style={{ textAlign: 'left' }}>Status</th>
@@ -1022,7 +1022,7 @@ const ChequeLedger = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

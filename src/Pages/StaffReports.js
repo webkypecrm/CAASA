@@ -519,7 +519,7 @@ const StaffReports = () => {
                                 <div className="col-lg-12">
                                     <div className="card custom-card">
                                         <div className="card-body">
-                                            <div className="table-responsive"> 
+                                            <div className="table-responsive">
                                                 {loading ? (
                                                     <div style={loaderStyles.overlay}>
                                                         <div style={loaderStyles.loaderContainer}>
@@ -833,7 +833,7 @@ const StaffReports = () => {
                                 </div>
                             </div>
                             {/* End Row */}
-                        </div> 
+                        </div>
                     </div>
                 </div>
 
@@ -887,7 +887,7 @@ const StaffReports = () => {
                                             >
                                                 <option value=''>Select Reason</option>
                                                 <option >Resigned</option>
-                                                <option >Fired by AMRS</option>
+                                                <option >Fired by Webkype</option>
                                                 <option >Un-Informed Absence</option>
                                                 <option >Legal Issues</option>
 
@@ -972,7 +972,7 @@ const StaffReports = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -477,9 +477,9 @@ const EoiDetails = () => {
                 handleCloseModalRefaund()
                 setRefaundP(initialFormDataRefaund);
                 fetchLeadData();
-               
-               
-                
+
+
+
             } else {
                 toast.error("Failed to update status");
             }
@@ -491,7 +491,7 @@ const EoiDetails = () => {
 
 
 
-    
+
 
     const handleInputChangeRefaundRequests = (event) => {
         const { name, value } = event.target;
@@ -6249,7 +6249,7 @@ const EoiDetails = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

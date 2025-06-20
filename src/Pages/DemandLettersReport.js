@@ -142,9 +142,9 @@ const DemandLettersReport = () => {
             const response = await fetch(url, {
                 headers: { 'Authorization': `Bearer ${Token}` }
             });
-    
+
             const data = await response.json();
-    
+
             if (data.status === 'success') {
                 if (Array.isArray(data.data)) {
                     const formattedData = data.data.map(item => ({
@@ -162,7 +162,7 @@ const DemandLettersReport = () => {
             console.error('Error fetching data:', error);
         }
     };
-    
+
 
     useEffect(() => {
         fetchDataFromApi()
@@ -411,7 +411,7 @@ const DemandLettersReport = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -76,7 +76,7 @@ const ListScheme = () => {
             }
             setLoading(false);
         } catch (error) {
-            
+
             console.error('Error fetching data:', error);
         }
         setLoading(false);
@@ -116,7 +116,7 @@ const ListScheme = () => {
             left: 0,
             width: '100%',
             height: '100%',
-            background: 'rgba(255, 255, 255, 0.3)', 
+            background: 'rgba(255, 255, 255, 0.3)',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -126,13 +126,13 @@ const ListScheme = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            gap: '15px',  
+            gap: '15px',
         },
         dot: {
-            width: '20px', 
+            width: '20px',
             height: '20px',
             borderRadius: '50%',
-            backgroundColor: '#3498db',  
+            backgroundColor: '#3498db',
             animation: 'bounce 1.2s infinite ease-in-out',
         },
     };
@@ -234,7 +234,7 @@ const ListScheme = () => {
                                                                                 <th >Photo</th>
                                                                                 <th >Scheme Name</th>
                                                                                 <th > Mapped Project</th>
-                                                                
+
                                                                                 <th >Actions</th>
 
                                                                             </tr>
@@ -276,10 +276,10 @@ const ListScheme = () => {
                                                                                                     </div>
                                                                                                 ))
                                                                                             ) : (
-                                                                                                <div>No Mapped Project available</div> 
+                                                                                                <div>No Mapped Project available</div>
                                                                                             )}
                                                                                         </td>
-                                                                                       
+
 
 
                                                                                         <td>
@@ -326,7 +326,7 @@ const ListScheme = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

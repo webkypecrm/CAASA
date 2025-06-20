@@ -411,8 +411,8 @@ const UserApplicant = () => {
                                 <span>
                                   {selectedIds
                                     ? project.find(
-                                        (item) => item.id === selectedIds
-                                      )?.projectName || "Select project"
+                                      (item) => item.id === selectedIds
+                                    )?.projectName || "Select project"
                                     : "Select project"}
                                 </span>
                               </div>
@@ -484,14 +484,14 @@ const UserApplicant = () => {
                                           setIsOpen(false); // Close dropdown after selection
                                         }}
                                         onMouseEnter={(e) =>
-                                          (e.target.style.backgroundColor =
-                                            "#f1f1f1")
+                                        (e.target.style.backgroundColor =
+                                          "#f1f1f1")
                                         }
                                         onMouseLeave={(e) =>
-                                          (e.target.style.backgroundColor =
-                                            selectedIds === option.id
-                                              ? "#f1f1f1"
-                                              : "#fff")
+                                        (e.target.style.backgroundColor =
+                                          selectedIds === option.id
+                                            ? "#f1f1f1"
+                                            : "#fff")
                                         }
                                       >
                                         {option.projectName}
@@ -668,7 +668,7 @@ const UserApplicant = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">AMRS</a>.
+                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
                   Designed by <a href="http://webkype.com/">Webkype.com</a> All
                   rights reserved.
                 </span>

@@ -277,7 +277,7 @@ const Dashboard = () => {
 
   // Call and Mitting
   useEffect(() => {
-    const intervalId = setInterval(() => {}, 60000);
+    const intervalId = setInterval(() => { }, 60000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -812,10 +812,10 @@ const Dashboard = () => {
                           (e.target.style.backgroundColor = "#0056b3")
                         }
                         onMouseLeave={(e) =>
-                          (e.target.style.backgroundColor =
-                            location.pathname === "/Dashboard"
-                              ? "#0056b3"
-                              : "#007bff")
+                        (e.target.style.backgroundColor =
+                          location.pathname === "/Dashboard"
+                            ? "#0056b3"
+                            : "#007bff")
                         }
                         onMouseDown={(e) =>
                           (e.target.style.transform = "scale(0.95)")
@@ -851,10 +851,10 @@ const Dashboard = () => {
                           (e.target.style.backgroundColor = "#0056b3")
                         }
                         onMouseLeave={(e) =>
-                          (e.target.style.backgroundColor =
-                            location.pathname === "/sales-dashboard"
-                              ? "#0056b3"
-                              : "#007bff")
+                        (e.target.style.backgroundColor =
+                          location.pathname === "/sales-dashboard"
+                            ? "#0056b3"
+                            : "#007bff")
                         }
                         onMouseDown={(e) =>
                           (e.target.style.transform = "scale(0.95)")
@@ -891,10 +891,10 @@ const Dashboard = () => {
                           (e.target.style.backgroundColor = "#0056b3")
                         }
                         onMouseLeave={(e) =>
-                          (e.target.style.backgroundColor =
-                            location.pathname === "/inventory-dashboard"
-                              ? "#0056b3"
-                              : "#007bff")
+                        (e.target.style.backgroundColor =
+                          location.pathname === "/inventory-dashboard"
+                            ? "#0056b3"
+                            : "#007bff")
                         }
                         onMouseDown={(e) =>
                           (e.target.style.transform = "scale(0.95)")
@@ -957,10 +957,10 @@ const Dashboard = () => {
                           (e.target.style.backgroundColor = "#0056b3")
                         }
                         onMouseLeave={(e) =>
-                          (e.target.style.backgroundColor =
-                            location.pathname === "/ods-dashboard"
-                              ? "#0056b3"
-                              : "#007bff")
+                        (e.target.style.backgroundColor =
+                          location.pathname === "/ods-dashboard"
+                            ? "#0056b3"
+                            : "#007bff")
                         }
                         onMouseDown={(e) =>
                           (e.target.style.transform = "scale(0.95)")
@@ -5195,7 +5195,7 @@ const Dashboard = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">AMRS</a>.
+                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
                   Designed by <a href="http://webkype.com/">Webkype.com</a> All
                   rights reserved.
                 </span>

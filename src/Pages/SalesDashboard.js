@@ -187,7 +187,7 @@ const SalesDashboard = () => {
                 console.error('Unexpected API response:', data);
             }
             setLoading(false);
-        } catch (error) {  
+        } catch (error) {
             console.error('Error fetching data:', error);
         }
         setLoading(false);
@@ -201,26 +201,26 @@ const SalesDashboard = () => {
 
 
 
-    const handleDownload = async () => {   
+    const handleDownload = async () => {
         try {
             const { to, from, status, empId, project, source, size, utmSource, vendor } = filterByObj;
             const urls = `${apiUrl}/lead/downloadLeadAllocation?empId=${empId}&to=${to}&from=${from}&status=${status}&project=${project}&source=${source}&size=${size}&utmSource=${utmSource}&vendor=${vendor}`;
-    
+
             const response = await fetch(urls, {
                 method: 'GET',
                 headers: { 'Authorization': `Bearer ${Token}` }
             });
-    
+
             // Check if the response status is OK (200-299)
             if (!response.ok) {
                 const errorData = await response.json();
                 const errorMessage = errorData.message || 'Error occurred while fetching the file.';
                 throw new Error(errorMessage);
             }
-    
+
             // Parse the response JSON to get the download URL
             const result = await response.json();
-            
+
             if (result.status === 'success' && result.data) {
                 // Use the direct file URL from the API response to download
                 const downloadUrl = result.data;
@@ -230,7 +230,7 @@ const SalesDashboard = () => {
                 document.body.appendChild(link);
                 link.click();
                 link.remove();
-                
+
                 // Display success message
                 toast.success('File downloaded successfully!');
             } else {
@@ -241,7 +241,7 @@ const SalesDashboard = () => {
             toast.error(`Error: ${error.message}`);
         }
     };
-    
+
 
     const handleSearchChange = (event) => {
         setSearchTerm(event.target.value);
@@ -304,7 +304,7 @@ const SalesDashboard = () => {
                                                                         : 'Select Employee'
                                                                     }
                                                                 </button>
-                                                                
+
                                                                 {isOpen2 && (
                                                                     <div className="dropdown-menu" style={{
                                                                         display: 'block',
@@ -383,14 +383,14 @@ const SalesDashboard = () => {
 
                                 <div className="d-flex">
                                     <div className="justify-content-center" style={{ marginTop: '-20px' }}>
-                                       
+
                                         <button
-                                          onClick={handleDownload}
+                                            onClick={handleDownload}
                                             download
                                             type="button"
                                             className="btn btn-primary my-2 btn-icon-text me-2"
                                         >
-                                            Download 
+                                            Download
                                         </button>
                                     </div>
                                 </div>
@@ -605,7 +605,7 @@ const SalesDashboard = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

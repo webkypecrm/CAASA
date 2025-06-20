@@ -1949,7 +1949,7 @@ const WldInventoryDetails = () => {
                                     }
 
 
- 
+
 
 
                                 </div>
@@ -4386,7 +4386,7 @@ const WldInventoryDetails = () => {
                                                                                                     <p className="mb-0 tx-13 text-dark">
                                                                                                         <i className="fe fe-chevrons-right me-1" />
                                                                                                         Gift:{" "}
-                                                                                                        <span style={{ color: employee2.gift? 'inherit' : 'red' }}>
+                                                                                                        <span style={{ color: employee2.gift ? 'inherit' : 'red' }}>
                                                                                                             {employee2.gift | 'N/A'}
                                                                                                         </span>
 
@@ -6976,7 +6976,7 @@ const WldInventoryDetails = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -374,7 +374,7 @@ const EdidScheme = () => {
                                                 </div>
 
 
-                                                <div className="col-sm-12 mg-t-10"style={{ height: "250px" }}>
+                                                <div className="col-sm-12 mg-t-10" style={{ height: "250px" }}>
                                                     <label className="form-label">
                                                         Enter Details <span className="tx-danger">*</span>
                                                     </label>
@@ -396,7 +396,7 @@ const EdidScheme = () => {
                                                 <div className="col-sm-12 mg-t-10" style={{ height: "220px" }}>
                                                     <label className="form-label">
                                                         Notes
-                                                    </label>  
+                                                    </label>
 
                                                     <ReactQuill
                                                         theme="snow"
@@ -409,7 +409,7 @@ const EdidScheme = () => {
                                                         }
                                                         style={{ height: "100px" }}
                                                     />
-                                                   
+
                                                 </div>
                                             </div>
                                         </div>
@@ -471,7 +471,7 @@ const EdidScheme = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

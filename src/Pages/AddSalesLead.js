@@ -8,8 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 
 const AddSalesLead = () => {
-    const navigate = useNavigate();  
-    
+    const navigate = useNavigate();
+
     const initialFormData = {
         status: null,
         clientName: '',
@@ -22,7 +22,7 @@ const AddSalesLead = () => {
         state: '',
         country: 101,
         project: '',
-       
+
         size: '',
         status: '',
         activenessMeter: '',
@@ -50,7 +50,7 @@ const AddSalesLead = () => {
     const [reportingBossA, setReportingBossA] = useState([])
     const [vendor, setVendor] = useState([]);
     const [vendors, setVendors] = useState([]);
-    const[ven, setVen] = useState([]);
+    const [ven, setVen] = useState([]);
     const [showLoader, setShowLoader] = useState(true);
 
 
@@ -74,7 +74,7 @@ const AddSalesLead = () => {
                 console.error('Error fetching country data:', error);
             });
     }, []);
-   
+
 
     //project api 
     useEffect(() => {
@@ -170,8 +170,8 @@ const AddSalesLead = () => {
             ...formData,
             country: selectedCountry,
         });
-        setStateOptions([]); 
-       
+        setStateOptions([]);
+
     };
 
     const handleStateChange = (event) => {
@@ -181,10 +181,10 @@ const AddSalesLead = () => {
             ...formData,
             state: selectedState,
         });
-        setCityOptions([]); 
+        setCityOptions([]);
     };
 
-    
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -366,8 +366,8 @@ const AddSalesLead = () => {
 
         fetch(`${apiUrl}/employee/allEmpDesig`, {
             headers: {
-                'Authorization': `Bearer ${Token}` 
-               
+                'Authorization': `Bearer ${Token}`
+
             }
         })
             .then(response => response.json())
@@ -406,7 +406,7 @@ const AddSalesLead = () => {
             });
     }, []);
 
-   
+
 
 
     useEffect(() => {
@@ -419,7 +419,7 @@ const AddSalesLead = () => {
     return (
         <>
             <div className="page">
-           
+
                 <TopHeader />
                 <Prince />
 
@@ -463,8 +463,8 @@ const AddSalesLead = () => {
                                                                 ))}
                                                             </select>
                                                         </div>
-                                                        {/* col-4 */} 
-                                                       
+                                                        {/* col-4 */}
+
                                                         <div className="col-lg-4 form-group">
                                                             <label className="form-label">
                                                                 Project: <span className="tx-danger">*</span>
@@ -482,13 +482,13 @@ const AddSalesLead = () => {
                                                             </select>
                                                         </div>
                                                         {/* col-4 */}
-                                                        
+
                                                         {/* col-4 */}
                                                         <div className="col-lg-4 form-group">
                                                             <label className="form-label">
-                                                                 Size
+                                                                Size
                                                             </label>
-                                                            
+
                                                             <input
                                                                 className="form-control"
                                                                 name="size"
@@ -623,7 +623,7 @@ const AddSalesLead = () => {
 
                                                         </div>
 
-                                                        
+
                                                         <div className="col-lg-4 form-group">
                                                             <label className="form-label">
                                                                 Address
@@ -748,7 +748,7 @@ const AddSalesLead = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

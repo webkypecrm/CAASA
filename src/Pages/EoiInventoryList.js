@@ -13,7 +13,7 @@ const EoiInventoryList = () => {
     const location = useLocation();
     const { id, firstName, middleName, lastName, eoiCode } = location.state || {};
     const navigate = useNavigate();
-    const { empid, empid2, empid3, empid4 } = useParams();  
+    const { empid, empid2, empid3, empid4 } = useParams();
 
     const initialFormData = {
         excelUpload: '',
@@ -1526,7 +1526,7 @@ const EoiInventoryList = () => {
             response = await response.json();
 
             if (response.status === "success") {
-                
+
                 const eoiData = response.data;
                 const firstPaymentLedge = eoiData.paymentLedger?.[0];
 
@@ -4625,7 +4625,7 @@ const EoiInventoryList = () => {
                                                     />
                                                 </div>
                                                 <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                    <label className="form-label">Deposit to AMRS</label>
+                                                    <label className="form-label">Deposit to Webkype</label>
                                                     <select className="form-control select2"
                                                         name="amrsAccount"
                                                         value={formData10.amrsAccount}
@@ -4657,7 +4657,7 @@ const EoiInventoryList = () => {
                                             <>
 
                                                 <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                    <label className="form-label">AMRS Account</label>
+                                                    <label className="form-label">Webkype Account</label>
                                                     <select className="form-control select2"
                                                         name="amrsAccount"
                                                         value={formData10.amrsAccount}
@@ -4908,10 +4908,10 @@ const EoiInventoryList = () => {
                                         <tbody>
                                             {inventoryHistorys.map((user) => (
                                                 <tr
-                                                style={{
-                                                    backgroundColor: user.color === 'green' ? 'lightGreen' : '', 
-                                                    color: '#fff', 
-                                                }}>
+                                                    style={{
+                                                        backgroundColor: user.color === 'green' ? 'lightGreen' : '',
+                                                        color: '#fff',
+                                                    }}>
 
                                                     <td>
 
@@ -5014,7 +5014,7 @@ const EoiInventoryList = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

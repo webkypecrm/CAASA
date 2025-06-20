@@ -21,7 +21,7 @@ const AddScheme = () => {
         farmhouseRegistrationFee: '',
 
     };
-    
+
     const [formData, setFormData] = useState(initialFormData);
     const [profilePicFile, setProfilePicFile] = useState(null);
     const [displayStatus, setDisplayStatus] = useState([]);
@@ -405,7 +405,7 @@ const AddScheme = () => {
 
 
 
-                                                <div className="col-sm-12 mg-t-10"style={{ height: "280px" }}>
+                                                <div className="col-sm-12 mg-t-10" style={{ height: "280px" }}>
                                                     <label className="form-label">
                                                         Enter Details <span className="tx-danger">*</span>
                                                     </label>
@@ -430,7 +430,7 @@ const AddScheme = () => {
                                                         onChange={handleInputChangeTextAreas}
                                                         style={{ height: "100px" }}
                                                     />
-                                                    
+
                                                 </div>
 
 
@@ -500,7 +500,7 @@ const AddScheme = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

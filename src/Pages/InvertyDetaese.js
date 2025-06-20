@@ -2100,8 +2100,8 @@ const InvertyDetaese = () => {
 
     setAllChecked(
       demandNoticeChecked &&
-        finalDemandLetterChecked &&
-        cancellationNoticeChecked
+      finalDemandLetterChecked &&
+      cancellationNoticeChecked
     );
   }, [users]);
 
@@ -2370,11 +2370,10 @@ const InvertyDetaese = () => {
                                   }}
                                 >
                                   <i
-                                    className={`fas ${
-                                      employee2.resultStatus === 1
+                                    className={`fas ${employee2.resultStatus === 1
                                         ? "fa-check-circle"
                                         : "fa-times-circle"
-                                    }`}
+                                      }`}
                                   ></i>
                                 </span>
                               </div>
@@ -2403,17 +2402,16 @@ const InvertyDetaese = () => {
                                   }}
                                 >
                                   <i
-                                    className={`fas ${
-                                      employee2.isFirstPaymet
+                                    className={`fas ${employee2.isFirstPaymet
                                         ? "fa-check-circle"
                                         : "fa-times-circle"
-                                    }`}
+                                      }`}
                                   ></i>
                                 </span>
                                 <span>
                                   {employee2?.isFirstPaymetcollectionMode ===
                                     "Cheque" &&
-                                  employee2?.isFirstPaymetcollectionChequeStatus ===
+                                    employee2?.isFirstPaymetcollectionChequeStatus ===
                                     true
                                     ? " (PDC)"
                                     : ""}
@@ -2444,11 +2442,10 @@ const InvertyDetaese = () => {
                                   }}
                                 >
                                   <i
-                                    className={`fas ${
-                                      employee2.isWelcomeLetter
+                                    className={`fas ${employee2.isWelcomeLetter
                                         ? "fa-check-circle"
                                         : "fa-times-circle"
-                                    }`}
+                                      }`}
                                   ></i>
                                 </span>
                               </div>
@@ -2479,11 +2476,10 @@ const InvertyDetaese = () => {
                                   }}
                                 >
                                   <i
-                                    className={`fas ${
-                                      employee2.isAllotmentLetter
+                                    className={`fas ${employee2.isAllotmentLetter
                                         ? "fa-check-circle"
                                         : "fa-times-circle"
-                                    }`}
+                                      }`}
                                   ></i>
                                 </span>
                                 <span>
@@ -2537,11 +2533,10 @@ const InvertyDetaese = () => {
                                   }}
                                 >
                                   <i
-                                    className={`fas ${
-                                      employee2.resultStatus === 1
+                                    className={`fas ${employee2.resultStatus === 1
                                         ? "fa-check-circle"
                                         : "fa-times-circle"
-                                    }`}
+                                      }`}
                                   ></i>
                                 </span>
                               </div>
@@ -2570,17 +2565,16 @@ const InvertyDetaese = () => {
                                   }}
                                 >
                                   <i
-                                    className={`fas ${
-                                      employee2.isFirstPaymet
+                                    className={`fas ${employee2.isFirstPaymet
                                         ? "fa-check-circle"
                                         : "fa-times-circle"
-                                    }`}
+                                      }`}
                                   ></i>
                                 </span>
                                 <span>
                                   {employee2?.isFirstPaymetcollectionMode ===
                                     "Cheque" &&
-                                  employee2?.isFirstPaymetcollectionChequeStatus ===
+                                    employee2?.isFirstPaymetcollectionChequeStatus ===
                                     true
                                     ? " (PDC)"
                                     : ""}
@@ -2611,11 +2605,10 @@ const InvertyDetaese = () => {
                                   }}
                                 >
                                   <i
-                                    className={`fas ${
-                                      employee2.isWelcomeLetter
+                                    className={`fas ${employee2.isWelcomeLetter
                                         ? "fa-check-circle"
                                         : "fa-times-circle"
-                                    }`}
+                                      }`}
                                   ></i>
                                 </span>
                               </div>
@@ -2644,11 +2637,10 @@ const InvertyDetaese = () => {
                                   }}
                                 >
                                   <i
-                                    className={`fas ${
-                                      employee2.isAllotmentLetter
+                                    className={`fas ${employee2.isAllotmentLetter
                                         ? "fa-check-circle"
                                         : "fa-times-circle"
-                                    }`}
+                                      }`}
                                   ></i>
                                 </span>
                                 <span>
@@ -2822,9 +2814,8 @@ const InvertyDetaese = () => {
                                   </button>
 
                                   <div
-                                    className={`modal ${
-                                      isModalOpen4 ? "show" : ""
-                                    }`}
+                                    className={`modal ${isModalOpen4 ? "show" : ""
+                                      }`}
                                     style={{
                                       display: isModalOpen4 ? "block" : "none",
                                       position: "fixed",
@@ -2950,9 +2941,8 @@ const InvertyDetaese = () => {
                                   </button>
 
                                   <div
-                                    className={`modal fade ${
-                                      isModalOpen2 ? "show d-block" : ""
-                                    }`}
+                                    className={`modal fade ${isModalOpen2 ? "show d-block" : ""
+                                      }`}
                                     id="modaldemo-callback-form"
                                     tabIndex="-1"
                                     style={{
@@ -3139,9 +3129,8 @@ const InvertyDetaese = () => {
                                   </button>
 
                                   <div
-                                    className={`modal fade ${
-                                      isModalOpen3 ? "show d-block" : ""
-                                    }`}
+                                    className={`modal fade ${isModalOpen3 ? "show d-block" : ""
+                                      }`}
                                     id="modaldemo-callback-form"
                                     tabIndex="-1"
                                     style={{
@@ -3491,19 +3480,15 @@ const InvertyDetaese = () => {
                                                             employee2?.project
                                                               ?.projectName
                                                           }
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
                                                           Unit Number:{" "}
-                                                          {`${
-                                                            employee2?.unitNo
-                                                          } / ${
-                                                            employee2?.schemeType
-                                                          } / ${
-                                                            employee2?.size
-                                                          } (${
-                                                            [
+                                                          {`${employee2?.unitNo
+                                                            } / ${employee2?.schemeType
+                                                            } / ${employee2?.size
+                                                            } (${[
                                                               "plot",
                                                               "farmhouse",
                                                             ].includes(
@@ -3511,8 +3496,8 @@ const InvertyDetaese = () => {
                                                             )
                                                               ? "SQ YD"
                                                               : "SQ FT"
-                                                          })`}
-                                                          {}
+                                                            })`}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3520,7 +3505,7 @@ const InvertyDetaese = () => {
                                                           {Math.floor(
                                                             employee2?.totalCost
                                                           )}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3528,7 +3513,7 @@ const InvertyDetaese = () => {
                                                           {Math.floor(
                                                             employee2?.discountAmount
                                                           )}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3537,9 +3522,9 @@ const InvertyDetaese = () => {
                                                             Final Cost: Rs.{" "}
                                                             {Math.floor(
                                                               employee2?.totalCost -
-                                                                employee2?.discountAmount
+                                                              employee2?.discountAmount
                                                             )}
-                                                            {}
+                                                            { }
                                                           </strong>
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
@@ -3548,7 +3533,7 @@ const InvertyDetaese = () => {
                                                           {Math.floor(
                                                             employee2?.totolReceived
                                                           )}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3560,8 +3545,8 @@ const InvertyDetaese = () => {
                                                           >
                                                             {Math.floor(
                                                               employee2?.totalCost -
-                                                                (employee2?.discountAmount +
-                                                                  employee2?.totolReceived)
+                                                              (employee2?.discountAmount +
+                                                                employee2?.totolReceived)
                                                             )}
                                                             {""} (To be
                                                             collected)
@@ -3583,7 +3568,7 @@ const InvertyDetaese = () => {
                                                             ?.maintenanceCharges[0]
                                                             ?.nameOnRegistry ||
                                                             ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3594,7 +3579,7 @@ const InvertyDetaese = () => {
                                                               ?.maintenanceCharges[0]
                                                               ?.nameChangeCharges
                                                           ) || ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3617,7 +3602,7 @@ const InvertyDetaese = () => {
                                                               ></i>
                                                             )}
                                                           </span>
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3640,7 +3625,7 @@ const InvertyDetaese = () => {
                                                               ></i>
                                                             )}
                                                           </span>
-                                                          {}
+                                                          { }
                                                         </p>
                                                         -----------------------------------------------------------------------------------------------------
                                                         <p className="mb-0 tx-13 text-dark">
@@ -3652,36 +3637,7 @@ const InvertyDetaese = () => {
                                                               ?.maintenanceCharges[0]
                                                               ?.camStartDate
                                                               ? new Date(
-                                                                  comment?.maintenanceCharges[0]?.camStartDate
-                                                                ).toLocaleString(
-                                                                  "en-US",
-                                                                  {
-                                                                    day: "numeric",
-                                                                    month:
-                                                                      "short",
-                                                                    year: "numeric",
-                                                                  }
-                                                                )
-                                                              : ""
-                                                          }
-                                                          {}
-                                                        </p>
-                                                        <p className="mb-0 tx-13 text-dark">
-                                                          <i className="fe fe-chevrons-right me-1" />
-                                                          Total Month:{" "}
-                                                          {comment
-                                                            ?.maintenanceCharges[0]
-                                                            ?.totalMonth || ""}
-                                                          {}
-                                                        </p>
-                                                        <p className="mb-0 tx-13 text-dark">
-                                                          <i className="fe fe-chevrons-right me-1" />
-                                                          CAM End Date:{" "}
-                                                          {comment
-                                                            ?.maintenanceCharges[0]
-                                                            ?.camEndDate
-                                                            ? new Date(
-                                                                comment?.maintenanceCharges[0]?.camEndDate
+                                                                comment?.maintenanceCharges[0]?.camStartDate
                                                               ).toLocaleString(
                                                                 "en-US",
                                                                 {
@@ -3691,8 +3647,37 @@ const InvertyDetaese = () => {
                                                                   year: "numeric",
                                                                 }
                                                               )
+                                                              : ""
+                                                          }
+                                                          { }
+                                                        </p>
+                                                        <p className="mb-0 tx-13 text-dark">
+                                                          <i className="fe fe-chevrons-right me-1" />
+                                                          Total Month:{" "}
+                                                          {comment
+                                                            ?.maintenanceCharges[0]
+                                                            ?.totalMonth || ""}
+                                                          { }
+                                                        </p>
+                                                        <p className="mb-0 tx-13 text-dark">
+                                                          <i className="fe fe-chevrons-right me-1" />
+                                                          CAM End Date:{" "}
+                                                          {comment
+                                                            ?.maintenanceCharges[0]
+                                                            ?.camEndDate
+                                                            ? new Date(
+                                                              comment?.maintenanceCharges[0]?.camEndDate
+                                                            ).toLocaleString(
+                                                              "en-US",
+                                                              {
+                                                                day: "numeric",
+                                                                month:
+                                                                  "short",
+                                                                year: "numeric",
+                                                              }
+                                                            )
                                                             : ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3702,23 +3687,23 @@ const InvertyDetaese = () => {
                                                             ?.unitSize ||
                                                             ""}{" "}
                                                           {employee2?.schemeType ===
-                                                          "Shop"
+                                                            "Shop"
                                                             ? " SQFT"
                                                             : " SQ YD"}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
                                                           CAM Rate (per{" "}
                                                           {employee2?.schemeType ===
-                                                          "Shop"
+                                                            "Shop"
                                                             ? "SQFT"
                                                             : "SQ YD"}
                                                           ):{" "}
                                                           {comment
                                                             ?.maintenanceCharges[0]
                                                             ?.camRate || ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3728,15 +3713,15 @@ const InvertyDetaese = () => {
                                                               +comment
                                                                 ?.maintenanceCharges[0]
                                                                 ?.camRate *
-                                                                +comment
-                                                                  ?.maintenanceCharges[0]
-                                                                  ?.unitSize *
-                                                                +comment
-                                                                  ?.maintenanceCharges[0]
-                                                                  ?.totalMonth
+                                                              +comment
+                                                                ?.maintenanceCharges[0]
+                                                                ?.unitSize *
+                                                              +comment
+                                                                ?.maintenanceCharges[0]
+                                                                ?.totalMonth
                                                             ) || ""}{" "}
                                                           </strong>
-                                                          {}
+                                                          { }
                                                         </p>
                                                         -----------------------------------------------------------------------------------------------------
                                                         <p className="mb-0 tx-13 text-dark">
@@ -3747,7 +3732,7 @@ const InvertyDetaese = () => {
                                                               ?.maintenanceCharges[0]
                                                               ?.refrenceGiven ||
                                                             0}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3756,7 +3741,7 @@ const InvertyDetaese = () => {
                                                             ?.maintenanceCharges[0]
                                                             ?.waveOffMonth ||
                                                             ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3773,7 +3758,7 @@ const InvertyDetaese = () => {
                                                                 ?.discountCam
                                                             ) || ""}
                                                           </span>
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3782,7 +3767,7 @@ const InvertyDetaese = () => {
                                                           {comment
                                                             ?.maintenanceCharges[0]
                                                             ?.totalCam || 0}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3790,7 +3775,7 @@ const InvertyDetaese = () => {
                                                           {comment
                                                             ?.maintenanceCharges[0]
                                                             ?.gst || ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3801,7 +3786,7 @@ const InvertyDetaese = () => {
                                                               ?.maintenanceCharges[0]
                                                               ?.payableCam
                                                           ) || ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         -----------------------------------------------------------------------------------------------------
                                                         <p className="mb-0 tx-13 text-dark">
@@ -3811,7 +3796,7 @@ const InvertyDetaese = () => {
                                                             ?.maintenanceCharges[0]
                                                             ?.chequeBounce ||
                                                             ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3822,7 +3807,7 @@ const InvertyDetaese = () => {
                                                               ?.maintenanceCharges[0]
                                                               ?.chequePenalty
                                                           ) || ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3833,7 +3818,7 @@ const InvertyDetaese = () => {
                                                               ?.maintenanceCharges[0]
                                                               ?.chequeBounceCharges
                                                           ) || ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         -----------------------------------------------------------------------------------------------------
                                                         <p className="mb-0 tx-13 text-dark">
@@ -3844,7 +3829,7 @@ const InvertyDetaese = () => {
                                                               ?.maintenanceCharges[0]
                                                               ?.stampDuty
                                                           ) || ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3854,7 +3839,7 @@ const InvertyDetaese = () => {
                                                               ?.maintenanceCharges[0]
                                                               ?.lawyerFees
                                                           ) || ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3864,7 +3849,7 @@ const InvertyDetaese = () => {
                                                               ?.maintenanceCharges[0]
                                                               ?.intrestAmount
                                                           ) || ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         -----------------------------------------------------------------------------------------------------
                                                         <p className="mb-0 tx-13 text-dark">
@@ -3882,7 +3867,7 @@ const InvertyDetaese = () => {
                                                                 ?.waiverCharges
                                                             ) || ""}
                                                           </span>
-                                                          {}
+                                                          { }
                                                         </p>
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -3890,7 +3875,7 @@ const InvertyDetaese = () => {
                                                           {comment
                                                             ?.maintenanceCharges[0]
                                                             ?.remark || ""}
-                                                          {}
+                                                          { }
                                                         </p>
                                                         -----------------------------------------------------------------------------------------------------
                                                         <p className="mb-0 tx-13 text-dark">
@@ -3905,7 +3890,7 @@ const InvertyDetaese = () => {
                                                                 ?.finalNocAmount
                                                             ) || ""}{" "}
                                                           </strong>
-                                                          {}
+                                                          { }
                                                         </p>
                                                       </div>
                                                       {/* <div className="notify-time">
@@ -3922,19 +3907,18 @@ const InvertyDetaese = () => {
                                                     {/* Badge showing status */}
                                                     <div>
                                                       <div
-                                                        className={`badge bg-pill text-white d-inline-block text-center ${
-                                                          comment
+                                                        className={`badge bg-pill text-white d-inline-block text-center ${comment
                                                             ?.maintenanceCharges[0]
                                                             ?.status ===
-                                                          "Pending"
+                                                            "Pending"
                                                             ? "bg-warning"
                                                             : comment
-                                                                ?.maintenanceCharges[0]
-                                                                ?.status ===
+                                                              ?.maintenanceCharges[0]
+                                                              ?.status ===
                                                               "Approved"
-                                                            ? "bg-success"
-                                                            : "bg-danger"
-                                                        }`}
+                                                              ? "bg-success"
+                                                              : "bg-danger"
+                                                          }`}
                                                         style={{
                                                           width: "310px",
                                                           fontSize: "15px",
@@ -3947,66 +3931,66 @@ const InvertyDetaese = () => {
                                                           ?.status === "Pending"
                                                           ? "Pending At Accounts"
                                                           : comment
-                                                              ?.maintenanceCharges?.[0]
-                                                              ?.status}
+                                                            ?.maintenanceCharges?.[0]
+                                                            ?.status}
                                                       </div>
                                                       <div className="align-left">
                                                         {comment
                                                           ?.maintenanceCharges?.[0] && (
-                                                          <>
-                                                            {comment
-                                                              .maintenanceCharges[0]
-                                                              .odcRemark && (
-                                                              <>
-                                                                <i className="fe fe-chevrons-right me-1" />{" "}
-                                                                Approve Remark:{" "}
-                                                                <strong>
-                                                                  {" "}
-                                                                  {
-                                                                    comment
-                                                                      .maintenanceCharges[0]
-                                                                      .odcRemark
-                                                                  }{" "}
-                                                                </strong>
-                                                                <br />
-                                                              </>
-                                                            )}
-                                                            {comment
-                                                              .maintenanceCharges[0]
-                                                              .approvedByName && (
-                                                              <>
-                                                                <i className="fe fe-chevrons-right me-1" />{" "}
-                                                                Approved By:{" "}
-                                                                <strong>
-                                                                  {" "}
-                                                                  {
-                                                                    comment
-                                                                      .maintenanceCharges[0]
-                                                                      .approvedByName
-                                                                  }{" "}
-                                                                </strong>
-                                                                <br />
-                                                              </>
-                                                            )}
-                                                            {comment
-                                                              .maintenanceCharges[0]
-                                                              .formatedApprovedAt && (
-                                                              <>
-                                                                <i className="fe fe-chevrons-right me-1" />{" "}
-                                                                Approved At:{" "}
-                                                                <strong>
-                                                                  {" "}
-                                                                  {
-                                                                    comment
-                                                                      .maintenanceCharges[0]
-                                                                      .formatedApprovedAt
-                                                                  }{" "}
-                                                                </strong>
-                                                                <br />
-                                                              </>
-                                                            )}
-                                                          </>
-                                                        )}
+                                                            <>
+                                                              {comment
+                                                                .maintenanceCharges[0]
+                                                                .odcRemark && (
+                                                                  <>
+                                                                    <i className="fe fe-chevrons-right me-1" />{" "}
+                                                                    Approve Remark:{" "}
+                                                                    <strong>
+                                                                      {" "}
+                                                                      {
+                                                                        comment
+                                                                          .maintenanceCharges[0]
+                                                                          .odcRemark
+                                                                      }{" "}
+                                                                    </strong>
+                                                                    <br />
+                                                                  </>
+                                                                )}
+                                                              {comment
+                                                                .maintenanceCharges[0]
+                                                                .approvedByName && (
+                                                                  <>
+                                                                    <i className="fe fe-chevrons-right me-1" />{" "}
+                                                                    Approved By:{" "}
+                                                                    <strong>
+                                                                      {" "}
+                                                                      {
+                                                                        comment
+                                                                          .maintenanceCharges[0]
+                                                                          .approvedByName
+                                                                      }{" "}
+                                                                    </strong>
+                                                                    <br />
+                                                                  </>
+                                                                )}
+                                                              {comment
+                                                                .maintenanceCharges[0]
+                                                                .formatedApprovedAt && (
+                                                                  <>
+                                                                    <i className="fe fe-chevrons-right me-1" />{" "}
+                                                                    Approved At:{" "}
+                                                                    <strong>
+                                                                      {" "}
+                                                                      {
+                                                                        comment
+                                                                          .maintenanceCharges[0]
+                                                                          .formatedApprovedAt
+                                                                      }{" "}
+                                                                    </strong>
+                                                                    <br />
+                                                                  </>
+                                                                )}
+                                                            </>
+                                                          )}
                                                       </div>
                                                     </div>
 
@@ -4014,21 +3998,21 @@ const InvertyDetaese = () => {
                                                       ?.maintenanceCharges[0]
                                                       ?.status ===
                                                       "Approved" && (
-                                                      <Link
-                                                        className="badge bg-primary text-white d-inline-block text-center"
-                                                        style={{
-                                                          width: "160px",
-                                                          fontSize: "15px",
-                                                          marginBottom: "10px",
-                                                          lineHeight: "1.5",
-                                                          textDecoration:
-                                                            "none",
-                                                        }}
-                                                        to={`/single-payment-entry/${empid}`}
-                                                      >
-                                                        Proceed to NOC
-                                                      </Link>
-                                                    )}
+                                                        <Link
+                                                          className="badge bg-primary text-white d-inline-block text-center"
+                                                          style={{
+                                                            width: "160px",
+                                                            fontSize: "15px",
+                                                            marginBottom: "10px",
+                                                            lineHeight: "1.5",
+                                                            textDecoration:
+                                                              "none",
+                                                          }}
+                                                          to={`/single-payment-entry/${empid}`}
+                                                        >
+                                                          Proceed to NOC
+                                                        </Link>
+                                                      )}
                                                   </div>
                                                 </div>
                                               </li>
@@ -4611,9 +4595,9 @@ const InvertyDetaese = () => {
                                                           <i className="fe fe-chevrons-right me-1" />
                                                           EDC/IDC (Rs.):{" "}
                                                           {comment &&
-                                                          comment.applicant &&
-                                                          comment.applicant
-                                                            .fixedCharges !==
+                                                            comment.applicant &&
+                                                            comment.applicant
+                                                              .fixedCharges !==
                                                             null
                                                             ? `${comment.applicant.fixedCharges}`
                                                             : "N/A"}
@@ -4623,9 +4607,9 @@ const InvertyDetaese = () => {
                                                           <i className="fe fe-chevrons-right me-1" />
                                                           Total cost (Rs.):{" "}
                                                           {comment &&
-                                                          comment.applicant &&
-                                                          comment.applicant
-                                                            .totalCost !== null
+                                                            comment.applicant &&
+                                                            comment.applicant
+                                                              .totalCost !== null
                                                             ? `${comment.applicant.totalCost}`
                                                             : "N/A"}
                                                         </p>
@@ -4634,9 +4618,9 @@ const InvertyDetaese = () => {
                                                           <i className="fe fe-chevrons-right me-1" />
                                                           Facing:{" "}
                                                           {comment &&
-                                                          comment.applicant &&
-                                                          comment.applicant
-                                                            .facing !== null
+                                                            comment.applicant &&
+                                                            comment.applicant
+                                                              .facing !== null
                                                             ? `${comment.applicant.facing}`
                                                             : "N/A"}
                                                         </p>
@@ -5120,47 +5104,47 @@ const InvertyDetaese = () => {
                                                         </p>
                                                         {comment.mode ===
                                                           "Cash" && (
-                                                          <p className="mb-0 tx-13 text-dark">
-                                                            <i className="fe fe-chevrons-right me-1" />
-                                                            Remark:{" "}
-                                                            {comment.remark}
-                                                          </p>
-                                                        )}
+                                                            <p className="mb-0 tx-13 text-dark">
+                                                              <i className="fe fe-chevrons-right me-1" />
+                                                              Remark:{" "}
+                                                              {comment.remark}
+                                                            </p>
+                                                          )}
                                                         {comment.mode ===
                                                           "Online" && (
-                                                          <p className="mb-0 tx-13 text-dark">
-                                                            <i className="fe fe-chevrons-right me-1" />
-                                                            Transaction id:{" "}
-                                                            {
-                                                              comment.transaction
-                                                            }
-                                                          </p>
-                                                        )}
+                                                            <p className="mb-0 tx-13 text-dark">
+                                                              <i className="fe fe-chevrons-right me-1" />
+                                                              Transaction id:{" "}
+                                                              {
+                                                                comment.transaction
+                                                              }
+                                                            </p>
+                                                          )}
                                                         {comment.mode ===
                                                           "Cheque" && (
-                                                          <>
-                                                            <p className="mb-0 tx-13 text-dark">
-                                                              <i className="fe fe-chevrons-right me-1" />
-                                                              Cheque No:{" "}
-                                                              {comment.chequeNo}
-                                                            </p>
-                                                            <p className="mb-0 tx-13 text-dark">
-                                                              <i className="fe fe-chevrons-right me-1" />
-                                                              Cheque Date:{" "}
-                                                              {
-                                                                comment.chequeDate
-                                                              }
-                                                            </p>
-                                                            <p className="mb-0 tx-13 text-dark">
-                                                              <i className="fe fe-chevrons-right me-1" />
-                                                              Cheque Details
-                                                              Bank:{" "}
-                                                              {
-                                                                comment.chequeDetails
-                                                              }
-                                                            </p>
-                                                          </>
-                                                        )}
+                                                            <>
+                                                              <p className="mb-0 tx-13 text-dark">
+                                                                <i className="fe fe-chevrons-right me-1" />
+                                                                Cheque No:{" "}
+                                                                {comment.chequeNo}
+                                                              </p>
+                                                              <p className="mb-0 tx-13 text-dark">
+                                                                <i className="fe fe-chevrons-right me-1" />
+                                                                Cheque Date:{" "}
+                                                                {
+                                                                  comment.chequeDate
+                                                                }
+                                                              </p>
+                                                              <p className="mb-0 tx-13 text-dark">
+                                                                <i className="fe fe-chevrons-right me-1" />
+                                                                Cheque Details
+                                                                Bank:{" "}
+                                                                {
+                                                                  comment.chequeDetails
+                                                                }
+                                                              </p>
+                                                            </>
+                                                          )}
                                                       </div>
                                                       <div className="notify-time">
                                                         <p className="mb-0 text-muted tx-11 badge bg-pill bg-danger-light">
@@ -5616,98 +5600,98 @@ const InvertyDetaese = () => {
                                                             ?.registryPayment[0]
                                                             ?.collectionMode ===
                                                             "Cash Deposit" && (
-                                                            <>
-                                                              Enter Discount:{" "}
-                                                              {
-                                                                comment
-                                                                  ?.registryPayment[0]
-                                                                  ?.enterDiscount
-                                                              }
-                                                            </>
-                                                          )}
+                                                              <>
+                                                                Enter Discount:{" "}
+                                                                {
+                                                                  comment
+                                                                    ?.registryPayment[0]
+                                                                    ?.enterDiscount
+                                                                }
+                                                              </>
+                                                            )}
                                                           {comment
                                                             ?.registryPayment[0]
                                                             ?.collectionMode ===
                                                             "Online" && (
-                                                            <>
-                                                              Amrs Account:{" "}
-                                                              {
-                                                                comment
-                                                                  ?.registryPayment[0]
-                                                                  ?.amrsAccount
-                                                              }
-                                                            </>
-                                                          )}
+                                                              <>
+                                                                Amrs Account:{" "}
+                                                                {
+                                                                  comment
+                                                                    ?.registryPayment[0]
+                                                                    ?.amrsAccount
+                                                                }
+                                                              </>
+                                                            )}
                                                           {comment
                                                             ?.registryPayment[0]
                                                             ?.collectionMode ===
                                                             "Cheque" && (
-                                                            <>
-                                                              Cheque No:{" "}
-                                                              {
-                                                                comment
-                                                                  ?.registryPayment[0]
-                                                                  ?.chequeNo
-                                                              }
-                                                            </>
-                                                          )}
+                                                              <>
+                                                                Cheque No:{" "}
+                                                                {
+                                                                  comment
+                                                                    ?.registryPayment[0]
+                                                                    ?.chequeNo
+                                                                }
+                                                              </>
+                                                            )}
                                                         </p>
                                                         {comment
                                                           ?.registryPayment[0]
                                                           ?.collectionMode ===
                                                           "Cheque" && (
-                                                          <p className="mb-0 tx-13 text-dark">
-                                                            <i className="fe fe-chevrons-right  me-1" />
-                                                            Cheque Date:{" "}
-                                                            {
-                                                              comment
-                                                                ?.registryPayment[0]
-                                                                ?.chequeDate
-                                                            }
-                                                          </p>
-                                                        )}
+                                                            <p className="mb-0 tx-13 text-dark">
+                                                              <i className="fe fe-chevrons-right  me-1" />
+                                                              Cheque Date:{" "}
+                                                              {
+                                                                comment
+                                                                  ?.registryPayment[0]
+                                                                  ?.chequeDate
+                                                              }
+                                                            </p>
+                                                          )}
                                                         {comment
                                                           ?.registryPayment[0]
                                                           ?.collectionMode ===
                                                           "Online" && (
-                                                          <p className="mb-0 tx-13 text-dark">
-                                                            <i className="fe fe-chevrons-right  me-1" />
-                                                            Mode:{" "}
-                                                            {
-                                                              comment
-                                                                ?.registryPayment[0]
-                                                                ?.remark
-                                                            }
-                                                          </p>
-                                                        )}
+                                                            <p className="mb-0 tx-13 text-dark">
+                                                              <i className="fe fe-chevrons-right  me-1" />
+                                                              Mode:{" "}
+                                                              {
+                                                                comment
+                                                                  ?.registryPayment[0]
+                                                                  ?.remark
+                                                              }
+                                                            </p>
+                                                          )}
                                                         {comment
                                                           ?.registryPayment[0]
                                                           ?.collectionMode ===
                                                           "Cheque" && (
-                                                          <p className="mb-0 tx-13 text-dark">
-                                                            <i className="fe fe-chevrons-right  me-1" />
-                                                            Bank Cheque:{" "}
-                                                            {
-                                                              comment
-                                                                ?.registryPayment[0]
-                                                                ?.deposteToAmrs
-                                                            }
-                                                          </p>
-                                                        )}
+                                                            <p className="mb-0 tx-13 text-dark">
+                                                              <i className="fe fe-chevrons-right  me-1" />
+                                                              Bank Cheque:{" "}
+                                                              {
+                                                                comment
+                                                                  ?.registryPayment[0]
+                                                                  ?.deposteToAmrs
+                                                              }
+                                                            </p>
+                                                          )}
                                                         {comment
                                                           ?.registryPayment[0]
                                                           ?.collectionMode ===
                                                           "Online" && (
-                                                          <p className="mb-0 tx-13 text-dark">
-                                                            <i className="fe fe-chevrons-right  me-1" />
-                                                            Transaction No:{" "}
-                                                            {
-                                                              comment
-                                                                ?.registryPayment[0]
-                                                                ?.transactionNo
-                                                            }
-                                                          </p>
-                                                        )}
+                                                            <p className="mb-0 tx-13 text-dark">
+                                                              <i className="fe fe-chevrons-right  me-1" />
+                                                              Transaction No:{" "}
+                                                              {
+                                                                comment
+                                                                  ?.registryPayment[0]
+                                                                  ?.transactionNo
+                                                              }
+                                                            </p>
+                                                          )}
 
                                                         <p className="mb-0 tx-13 text-dark">
                                                           <i className="fe fe-chevrons-right me-1" />
@@ -6374,8 +6358,8 @@ const InvertyDetaese = () => {
                                                           {comment?.ownership[0]
                                                             ?.registryDateTime
                                                             ? new Date(
-                                                                comment.ownership[0].registryDateTime
-                                                              ).toLocaleTimeString()
+                                                              comment.ownership[0].registryDateTime
+                                                            ).toLocaleTimeString()
                                                             : "N/A"}
                                                         </p>
 
@@ -7199,7 +7183,7 @@ const InvertyDetaese = () => {
                                                         return (
                                                           <>
                                                             {type === "Plot" ||
-                                                            type === "Farmhouse"
+                                                              type === "Farmhouse"
                                                               ? `${size} SQ YD`
                                                               : ""}
                                                             {type === "Shop"
@@ -7513,7 +7497,7 @@ const InvertyDetaese = () => {
                                                         return (
                                                           <>
                                                             {type === "Plot" ||
-                                                            type === "Farmhouse"
+                                                              type === "Farmhouse"
                                                               ? `${size} SQ YD`
                                                               : ""}
                                                             {type === "Shop"
@@ -7567,40 +7551,40 @@ const InvertyDetaese = () => {
                                                     <i className="fe fe-chevrons-right me-1" />
                                                     {employee2.paymentMethod ===
                                                       "Online" && (
-                                                      <>
-                                                        Transaction Id:{" "}
-                                                        {employee2.transactionID ||
-                                                          "N/A"}
-                                                      </>
-                                                    )}
+                                                        <>
+                                                          Transaction Id:{" "}
+                                                          {employee2.transactionID ||
+                                                            "N/A"}
+                                                        </>
+                                                      )}
 
                                                     {employee2.paymentMethod ===
                                                       "Cash" && (
-                                                      <>
-                                                        Cash Remark:{" "}
-                                                        {employee2.cashRemark ||
-                                                          "N/A"}
-                                                      </>
-                                                    )}
+                                                        <>
+                                                          Cash Remark:{" "}
+                                                          {employee2.cashRemark ||
+                                                            "N/A"}
+                                                        </>
+                                                      )}
 
                                                     {employee2.paymentMethod ===
                                                       "Cheque" && (
-                                                      <>
-                                                        ChequeNo:{" "}
-                                                        {employee2.chequeNo ||
-                                                          "N/A"}
-                                                        <br />
-                                                        <i className="fe fe-chevrons-right me-1" />{" "}
-                                                        Cheque Details:{" "}
-                                                        {employee2.chequeDetails ||
-                                                          "N/A"}
-                                                        <br />
-                                                        <i className="fe fe-chevrons-right me-1" />{" "}
-                                                        Cheque Date:{" "}
-                                                        {employee2.formattedDate3 ||
-                                                          "N/A"}
-                                                      </>
-                                                    )}
+                                                        <>
+                                                          ChequeNo:{" "}
+                                                          {employee2.chequeNo ||
+                                                            "N/A"}
+                                                          <br />
+                                                          <i className="fe fe-chevrons-right me-1" />{" "}
+                                                          Cheque Details:{" "}
+                                                          {employee2.chequeDetails ||
+                                                            "N/A"}
+                                                          <br />
+                                                          <i className="fe fe-chevrons-right me-1" />{" "}
+                                                          Cheque Date:{" "}
+                                                          {employee2.formattedDate3 ||
+                                                            "N/A"}
+                                                        </>
+                                                      )}
                                                   </p>
                                                 </div>
                                                 <div className="notify-time">
@@ -7702,9 +7686,9 @@ const InvertyDetaese = () => {
                                                       `${employee3.paymentLedger.collectionMode}`}
                                                   </p>
                                                   {employee3 &&
-                                                  employee3.paymentLedger &&
-                                                  employee3.paymentLedger
-                                                    .collectionMode ===
+                                                    employee3.paymentLedger &&
+                                                    employee3.paymentLedger
+                                                      .collectionMode ===
                                                     "Online" ? (
                                                     <p className="mb-0 tx-13 text-dark">
                                                       <i className="fe fe-chevrons-right me-1" />
@@ -7717,9 +7701,9 @@ const InvertyDetaese = () => {
                                                   ) : null}
 
                                                   {employee3 &&
-                                                  employee3.paymentLedger &&
-                                                  employee3.paymentLedger
-                                                    .collectionMode ===
+                                                    employee3.paymentLedger &&
+                                                    employee3.paymentLedger
+                                                      .collectionMode ===
                                                     "Cheque" ? (
                                                     <p className="mb-0 tx-13 text-dark">
                                                       <i className="fe fe-chevrons-right me-1" />
@@ -7780,7 +7764,7 @@ const InvertyDetaese = () => {
                                                       }}
                                                     >
                                                       {employee3?.isApproved ===
-                                                      1 ? (
+                                                        1 ? (
                                                         <span
                                                           style={{
                                                             color: "green",
@@ -7900,9 +7884,8 @@ const InvertyDetaese = () => {
                                   </div>
 
                                   <div
-                                    className={`modal ${
-                                      isModalOpen31 ? "show" : ""
-                                    }`}
+                                    className={`modal ${isModalOpen31 ? "show" : ""
+                                      }`}
                                     style={{
                                       display: isModalOpen31 ? "block" : "none",
 
@@ -8011,706 +7994,706 @@ const InvertyDetaese = () => {
                                                               >
                                                                 {employee2.paymentPlan ===
                                                                   "FPP" && (
-                                                                  <tbody>
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          width:
-                                                                            "60%",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        On
-                                                                        Booking
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td
                                                                           style={{
-                                                                            color:
-                                                                              "blue",
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            width:
+                                                                              "60%",
+                                                                            border:
+                                                                              "1px solid #ccc",
                                                                           }}
                                                                         >
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.onBookingPerFPP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span
+                                                                          On
+                                                                          Booking
+                                                                        </td>
+                                                                        <td
                                                                           style={{
-                                                                            color:
-                                                                              "blue",
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
                                                                           }}
                                                                         >
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.onBookingFPP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-                                                                  </tbody>
-                                                                )}
+                                                                          <span
+                                                                            style={{
+                                                                              color:
+                                                                                "blue",
+                                                                            }}
+                                                                          >
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.onBookingPerFPP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span
+                                                                            style={{
+                                                                              color:
+                                                                                "blue",
+                                                                            }}
+                                                                          >
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.onBookingFPP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  )}
                                                                 {employee2.paymentPlan ===
                                                                   "PLP" && (
-                                                                  <tbody>
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          width:
-                                                                            "60%",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        On
-                                                                        Booking
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {" "}
-                                                                          {employee2 &&
-                                                                          employee2.plan &&
-                                                                          employee2
-                                                                            .plan
-                                                                            .onBookingPerPLP
-                                                                            ? `${employee2.plan.onBookingPerPLP}%`
-                                                                            : ""}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.onBookingPLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        Within{" "}
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.days1PLP}`}
-                                                                        </span>{" "}
-                                                                        Days
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                          employee2.plan &&
-                                                                          employee2
-                                                                            .plan
-                                                                            .withIn60PerPLP
-                                                                            ? `${employee2.plan.withIn60PerPLP}%`
-                                                                            : ""}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.withIn60PLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        Within{" "}
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.days2PLP}`}
-                                                                        </span>{" "}
-                                                                        Days
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                          employee2.plan &&
-                                                                          employee2
-                                                                            .plan
-                                                                            .withIn90PerPLP
-                                                                            ? `${employee2.plan.withIn90PerPLP}%`
-                                                                            : ""}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.withIn90PLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        Within{" "}
-                                                                        {employee2 &&
-                                                                          employee2.plan &&
-                                                                          `${employee2.plan.days3PLP}`}{" "}
-                                                                        Days
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                          employee2.plan &&
-                                                                          employee2
-                                                                            .plan
-                                                                            .withIn120PerPLP
-                                                                            ? `${employee2.plan.withIn120PerPLP}%`
-                                                                            : ""}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.withIn120PLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        Within{" "}
-                                                                        {employee2 &&
-                                                                          employee2.plan &&
-                                                                          `${employee2.plan.days4PLP}`}{" "}
-                                                                        Days
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                          employee2.plan &&
-                                                                          employee2
-                                                                            .plan
-                                                                            .withIn150PerPLP
-                                                                            ? `${employee2.plan.withIn150PerPLP}%`
-                                                                            : ""}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.withIn150PLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        Within{" "}
-                                                                        {employee2 &&
-                                                                          employee2.plan &&
-                                                                          `${employee2.plan.days5PLP}`}{" "}
-                                                                        Days
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                          employee2.plan &&
-                                                                          employee2
-                                                                            .plan
-                                                                            .withIn180PerPLP
-                                                                            ? `${employee2.plan.withIn180PerPLP}%`
-                                                                            : ""}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.withIn180PLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        Within{" "}
-                                                                        {employee2 &&
-                                                                          employee2.plan &&
-                                                                          `${employee2.plan.days6PLP}`}{" "}
-                                                                        Days
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {" "}
-                                                                          {employee2 &&
-                                                                          employee2.plan &&
-                                                                          employee2
-                                                                            .plan
-                                                                            .extraPerPLP1
-                                                                            ? `${employee2.plan.extraPerPLP1}%`
-                                                                            : ""}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            width:
+                                                                              "60%",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          On
+                                                                          Booking
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
                                                                           <span>
+                                                                            {" "}
                                                                             {employee2 &&
-                                                                            employee2.plan &&
-                                                                            employee2
-                                                                              .plan
-                                                                              .extraValuePLP1
-                                                                              ? `${employee2.plan.extraValuePLP1}`
+                                                                              employee2.plan &&
+                                                                              employee2
+                                                                                .plan
+                                                                                .onBookingPerPLP
+                                                                              ? `${employee2.plan.onBookingPerPLP}%`
                                                                               : ""}
                                                                           </span>
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        Within{" "}
-                                                                        {employee2 &&
-                                                                          employee2.plan &&
-                                                                          `${employee2.plan.days7PLP}`}{" "}
-                                                                        Days
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {" "}
-                                                                          {employee2 &&
-                                                                          employee2.plan &&
-                                                                          employee2
-                                                                            .plan
-                                                                            .extraPerPLP2
-                                                                            ? `${employee2.plan.extraPerPLP2}%`
-                                                                            : ""}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
                                                                           <span>
                                                                             {employee2 &&
-                                                                            employee2.plan &&
-                                                                            employee2
-                                                                              .plan
-                                                                              .extraValuePLP2
-                                                                              ? `${employee2.plan.extraValuePLP2}`
-                                                                              : ""}
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.onBookingPLP}`}
                                                                           </span>
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        Within{" "}
-                                                                        {employee2 &&
-                                                                          employee2.plan &&
-                                                                          `${employee2.plan.days8PLP}`}{" "}
-                                                                        Days
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {" "}
-                                                                          {employee2 &&
-                                                                          employee2.plan &&
-                                                                          employee2
-                                                                            .plan
-                                                                            .extraPerPLP3
-                                                                            ? `${employee2.plan.extraPerPLP3}%`
-                                                                            : ""}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          Within{" "}
                                                                           <span>
                                                                             {employee2 &&
-                                                                            employee2.plan &&
-                                                                            employee2
-                                                                              .plan
-                                                                              .extraValuePLP3
-                                                                              ? `${employee2.plan.extraValuePLP3}`
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.days1PLP}`}
+                                                                          </span>{" "}
+                                                                          Days
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              employee2
+                                                                                .plan
+                                                                                .withIn60PerPLP
+                                                                              ? `${employee2.plan.withIn60PerPLP}%`
                                                                               : ""}
                                                                           </span>
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.withIn60PLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          Within{" "}
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.days2PLP}`}
+                                                                          </span>{" "}
+                                                                          Days
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              employee2
+                                                                                .plan
+                                                                                .withIn90PerPLP
+                                                                              ? `${employee2.plan.withIn90PerPLP}%`
+                                                                              : ""}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.withIn90PLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
 
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        On
-                                                                        Registry
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                          employee2.plan &&
-                                                                          employee2
-                                                                            .plan
-                                                                            .restOnRegistryPerPLP
-                                                                            ? `${employee2.plan.restOnRegistryPerPLP}%`
-                                                                            : ""}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          Within{" "}
                                                                           {employee2 &&
                                                                             employee2.plan &&
-                                                                            `${employee2.plan.restOnRegistryPLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-                                                                  </tbody>
-                                                                )}
+                                                                            `${employee2.plan.days3PLP}`}{" "}
+                                                                          Days
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              employee2
+                                                                                .plan
+                                                                                .withIn120PerPLP
+                                                                              ? `${employee2.plan.withIn120PerPLP}%`
+                                                                              : ""}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.withIn120PLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          Within{" "}
+                                                                          {employee2 &&
+                                                                            employee2.plan &&
+                                                                            `${employee2.plan.days4PLP}`}{" "}
+                                                                          Days
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              employee2
+                                                                                .plan
+                                                                                .withIn150PerPLP
+                                                                              ? `${employee2.plan.withIn150PerPLP}%`
+                                                                              : ""}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.withIn150PLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          Within{" "}
+                                                                          {employee2 &&
+                                                                            employee2.plan &&
+                                                                            `${employee2.plan.days5PLP}`}{" "}
+                                                                          Days
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              employee2
+                                                                                .plan
+                                                                                .withIn180PerPLP
+                                                                              ? `${employee2.plan.withIn180PerPLP}%`
+                                                                              : ""}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.withIn180PLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          Within{" "}
+                                                                          {employee2 &&
+                                                                            employee2.plan &&
+                                                                            `${employee2.plan.days6PLP}`}{" "}
+                                                                          Days
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {" "}
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              employee2
+                                                                                .plan
+                                                                                .extraPerPLP1
+                                                                              ? `${employee2.plan.extraPerPLP1}%`
+                                                                              : ""}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            <span>
+                                                                              {employee2 &&
+                                                                                employee2.plan &&
+                                                                                employee2
+                                                                                  .plan
+                                                                                  .extraValuePLP1
+                                                                                ? `${employee2.plan.extraValuePLP1}`
+                                                                                : ""}
+                                                                            </span>
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          Within{" "}
+                                                                          {employee2 &&
+                                                                            employee2.plan &&
+                                                                            `${employee2.plan.days7PLP}`}{" "}
+                                                                          Days
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {" "}
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              employee2
+                                                                                .plan
+                                                                                .extraPerPLP2
+                                                                              ? `${employee2.plan.extraPerPLP2}%`
+                                                                              : ""}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            <span>
+                                                                              {employee2 &&
+                                                                                employee2.plan &&
+                                                                                employee2
+                                                                                  .plan
+                                                                                  .extraValuePLP2
+                                                                                ? `${employee2.plan.extraValuePLP2}`
+                                                                                : ""}
+                                                                            </span>
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          Within{" "}
+                                                                          {employee2 &&
+                                                                            employee2.plan &&
+                                                                            `${employee2.plan.days8PLP}`}{" "}
+                                                                          Days
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {" "}
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              employee2
+                                                                                .plan
+                                                                                .extraPerPLP3
+                                                                              ? `${employee2.plan.extraPerPLP3}%`
+                                                                              : ""}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            <span>
+                                                                              {employee2 &&
+                                                                                employee2.plan &&
+                                                                                employee2
+                                                                                  .plan
+                                                                                  .extraValuePLP3
+                                                                                ? `${employee2.plan.extraValuePLP3}`
+                                                                                : ""}
+                                                                            </span>
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          On
+                                                                          Registry
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              employee2
+                                                                                .plan
+                                                                                .restOnRegistryPerPLP
+                                                                              ? `${employee2.plan.restOnRegistryPerPLP}%`
+                                                                              : ""}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.restOnRegistryPLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  )}
                                                                 {employee2.paymentPlan ===
                                                                   "DLP" && (
-                                                                  <tbody>
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          width:
-                                                                            "60%",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        On
-                                                                        Booking
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
+                                                                    <tbody>
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            width:
+                                                                              "60%",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          On
+                                                                          Booking
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.onBookingPerDLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.onBookingDLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          Within{" "}
                                                                           {employee2 &&
                                                                             employee2.plan &&
-                                                                            `${employee2.plan.onBookingPerDLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.onBookingDLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        Within{" "}
-                                                                        {employee2 &&
-                                                                          employee2.plan &&
-                                                                          `${employee2.plan.daysDLP}`}{" "}
-                                                                        Days
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.withIn30PerDLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.withIn30DLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        On
-                                                                        Registry
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.restOnRegistryPerDLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                      <td
-                                                                        style={{
-                                                                          padding:
-                                                                            "5px 10px",
-                                                                          border:
-                                                                            "1px solid #ccc",
-                                                                        }}
-                                                                      >
-                                                                        <span>
-                                                                          {employee2 &&
-                                                                            employee2.plan &&
-                                                                            `${employee2.plan.restOnRegistryDLP}`}
-                                                                        </span>
-                                                                      </td>
-                                                                    </tr>
-                                                                  </tbody>
-                                                                )}
+                                                                            `${employee2.plan.daysDLP}`}{" "}
+                                                                          Days
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.withIn30PerDLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.withIn30DLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          On
+                                                                          Registry
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.restOnRegistryPerDLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                        <td
+                                                                          style={{
+                                                                            padding:
+                                                                              "5px 10px",
+                                                                            border:
+                                                                              "1px solid #ccc",
+                                                                          }}
+                                                                        >
+                                                                          <span>
+                                                                            {employee2 &&
+                                                                              employee2.plan &&
+                                                                              `${employee2.plan.restOnRegistryDLP}`}
+                                                                          </span>
+                                                                        </td>
+                                                                      </tr>
+                                                                    </tbody>
+                                                                  )}
                                                               </table>
                                                             </td>
                                                           </tr>
@@ -8736,15 +8719,14 @@ const InvertyDetaese = () => {
                                         backgroundColor: "black",
                                       }}
                                       onClick={handleNotesModel}
-                                      // disabled={employee2.hasSubscription === true}
+                                    // disabled={employee2.hasSubscription === true}
                                     >
                                       View Notes({notesCount})
                                     </button>
 
                                     <div
-                                      className={`modal fade ${
-                                        notesModelOpen ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${notesModelOpen ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -8850,7 +8832,7 @@ const InvertyDetaese = () => {
                                                           ?.split(" ")
                                                           .map((word, index) =>
                                                             (index + 1) % 10 ===
-                                                            0
+                                                              0
                                                               ? word + "\n"
                                                               : word
                                                           )
@@ -8889,9 +8871,8 @@ const InvertyDetaese = () => {
                                     </button>
 
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen101 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen101 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -9325,40 +9306,40 @@ const InvertyDetaese = () => {
                                                     <br />
                                                     {applicantView.paymentMethod ===
                                                       "Online" && (
-                                                      <>
-                                                        <strong>
-                                                          {" "}
-                                                          Transaction ID:
-                                                        </strong>{" "}
-                                                        {applicantView.transactionID ||
-                                                          "N/A"}
-                                                        <br />
-                                                      </>
-                                                    )}
+                                                        <>
+                                                          <strong>
+                                                            {" "}
+                                                            Transaction ID:
+                                                          </strong>{" "}
+                                                          {applicantView.transactionID ||
+                                                            "N/A"}
+                                                          <br />
+                                                        </>
+                                                      )}
                                                     {applicantView.paymentMethod ===
                                                       "Cash" && (
-                                                      <>
-                                                        <strong>
-                                                          {" "}
-                                                          Remark:
-                                                        </strong>{" "}
-                                                        {applicantView.cashRemark ||
-                                                          "N/A"}
-                                                        <br />
-                                                      </>
-                                                    )}
+                                                        <>
+                                                          <strong>
+                                                            {" "}
+                                                            Remark:
+                                                          </strong>{" "}
+                                                          {applicantView.cashRemark ||
+                                                            "N/A"}
+                                                          <br />
+                                                        </>
+                                                      )}
                                                     {applicantView.paymentMethod ===
                                                       "Cheque" && (
-                                                      <>
-                                                        <strong>
-                                                          {" "}
-                                                          Cheque No:
-                                                        </strong>{" "}
-                                                        {applicantView.chequeNo ||
-                                                          "N/A"}
-                                                        <br />
-                                                      </>
-                                                    )}
+                                                        <>
+                                                          <strong>
+                                                            {" "}
+                                                            Cheque No:
+                                                          </strong>{" "}
+                                                          {applicantView.chequeNo ||
+                                                            "N/A"}
+                                                          <br />
+                                                        </>
+                                                      )}
                                                     <strong>Advisor:</strong>{" "}
                                                     {applicantView.advisorId ||
                                                       "N/A"}
@@ -9438,15 +9419,14 @@ const InvertyDetaese = () => {
                                         backgroundColor: "black",
                                       }}
                                       onClick={handleOpenModal21}
-                                      // disabled={employee2.hasSubscription === true}
+                                    // disabled={employee2.hasSubscription === true}
                                     >
                                       BBA
                                     </button>
 
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen21 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen21 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -9954,9 +9934,8 @@ const InvertyDetaese = () => {
                                     </button> */}
 
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen6 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen6 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -10030,7 +10009,7 @@ const InvertyDetaese = () => {
                                                         employee2 &&
                                                         employee2.inventory &&
                                                         `${employee2.inventory.NOC}` ===
-                                                          "true"
+                                                        "true"
                                                       }
                                                       onChange={
                                                         handleCheckboxChange
@@ -10151,9 +10130,8 @@ const InvertyDetaese = () => {
                                     </button>
 
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen15 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen15 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -10434,9 +10412,8 @@ const InvertyDetaese = () => {
                                     </div>
 
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen7 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen7 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -10660,94 +10637,94 @@ const InvertyDetaese = () => {
                                                 )}
                                                 {formData10.mode ===
                                                   "Online" && (
-                                                  <div className="col-sm-6 form-group">
-                                                    <label className="form-label">
-                                                      Transaction ID
-                                                    </label>
-                                                    <input
-                                                      className="form-control"
-                                                      required=""
-                                                      type="text"
-                                                      name="transaction"
-                                                      value={
-                                                        formData10.transaction
-                                                      }
-                                                      onChange={
-                                                        handleInputChange10
-                                                      }
-                                                    />
-                                                  </div>
-                                                )}
-
-                                                {formData10.mode ===
-                                                  "Cheque" && (
-                                                  <>
                                                     <div className="col-sm-6 form-group">
                                                       <label className="form-label">
-                                                        Cheque No
+                                                        Transaction ID
                                                       </label>
                                                       <input
                                                         className="form-control"
                                                         required=""
                                                         type="text"
-                                                        name="chequeNo"
+                                                        name="transaction"
                                                         value={
-                                                          formData10.chequeNo
+                                                          formData10.transaction
                                                         }
                                                         onChange={
                                                           handleInputChange10
                                                         }
                                                       />
                                                     </div>
-                                                    <div className="col-sm-6 form-group">
-                                                      <label className="form-label">
-                                                        Cheque Details: Bank
-                                                      </label>
+                                                  )}
 
-                                                      <select
-                                                        className="form-control select2"
-                                                        name="chequeDetails"
-                                                        value={
-                                                          formData10.chequeDetails
-                                                        }
-                                                        onChange={
-                                                          handleInputChange10
-                                                        }
-                                                      >
-                                                        <option value="">
-                                                          Select{" "}
-                                                        </option>
-                                                        {bank.map(
-                                                          (option, index) => (
-                                                            <option
-                                                              key={option.id}
-                                                              value={option.id}
-                                                            >
-                                                              {option.name}
-                                                            </option>
-                                                          )
-                                                        )}
-                                                      </select>
-                                                    </div>
-                                                    <div className="col-sm-6 form-group">
-                                                      <label className="form-label">
-                                                        Cheque Date
-                                                      </label>
-                                                      <input
-                                                        className="form-control"
-                                                        required=""
-                                                        type="date"
-                                                        name="chequeDate"
-                                                        value={
-                                                          formData10.chequeDate
-                                                        }
-                                                        onChange={
-                                                          handleInputChange10
-                                                        }
-                                                      />
-                                                    </div>
-                                                  </>
-                                                )}
+                                                {formData10.mode ===
+                                                  "Cheque" && (
+                                                    <>
+                                                      <div className="col-sm-6 form-group">
+                                                        <label className="form-label">
+                                                          Cheque No
+                                                        </label>
+                                                        <input
+                                                          className="form-control"
+                                                          required=""
+                                                          type="text"
+                                                          name="chequeNo"
+                                                          value={
+                                                            formData10.chequeNo
+                                                          }
+                                                          onChange={
+                                                            handleInputChange10
+                                                          }
+                                                        />
+                                                      </div>
+                                                      <div className="col-sm-6 form-group">
+                                                        <label className="form-label">
+                                                          Cheque Details: Bank
+                                                        </label>
+
+                                                        <select
+                                                          className="form-control select2"
+                                                          name="chequeDetails"
+                                                          value={
+                                                            formData10.chequeDetails
+                                                          }
+                                                          onChange={
+                                                            handleInputChange10
+                                                          }
+                                                        >
+                                                          <option value="">
+                                                            Select{" "}
+                                                          </option>
+                                                          {bank.map(
+                                                            (option, index) => (
+                                                              <option
+                                                                key={option.id}
+                                                                value={option.id}
+                                                              >
+                                                                {option.name}
+                                                              </option>
+                                                            )
+                                                          )}
+                                                        </select>
+                                                      </div>
+                                                      <div className="col-sm-6 form-group">
+                                                        <label className="form-label">
+                                                          Cheque Date
+                                                        </label>
+                                                        <input
+                                                          className="form-control"
+                                                          required=""
+                                                          type="date"
+                                                          name="chequeDate"
+                                                          value={
+                                                            formData10.chequeDate
+                                                          }
+                                                          onChange={
+                                                            handleInputChange10
+                                                          }
+                                                        />
+                                                      </div>
+                                                    </>
+                                                  )}
                                               </div>
                                             </form>
                                           </div>
@@ -10778,9 +10755,8 @@ const InvertyDetaese = () => {
                                     </div>
 
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen10 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen10 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -10845,7 +10821,7 @@ const InvertyDetaese = () => {
                                                   {users.map(
                                                     (user) =>
                                                       user.reminderType ===
-                                                        "Demand Notice" && (
+                                                      "Demand Notice" && (
                                                         <div
                                                           key={user.id}
                                                           style={{
@@ -10913,7 +10889,7 @@ const InvertyDetaese = () => {
                                                   {users.map(
                                                     (user) =>
                                                       user.reminderType ===
-                                                        "Final Demand Letter" && (
+                                                      "Final Demand Letter" && (
                                                         <div
                                                           key={user.id}
                                                           style={{
@@ -10981,7 +10957,7 @@ const InvertyDetaese = () => {
                                                   {users.map(
                                                     (user) =>
                                                       user.reminderType ===
-                                                        "Cancellation Notice" && (
+                                                      "Cancellation Notice" && (
                                                         <div
                                                           key={user.id}
                                                           style={{
@@ -11226,9 +11202,8 @@ const InvertyDetaese = () => {
                                     </div>
 
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen20 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen20 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -11479,9 +11454,8 @@ const InvertyDetaese = () => {
                                     </Link>
 
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen19 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen19 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -11867,18 +11841,17 @@ const InvertyDetaese = () => {
                                         marginTop: "15px",
                                       }}
                                       onClick={handleOpenModal17}
-                                      //   disabled={
-                                      //     employee2.hasSubscription === true
-                                      //   }
+                                    //   disabled={
+                                    //     employee2.hasSubscription === true
+                                    //   }
                                     >
                                       Generate Cam
                                     </button>
 
                                     {/* geerate cam modal */}
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen17 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen17 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -12028,14 +12001,10 @@ const InvertyDetaese = () => {
                                                         }}
                                                       >
                                                         <label className="form-label">
-                                                          {`${
-                                                            employee2?.unitNo
-                                                          } / ${
-                                                            employee2?.schemeType
-                                                          } / ${
-                                                            employee2?.size
-                                                          } (${
-                                                            [
+                                                          {`${employee2?.unitNo
+                                                            } / ${employee2?.schemeType
+                                                            } / ${employee2?.size
+                                                            } (${[
                                                               "plot",
                                                               "farmhouse",
                                                             ].includes(
@@ -12043,7 +12012,7 @@ const InvertyDetaese = () => {
                                                             )
                                                               ? "SQ YD"
                                                               : "SQ FT"
-                                                          })`}
+                                                            })`}
                                                         </label>
                                                       </td>
                                                     </tr>
@@ -12134,7 +12103,7 @@ const InvertyDetaese = () => {
                                                         <label className="form-label">
                                                           {Math.floor(
                                                             employee2?.totalCost -
-                                                              employee2?.discountAmount
+                                                            employee2?.discountAmount
                                                           )}{" "}
                                                           (For calculation of
                                                           stamp Duty and Lawyer
@@ -12204,10 +12173,10 @@ const InvertyDetaese = () => {
                                                           {Math.floor(
                                                             (employee2?.totalCost ||
                                                               0) -
-                                                              (employee2?.discountAmount ||
-                                                                0) -
-                                                              (employee2?.totolReceived ||
-                                                                0)
+                                                            (employee2?.discountAmount ||
+                                                              0) -
+                                                            (employee2?.totolReceived ||
+                                                              0)
                                                           )}{" "}
                                                           (To be collected)
                                                         </label>
@@ -12277,7 +12246,7 @@ const InvertyDetaese = () => {
                                                       <label className="form-label">
                                                         Unit Size{" "}
                                                         {employee2?.schemeType ===
-                                                        "Shop"
+                                                          "Shop"
                                                           ? "(Sq ft)"
                                                           : "(Sq yd)"}
                                                       </label>
@@ -12295,7 +12264,7 @@ const InvertyDetaese = () => {
                                                       <label className="form-label">
                                                         (Rate/
                                                         {employee2?.schemeType ===
-                                                        "Shop"
+                                                          "Shop"
                                                           ? "Sq ft"
                                                           : "Sq yd"}
                                                         )
@@ -12671,15 +12640,15 @@ const InvertyDetaese = () => {
                                                         value={
                                                           Math.floor(
                                                             employee2?.totalCost ||
-                                                              0
+                                                            0
                                                           ) -
                                                           (employee2?.discountAmount ||
                                                             0)
                                                         }
                                                         readOnly
-                                                        // onChange={
-                                                        //   handleInputChange17
-                                                        // }
+                                                      // onChange={
+                                                      //   handleInputChange17
+                                                      // }
                                                       />
                                                     </div>
                                                     {/* Stamp duty percentage*/}
@@ -12789,7 +12758,7 @@ const InvertyDetaese = () => {
                                                         // placeholder="15000"
                                                         value={
                                                           applicantRefferenceCount >=
-                                                          10
+                                                            10
                                                             ? 3000
                                                             : 0
                                                         }
@@ -13049,11 +13018,10 @@ const InvertyDetaese = () => {
                                                 fontWeight: "bold",
                                               }}
                                             >
-                                              {`${
-                                                formData17Loading
+                                              {`${formData17Loading
                                                   ? "Submitting.."
                                                   : "Submit"
-                                              }`}
+                                                }`}
                                             </button>
                                           </div>
                                         </div>
@@ -13061,11 +13029,10 @@ const InvertyDetaese = () => {
                                     </div>
 
                                     <div
-                                      className={`modal fade ${
-                                        isMobileModalOpen17
+                                      className={`modal fade ${isMobileModalOpen17
                                           ? "show d-block"
                                           : ""
-                                      }`}
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -13252,10 +13219,10 @@ const InvertyDetaese = () => {
                                         color: "white",
                                         backgroundColor: "black",
                                       }}
-                                      //   onClick={handleOpenModal17}
-                                      //   disabled={
-                                      //     employee2.hasSubscription === true
-                                      //   }
+                                    //   onClick={handleOpenModal17}
+                                    //   disabled={
+                                    //     employee2.hasSubscription === true
+                                    //   }
                                     >
                                       Issue NOC
                                     </button>
@@ -13268,10 +13235,10 @@ const InvertyDetaese = () => {
                                         color: "white",
                                         backgroundColor: "black",
                                       }}
-                                      //   onClick={handleOpenModal17}
-                                      //   disabled={
-                                      //     employee2.hasSubscription === true
-                                      //   }
+                                    //   onClick={handleOpenModal17}
+                                    //   disabled={
+                                    //     employee2.hasSubscription === true
+                                    //   }
                                     >
                                       Schedule Registry
                                     </button>
@@ -13286,18 +13253,17 @@ const InvertyDetaese = () => {
                                         marginTop: "15px",
                                       }}
                                       onClick={handleOpenMobileModal17}
-                                      //   disabled={
-                                      //     employee2.hasSubscription === true
-                                      //   }
+                                    //   disabled={
+                                    //     employee2.hasSubscription === true
+                                    //   }
                                     >
                                       View Phone Number
                                     </button>
                                     {/* view number */}
 
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen5 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen5 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -13464,9 +13430,8 @@ const InvertyDetaese = () => {
                                     </div>
 
                                     <div
-                                      className={`modal fade ${
-                                        isModalOpen8 ? "show d-block" : ""
-                                      }`}
+                                      className={`modal fade ${isModalOpen8 ? "show d-block" : ""
+                                        }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
                                       style={{
@@ -13975,16 +13940,16 @@ const InvertyDetaese = () => {
                                 marginBottom: "10px",
                               }}
                               onMouseOver={(e) =>
-                                (e.currentTarget.style.backgroundColor =
-                                  "#0056b3")
+                              (e.currentTarget.style.backgroundColor =
+                                "#0056b3")
                               }
                               onMouseOut={(e) =>
-                                (e.currentTarget.style.backgroundColor =
-                                  "#007bff")
+                              (e.currentTarget.style.backgroundColor =
+                                "#007bff")
                               }
                               onMouseDown={(e) =>
-                                (e.currentTarget.style.transform =
-                                  "scale(0.95)")
+                              (e.currentTarget.style.transform =
+                                "scale(0.95)")
                               }
                               onMouseUp={(e) =>
                                 (e.currentTarget.style.transform = "scale(1)")
@@ -14109,7 +14074,7 @@ const InvertyDetaese = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">AMRS</a>.
+                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
                   Designed by <a href="http://webkype.com/">Webkype.com</a> All
                   rights reserved.
                 </span>

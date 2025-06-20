@@ -188,7 +188,7 @@ const LeadReport = () => {
 
 
     async function getEmp(event) {
-        event.preventDefault(); 
+        event.preventDefault();
 
         const { to, from, status, employeeId, utmSource, isNotConnected, project } = filterByObj;
         const url = `${apiUrl}/lead/leadReport?to=${to}&from=${from}&status=${status}&employeeId=${employeeId}&utmSource=${utmSource}&isNotConnected=${isNotConnected}&project=${project}`;
@@ -209,7 +209,7 @@ const LeadReport = () => {
                 // Download the Excel file
                 const link = document.createElement('a');
                 link.href = data.downloadUrl;
-                link.setAttribute('download', 'leads_export.xlsx'); 
+                link.setAttribute('download', 'leads_export.xlsx');
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
@@ -616,7 +616,7 @@ const LeadReport = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

@@ -21,7 +21,7 @@ const ApplicantApproved = () => {
     const [endDate, setEndDate] = useState(null)
     const [filterByObj, setFilterByObj] = useState({
         from: '',
-        to: '',    
+        to: '',
         projectId: '',
 
 
@@ -41,16 +41,16 @@ const ApplicantApproved = () => {
     const loadcontent9 = (id, eoiCode, user) => {
         navigation(`/eoi-inventory-list/${id}/${eoiCode}`, {
             state: {
-               
+
                 firstName: user.applicantFirstName,
                 middleName: user.applicantMiddleName,
                 lastName: user.applicantLastName,
                 eoiCode: eoiCode,
                 // add more properties here if needed
-            },  
+            },
         });
     };
-    
+
 
     const handleOpenModal2 = (id) => {
         setRefund(id)
@@ -698,7 +698,7 @@ const ApplicantApproved = () => {
                                                                                         <br />
                                                                                         {user?.stage === 'Applied' && (
                                                                                             <a
-                                                                                            onClick={() => loadcontent9(user.id, user.projectsubscription?.eoiCode, user)}
+                                                                                                onClick={() => loadcontent9(user.id, user.projectsubscription?.eoiCode, user)}
                                                                                             >
                                                                                                 <div
                                                                                                     style={{
@@ -906,7 +906,7 @@ const ApplicantApproved = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">AMRS</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>
