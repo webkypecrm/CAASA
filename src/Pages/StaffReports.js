@@ -887,7 +887,7 @@ const StaffReports = () => {
                                             >
                                                 <option value=''>Select Reason</option>
                                                 <option >Resigned</option>
-                                                <option >Fired by Webkype</option>
+                                                <option >Fired by Caasaa</option>
                                                 <option >Un-Informed Absence</option>
                                                 <option >Legal Issues</option>
 
@@ -972,7 +972,7 @@ const StaffReports = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Caasaa</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

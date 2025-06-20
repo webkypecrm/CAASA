@@ -411,7 +411,7 @@ function NewCom() {
                             <div className="row ">
                                 <div className="col-md-12">
                                     <span>
-                                        Copyright © 2024 <a href="">Webkype</a>. Designed
+                                        Copyright © 2024 <a href="">Caasaa</a>. Designed
                                         by <a href="http://webkype.com/">Webkype.com</a> All rights
                                         reserved.
                                     </span>

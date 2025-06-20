@@ -168,7 +168,7 @@ const CancellationLetter = () => {
                                                 </p>
                                                 <p>
                                                     Thanking you,<br />
-                                                    For Webkype<br />
+                                                    For Caasaa<br />
                                                     (Authorised Signatory)
                                                 </p>
                                             </div>

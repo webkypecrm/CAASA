@@ -161,8 +161,8 @@ const FinalDemandNotice = () => {
                                                     The payment is to be made in the below-mentioned bank account of the Firm either by cheque/Demand Draft in favour of <span style={{ color: 'blue' }}>{employee && employee.project && `${employee.project.projectName}`}</span>, payable at Noida towards the above-said by <span style={{ color: 'blue' }}>{employee.reminderDate}</span>.
                                                 </p>
                                                 <p>
-                                                    Account Name: Webkype<br />
-                                                    Bank Name: Webkype<br />
+                                                    Account Name: Caasaa<br />
+                                                    Bank Name: Caasaa<br />
                                                     Branch Name: Gurgaon<br />
                                                     Account No.: 201002718904<br />
                                                     IFSC Code: INDB0000619
@@ -172,7 +172,7 @@ const FinalDemandNotice = () => {
                                                 </p>
                                                 <p>
                                                     Thanking you,<br />
-                                                    For Webkype<br />
+                                                    For Caasaa<br />
                                                     (Authorised Signatory)
                                                 </p>
                                                 <p>

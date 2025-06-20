@@ -2371,8 +2371,8 @@ const InvertyDetaese = () => {
                                 >
                                   <i
                                     className={`fas ${employee2.resultStatus === 1
-                                        ? "fa-check-circle"
-                                        : "fa-times-circle"
+                                      ? "fa-check-circle"
+                                      : "fa-times-circle"
                                       }`}
                                   ></i>
                                 </span>
@@ -2403,8 +2403,8 @@ const InvertyDetaese = () => {
                                 >
                                   <i
                                     className={`fas ${employee2.isFirstPaymet
-                                        ? "fa-check-circle"
-                                        : "fa-times-circle"
+                                      ? "fa-check-circle"
+                                      : "fa-times-circle"
                                       }`}
                                   ></i>
                                 </span>
@@ -2443,8 +2443,8 @@ const InvertyDetaese = () => {
                                 >
                                   <i
                                     className={`fas ${employee2.isWelcomeLetter
-                                        ? "fa-check-circle"
-                                        : "fa-times-circle"
+                                      ? "fa-check-circle"
+                                      : "fa-times-circle"
                                       }`}
                                   ></i>
                                 </span>
@@ -2477,8 +2477,8 @@ const InvertyDetaese = () => {
                                 >
                                   <i
                                     className={`fas ${employee2.isAllotmentLetter
-                                        ? "fa-check-circle"
-                                        : "fa-times-circle"
+                                      ? "fa-check-circle"
+                                      : "fa-times-circle"
                                       }`}
                                   ></i>
                                 </span>
@@ -2534,8 +2534,8 @@ const InvertyDetaese = () => {
                                 >
                                   <i
                                     className={`fas ${employee2.resultStatus === 1
-                                        ? "fa-check-circle"
-                                        : "fa-times-circle"
+                                      ? "fa-check-circle"
+                                      : "fa-times-circle"
                                       }`}
                                   ></i>
                                 </span>
@@ -2566,8 +2566,8 @@ const InvertyDetaese = () => {
                                 >
                                   <i
                                     className={`fas ${employee2.isFirstPaymet
-                                        ? "fa-check-circle"
-                                        : "fa-times-circle"
+                                      ? "fa-check-circle"
+                                      : "fa-times-circle"
                                       }`}
                                   ></i>
                                 </span>
@@ -2606,8 +2606,8 @@ const InvertyDetaese = () => {
                                 >
                                   <i
                                     className={`fas ${employee2.isWelcomeLetter
-                                        ? "fa-check-circle"
-                                        : "fa-times-circle"
+                                      ? "fa-check-circle"
+                                      : "fa-times-circle"
                                       }`}
                                   ></i>
                                 </span>
@@ -2638,8 +2638,8 @@ const InvertyDetaese = () => {
                                 >
                                   <i
                                     className={`fas ${employee2.isAllotmentLetter
-                                        ? "fa-check-circle"
-                                        : "fa-times-circle"
+                                      ? "fa-check-circle"
+                                      : "fa-times-circle"
                                       }`}
                                   ></i>
                                 </span>
@@ -3908,16 +3908,16 @@ const InvertyDetaese = () => {
                                                     <div>
                                                       <div
                                                         className={`badge bg-pill text-white d-inline-block text-center ${comment
+                                                          ?.maintenanceCharges[0]
+                                                          ?.status ===
+                                                          "Pending"
+                                                          ? "bg-warning"
+                                                          : comment
                                                             ?.maintenanceCharges[0]
                                                             ?.status ===
-                                                            "Pending"
-                                                            ? "bg-warning"
-                                                            : comment
-                                                              ?.maintenanceCharges[0]
-                                                              ?.status ===
-                                                              "Approved"
-                                                              ? "bg-success"
-                                                              : "bg-danger"
+                                                            "Approved"
+                                                            ? "bg-success"
+                                                            : "bg-danger"
                                                           }`}
                                                         style={{
                                                           width: "310px",
@@ -13019,8 +13019,8 @@ const InvertyDetaese = () => {
                                               }}
                                             >
                                               {`${formData17Loading
-                                                  ? "Submitting.."
-                                                  : "Submit"
+                                                ? "Submitting.."
+                                                : "Submit"
                                                 }`}
                                             </button>
                                           </div>
@@ -13030,8 +13030,8 @@ const InvertyDetaese = () => {
 
                                     <div
                                       className={`modal fade ${isMobileModalOpen17
-                                          ? "show d-block"
-                                          : ""
+                                        ? "show d-block"
+                                        : ""
                                         }`}
                                       id="modaldemo-callback-form"
                                       tabIndex="-1"
@@ -14074,7 +14074,7 @@ const InvertyDetaese = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
+                  Copyright © 2024 <a href="javascript:void(0)">Caasaa</a>.
                   Designed by <a href="http://webkype.com/">Webkype.com</a> All
                   rights reserved.
                 </span>

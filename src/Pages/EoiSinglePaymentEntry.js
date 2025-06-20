@@ -2710,7 +2710,7 @@ const EoiSinglePaymentEntry = () => {
                                                     />
                                                 </div>
                                                 <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                    <label className="form-label">Deposit to Webkype</label>
+                                                    <label className="form-label">Deposit to Caasaa</label>
                                                     <select className="form-control select2"
                                                         name="amrsAccount"
                                                         value={formData.amrsAccount}
@@ -2892,7 +2892,7 @@ const EoiSinglePaymentEntry = () => {
                                                     />
                                                 </div>
                                                 <div className="col-sm-6 form-group" style={{ marginTop: '10px' }}>
-                                                    <label className="form-label">Deposit to Webkype</label>
+                                                    <label className="form-label">Deposit to Caasaa</label>
                                                     <select className="form-control select2"
                                                         name="amrsAccount"
                                                         value={formData10.amrsAccount}
@@ -3445,7 +3445,7 @@ const EoiSinglePaymentEntry = () => {
                         <div className="row row-sm">
                             <div className="col-md-12">
                                 <span>
-                                    Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
+                                    Copyright © 2024 <a href="javascript:void(0)">Caasaa</a>. Designed
                                     by <a href="http://webkype.com/">Webkype.com</a> All rights
                                     reserved.
                                 </span>

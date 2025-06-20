@@ -3,6 +3,7 @@ import mediaQuery from "../mediaQueries";
 import "../Components/prince.css";
 import { Link, useNavigate } from "react-router-dom";
 import { EmployeeContext } from "../Components/EmployeeContext";
+// import { backgroundImage } from "html2canvas/dist/types/css/property-descriptors/background-image";
 
 function Prince() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -617,7 +618,7 @@ function Prince() {
   };
 
   const navBarStyle = {
-    backgroundColor: "#032852",
+    backgroundImage: "linear-gradient(to right, #00dbde 0%, #fc00ff 100%)",
     display: "flex",
     //    position:'fixed',
     flexDirection: "row",
@@ -664,7 +665,7 @@ function Prince() {
   };
 
   const navBarStyles2 = {
-    backgroundColor: "#200771",
+    backgroundColor: "",
     display: "flex",
     //    position:'fixed',
     flexDirection: "row",

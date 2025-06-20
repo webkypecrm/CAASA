@@ -1487,8 +1487,8 @@ const AllocatedList = () => {
                                                   : undefined
                                               }
                                               className={`btn ripple btn-dark btn-xs ${leadCounts === true
-                                                  ? "disabled"
-                                                  : ""
+                                                ? "disabled"
+                                                : ""
                                                 }`}
                                               style={
                                                 leadCounts === true
@@ -1718,7 +1718,7 @@ const AllocatedList = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
+                  Copyright © 2024 <a href="javascript:void(0)">Caasaa</a>.
                   Designed by <a href="http://webkype.com/">Webkype.com</a> All
                   rights reserved.
                 </span>

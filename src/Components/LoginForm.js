@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/img/brand/webkype-logo.png"
+import logo from "../assets/img/brand/caasaaLogo.jpeg"
 
 
 function LoginForm() {
@@ -136,6 +136,7 @@ function LoginForm() {
                           <button
                             type="submit"
                             className="btn ripple btn-main-primary btn-block"
+                            style={{ backgroundColor: "#5956E9", color: "#fff" }}
                           >
                             Sign In
                           </button>
@@ -152,7 +153,7 @@ function LoginForm() {
           </div>
         </div>
         {/* End Row */}
-      </div>
+      </div >
 
     </>
   );

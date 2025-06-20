@@ -795,8 +795,8 @@ const DemandNotice = () => {
                                                 </p>
                                                 <p>
                                                     <strong>Account Details:</strong><br />
-                                                    Account Name: Webkype<br />
-                                                    Bank Name: Webkype<br />
+                                                    Account Name: Caasaa<br />
+                                                    Bank Name: Caasaa<br />
                                                     Branch Name: Gurgaon<br />
                                                     Account No.: 201002718904<br />
                                                     IFSC Code: INDB0000619
@@ -806,7 +806,7 @@ const DemandNotice = () => {
                                                 </p>
                                                 <p>
                                                     Thanking you,<br />
-                                                    For Webkype<br />
+                                                    For Caasaa<br />
                                                     (Authorised Signatory)
                                                 </p>
                                                 <p>

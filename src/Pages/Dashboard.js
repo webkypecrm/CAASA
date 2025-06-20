@@ -794,8 +794,8 @@ const Dashboard = () => {
                         style={{
                           backgroundColor:
                             location.pathname === "/Dashboard"
-                              ? "#0056b3"
-                              : "#007bff", // Active color if on /Dashboard
+                              ? "#5956E9"
+                              : "#5956E9", // Active color if on /Dashboard
                           color: "#fff",
                           padding: "5px 10px",
                           fontSize: "14px",
@@ -814,8 +814,8 @@ const Dashboard = () => {
                         onMouseLeave={(e) =>
                         (e.target.style.backgroundColor =
                           location.pathname === "/Dashboard"
-                            ? "#0056b3"
-                            : "#007bff")
+                            ? "#4a47c5"
+                            : "#5956E9")
                         }
                         onMouseDown={(e) =>
                           (e.target.style.transform = "scale(0.95)")
@@ -833,8 +833,8 @@ const Dashboard = () => {
                         style={{
                           backgroundColor:
                             location.pathname === "/sales-dashboard"
-                              ? "#0056b3"
-                              : "#007bff",
+                              ? "#4a47c5"
+                              : "#5956E9",
                           color: "#fff",
                           padding: "5px 10px",
                           fontSize: "14px",
@@ -853,8 +853,8 @@ const Dashboard = () => {
                         onMouseLeave={(e) =>
                         (e.target.style.backgroundColor =
                           location.pathname === "/sales-dashboard"
-                            ? "#0056b3"
-                            : "#007bff")
+                            ? "#4a47c5"
+                            : "#5956E9")
                         }
                         onMouseDown={(e) =>
                           (e.target.style.transform = "scale(0.95)")
@@ -873,8 +873,8 @@ const Dashboard = () => {
                         style={{
                           backgroundColor:
                             location.pathname === "/inventory-dashboard"
-                              ? "#0056b3"
-                              : "#007bff",
+                              ? "#5956E9"
+                              : "#5956E9",
                           color: "#fff",
                           padding: "5px 10px",
                           fontSize: "14px",
@@ -893,8 +893,8 @@ const Dashboard = () => {
                         onMouseLeave={(e) =>
                         (e.target.style.backgroundColor =
                           location.pathname === "/inventory-dashboard"
-                            ? "#0056b3"
-                            : "#007bff")
+                            ? "#4a47c5"
+                            : "#5956E9")
                         }
                         onMouseDown={(e) =>
                           (e.target.style.transform = "scale(0.95)")
@@ -939,8 +939,8 @@ const Dashboard = () => {
                         style={{
                           backgroundColor:
                             location.pathname === "/ods-dashboard"
-                              ? "#0056b3"
-                              : "#007bff",
+                              ? "#5956E9"
+                              : "#5956E9",
                           color: "#fff",
                           padding: "5px 10px",
                           fontSize: "14px",
@@ -959,8 +959,8 @@ const Dashboard = () => {
                         onMouseLeave={(e) =>
                         (e.target.style.backgroundColor =
                           location.pathname === "/ods-dashboard"
-                            ? "#0056b3"
-                            : "#007bff")
+                            ? "#4a47c5"
+                            : "#5956E9")
                         }
                         onMouseDown={(e) =>
                           (e.target.style.transform = "scale(0.95)")
@@ -4688,7 +4688,7 @@ const Dashboard = () => {
                               >
                                 <thead
                                   style={{
-                                    backgroundColor: "blue",
+                                    backgroundColor: "#5956E9",
                                     color: "white",
                                   }}
                                 >
@@ -4827,7 +4827,7 @@ const Dashboard = () => {
                   <div className="col-sm-12 col-lg-12 col-xl-4 mt-xl-0">
                     <div className="card custom-card card-dashboard-calendar pb-0">
                       <label className="main-content-label mb-2 pt-1">
-                        Webkype Updates
+                        Caasaa Updates
                       </label>
                       <span className="d-block tx-12 mb-2 text-muted">
                         What's new today in Webkype
@@ -5050,7 +5050,7 @@ const Dashboard = () => {
 
                     <div className="card custom-card card-dashboard-calendar pb-0">
                       <label className="main-content-label mb-2 pt-1">
-                        Webkype Updates( Birthday)
+                        Caasaa Updates( Birthday)
                       </label>
                       {/* <span className="d-block tx-12 mb-2 text-muted">
                         Birthday
@@ -5116,7 +5116,7 @@ const Dashboard = () => {
 
                     <div className="card custom-card card-dashboard-calendar pb-0">
                       <label className="main-content-label mb-2 pt-1">
-                        Webkype Updates(Anniversary)
+                        Caasaa Updates(Anniversary)
                       </label>
                       {/* <span className="d-block tx-12 mb-2 text-muted">
                         Anniversary
@@ -5195,7 +5195,7 @@ const Dashboard = () => {
             <div className="row row-sm">
               <div className="col-md-12">
                 <span>
-                  Copyright © 2024 <a href="javascript:void(0)">Webkype</a>.
+                  Copyright © 2024 <a href="javascript:void(0)">Caasaa</a>.
                   Designed by <a href="http://webkype.com/">Webkype.com</a> All
                   rights reserved.
                 </span>

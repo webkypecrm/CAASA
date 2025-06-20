@@ -226,6 +226,37 @@ p {
     margin-bottom: 1rem;
 }
 
+button {
+  background-color: #5956E9;
+  color: white; /* optional for contrast */
+  border: none; /* optional to remove default border */
+}
+
+button:hover {
+  background-color: #4a47c5; /* optional darker shade on hover */
+}
+
+.btn {
+  background-color: #5956E9 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn:hover {
+  background-color: #4a47c5 !important;
+}
+
+.btn-primary-custom {
+  background-color: #5956E9 !important;
+  color: white;
+  border: none;
+}
+
+.btn-primary-custom:hover {
+  background-color: #4a47c5;
+}
+
+
 abbr[title],
 abbr[data-original-title] {
     text-decoration: underline;

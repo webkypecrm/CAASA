@@ -148,7 +148,7 @@ const SalarySlip = () => {
         <div style={styles.leftSection}>
           <p style={styles.sectionContent}>{salarySlip.name}</p>
           <p style={styles.sectionContent}>Sales Manager</p>
-          <p style={styles.sectionContent}>Webkype</p>
+          <p style={styles.sectionContent}>Caasaa</p>
           <p style={styles.sectionContent}>
             <span style={styles.sectionTitle}>Employee Code:</span> N/A
           </p>

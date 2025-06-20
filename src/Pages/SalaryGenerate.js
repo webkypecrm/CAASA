@@ -109,7 +109,7 @@ const SalaryGenerate = () => {
                                 <div style={styles.leftSection}>
                                     <p style={styles.sectionContent}>Deepak Kumar</p>
                                     <p style={styles.sectionContent}>Sales Manager</p>
-                                    <p style={styles.sectionContent}>Webkype</p>
+                                    <p style={styles.sectionContent}>Caasaa</p>
                                     <p style={styles.sectionContent}>
                                         <span style={styles.sectionTitle}>Employee Code:</span> WISP/2015/001
                                     </p>
@@ -314,7 +314,7 @@ const SalaryGenerate = () => {
                     <div className="row row-sm">
                         <div className="col-md-12">
                             <span>
-                                Copyright © 2024 <a href="javascript:void(0)">Webkype</a>. Designed
+                                Copyright © 2024 <a href="javascript:void(0)">Caasaa</a>. Designed
                                 by <a href="http://webkype.com/">Webkype.com</a> All rights
                                 reserved.
                             </span>
