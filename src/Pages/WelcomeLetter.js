@@ -263,7 +263,7 @@ const WelcomeLetter = () => {
   const [bka, setBka] = useState(0);
   const [plc5, setPlc5] = useState('');
   const [hovered, setHovered] = useState(false);
- const [dividedValue, setDividedValue] = useState("");
+  const [dividedValue, setDividedValue] = useState("");
   const apiUrl = process.env.REACT_APP_URL;
   const Token = localStorage.getItem("Token");
 
@@ -1340,24 +1340,24 @@ const WelcomeLetter = () => {
 
 
   useEffect(() => {
-          setFormData3(prevFormData3 => ({ ...prevFormData3, perMonthEmiPer: 100 - formData2.onBookingPerFPP }));
-      }, [100 - formData2.onBookingPerFPP]);
-  
-      useEffect(() => {
-          setFormData3(prevFormData3 => ({ ...prevFormData3, perMonthEMI: dividedValue }));
-      }, [dividedValue]);
-  
-  
-     
-  
-  
-      useEffect(() => {
-          if (total1) {
-              setDividedValue((Number(total51) / 24).toFixed(2));
-          } else {
-              setDividedValue("");
-          }
-      }, [total51]);
+    setFormData3(prevFormData3 => ({ ...prevFormData3, perMonthEmiPer: 100 - formData2.onBookingPerFPP }));
+  }, [100 - formData2.onBookingPerFPP]);
+
+  useEffect(() => {
+    setFormData3(prevFormData3 => ({ ...prevFormData3, perMonthEMI: dividedValue }));
+  }, [dividedValue]);
+
+
+
+
+
+  useEffect(() => {
+    if (total1) {
+      setDividedValue((Number(total51) / 24).toFixed(2));
+    } else {
+      setDividedValue("");
+    }
+  }, [total51]);
 
 
   useEffect(() => {
@@ -1404,7 +1404,7 @@ const WelcomeLetter = () => {
                 <td align="center" colSpan={3}>
 
                   <a >
-                  <img border={0} width={150} src={formData?.project?.company?.profilePhoto || 'https://amrealty.webkype.com/assets/img/brand/logo.png'} />
+                    <img border={0} width={150} src={formData?.project?.company?.profilePhoto || 'https://amrealty.webkype.com/assets/img/brand/logo.png'} />
                     {/* <img border={0} width={150} src="https://amrealty.webkype.com/assets/img/brand/logo.png" /> */}
                   </a>
                   <br />
@@ -1439,7 +1439,7 @@ const WelcomeLetter = () => {
                           />
                           {" "}
                           ,<br />
-                          Congratulations from AM Realty Solutions on your new
+                          Congratulations from Webkype on your new
                           investment in{" "}
                           <input
                             type="text"
@@ -1463,7 +1463,7 @@ const WelcomeLetter = () => {
                           to get unit at such reasonable rates along with a free Gift.
                           <br />
                           <br />
-                          We at AM Realty Solutions feel privileged to be part of your
+                          We at Webkype feel privileged to be part of your
                           great investment.
                           <br />
                           <br />
@@ -1850,7 +1850,7 @@ const WelcomeLetter = () => {
                                   </td>
                                 </tr>
 
-                               
+
 
 
 
@@ -2460,7 +2460,7 @@ const WelcomeLetter = () => {
                             <br />
                             Off: 0120-4547484
                             <br />
-                            AM Realty Solutions
+                            Webkype
                             <br />
                             Web: www.amrealtysolutions.com
                             <br />
@@ -2565,7 +2565,7 @@ const WelcomeLetter = () => {
                                                       <span style={{ color: 'blue' }}>{`${formData.applicantFirstName} ${formData.applicantMiddleName} ${formData.applicantLastName}`}</span>
                                                       {" "}
                                                       ,<br />
-                                                      Congratulations from AM Realty Solutions on your new
+                                                      Congratulations from Webkype on your new
                                                       investment in{" "}
                                                       <span style={{ color: 'blue' }}> {formData.projectId}{" "} </span>
 
@@ -2579,7 +2579,7 @@ const WelcomeLetter = () => {
                                                       to get unit at such reasonable rates along with a free Gift.
                                                       <br />
                                                       <br />
-                                                      We at AM Realty Solutions feel privileged to be part of your
+                                                      We at Webkype feel privileged to be part of your
                                                       great investment.
                                                       <br />
                                                       <br />
@@ -3261,7 +3261,7 @@ const WelcomeLetter = () => {
                                                   <tr>
                                                     <td style={{ height: 20 }} />
                                                   </tr>
-                                                  
+
                                                   <tr>
                                                     <td>
                                                       <p>
@@ -3316,7 +3316,7 @@ const WelcomeLetter = () => {
                                                         <br />
                                                         Off: 0120-4547484
                                                         <br />
-                                                        AM Realty Solutions
+                                                        Webkype
                                                         <br />
                                                         Web: www.amrealtysolutions.com
                                                         <br />

@@ -99,7 +99,7 @@ const SalaryGenerate = () => {
         <div className="page">
             <TopHeader />
             <Prince />
-            <div className="main-content  pt-0" style={{marginTop: '10px'}}>
+            <div className="main-content  pt-0" style={{ marginTop: '10px' }}>
                 <div className="main-container container-fluid">
                     <div className="inner-body">
 
@@ -109,7 +109,7 @@ const SalaryGenerate = () => {
                                 <div style={styles.leftSection}>
                                     <p style={styles.sectionContent}>Deepak Kumar</p>
                                     <p style={styles.sectionContent}>Sales Manager</p>
-                                    <p style={styles.sectionContent}>AM Realty Solutions</p>
+                                    <p style={styles.sectionContent}>Webkype</p>
                                     <p style={styles.sectionContent}>
                                         <span style={styles.sectionTitle}>Employee Code:</span> WISP/2015/001
                                     </p>

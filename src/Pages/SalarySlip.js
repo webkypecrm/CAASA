@@ -143,12 +143,12 @@ const SalarySlip = () => {
 
   return (
     <div style={styles.container}>
-        <h2 style={styles.heading}>PAY SLIP FOR {currentMonthYear}</h2>
+      <h2 style={styles.heading}>PAY SLIP FOR {currentMonthYear}</h2>
       <div style={styles.flexContainer}>
         <div style={styles.leftSection}>
           <p style={styles.sectionContent}>{salarySlip.name}</p>
           <p style={styles.sectionContent}>Sales Manager</p>
-          <p style={styles.sectionContent}>AM Realty Solutions</p> 
+          <p style={styles.sectionContent}>Webkype</p>
           <p style={styles.sectionContent}>
             <span style={styles.sectionTitle}>Employee Code:</span> N/A
           </p>
@@ -193,7 +193,7 @@ const SalarySlip = () => {
               <th style={styles.ths}>Amount (B)</th>
             </tr>
           </thead>
-          <tbody> 
+          <tbody>
             <tr>
               <td style={styles.td}>Basic</td>
               <td style={styles.tdRightAlign}>{salarySlip.monthlySalery}</td>
@@ -321,7 +321,7 @@ const SalarySlip = () => {
               <td style={styles.td}>0</td>
               <td style={styles.tdRightAlign}>{salarySlip.deductionInSalery}</td>
             </tr>
-           
+
           </tbody>
         </table>
       </div>

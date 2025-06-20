@@ -5,7 +5,7 @@ import Prince from '../Components/Prince';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const WldAllotmentLetter  = () => {
+const WldAllotmentLetter = () => {
   const { empid } = useParams();
   const navigate = useNavigate();
   const initialFormData = {
@@ -466,8 +466,8 @@ const WldAllotmentLetter  = () => {
                 <br />
                 <h3 style={{ fontSize: '22px' }}>AM Heritage City-3 Phase-2</h3>
                 <hr style={{ border: '1px solid black' }}></hr>
-               
-               
+
+
               </td>
               <td style={{ width: 50 }}>&nbsp;</td>
             </tr>
@@ -481,8 +481,8 @@ const WldAllotmentLetter  = () => {
             <tr>
               <td style={{ width: 50 }}>&nbsp;</td>
               <td style={{ textAlign: "center" }}>
-                
-                <h3 style={{ margin: 0,marginTop: '-5px' }}>Personal and Booking Details</h3>
+
+                <h3 style={{ margin: 0, marginTop: '-5px' }}>Personal and Booking Details</h3>
               </td>
               <td style={{ width: 50 }}>&nbsp;</td>
             </tr>
@@ -813,7 +813,7 @@ const WldAllotmentLetter  = () => {
                       <td style={{ height: 30 }} />
                     </tr>
                     <tr>
-                      <td> 
+                      <td>
                         {" "}
                         <span
                           style={{
@@ -1505,7 +1505,7 @@ const WldAllotmentLetter  = () => {
                     refunded after deducting 50% of the total Cost..
                   </li>
                   <li>
-                    Cheque/DD/Payorder to be in the name of AM Realty Solutions.
+                    Cheque/DD/Payorder to be in the name of Webkype.
                   </li>
                   <li>
                     Cheque bouncing will be charged Rs.1000/- as penalty, and delay in

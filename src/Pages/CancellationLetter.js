@@ -103,14 +103,14 @@ const CancellationLetter = () => {
                                         <td>
 
                                             <div style={containerStyle}>
-                                            <div style={rightSideStyle}>
-                                                    <p>Date :<span style={{ color: 'blue' }}> {employee.formattedDates} </span></p> 
+                                                <div style={rightSideStyle}>
+                                                    <p>Date :<span style={{ color: 'blue' }}> {employee.formattedDates} </span></p>
                                                 </div>
                                             </div>
                                             <p>
                                                 Ref: 01/2023/
                                                 <br />
-                                                Customer Code: <span  style={{ color: 'blue' }}> {employee && employee.applicant && `${employee.applicant.ticketId}`}</span>
+                                                Customer Code: <span style={{ color: 'blue' }}> {employee && employee.applicant && `${employee.applicant.ticketId}`}</span>
 
                                             </p>
 
@@ -128,7 +128,7 @@ const CancellationLetter = () => {
                                             </p>
                                             <p>
                                                 Ref: (1) Builder Buyer Agreement (“Agreement”) <span style={{ color: 'blue' }}>{employee.bbaDate}</span> entered
-                                                into between yourself and AM Realty Solutions (hereinafter “Partnership Firm”)
+                                                into between yourself and Webkype (hereinafter “Partnership Firm”)
                                             </p>
                                             <p>(2) Our Demand letter dated <span style={{ color: 'blue' }}>{employee.dates}</span> (mention the 2nd letter of demand)</p>
                                             <p>
@@ -157,7 +157,7 @@ const CancellationLetter = () => {
                                                     due or payable, and any other amount of a non-refundable nature.
                                                 </p>
                                                 <p>
-                                                    On cancellation of this Agreement, you shall have no right or interest on the Said Plot/farmhouse/shop and the Firm shall be discharged of all liabilities and obligations under this Agreement and the Firm shall have the right to sell or deal with the Said Plot in the manner in which it may deem fit as if the Agreement had never been executed. The refund, if any, shall be refunded by 
+                                                    On cancellation of this Agreement, you shall have no right or interest on the Said Plot/farmhouse/shop and the Firm shall be discharged of all liabilities and obligations under this Agreement and the Firm shall have the right to sell or deal with the Said Plot in the manner in which it may deem fit as if the Agreement had never been executed. The refund, if any, shall be refunded by
                                                     the Firm by registered post only after realizing the amount on further sale/resale to any other party and without any interest or compensation whatsoever to you.
                                                 </p>
                                                 <p>
@@ -168,7 +168,7 @@ const CancellationLetter = () => {
                                                 </p>
                                                 <p>
                                                     Thanking you,<br />
-                                                    For AM Realty Solutions<br />
+                                                    For Webkype<br />
                                                     (Authorised Signatory)
                                                 </p>
                                             </div>

@@ -618,7 +618,7 @@ const WelcomesPrint = () => {
 
                                                     {" "}
                                                     ,<br />
-                                                    <span style={{ fontSize: '16px' }}> Congratulations from AM Realty Solutions on your new
+                                                    <span style={{ fontSize: '16px' }}> Congratulations from Webkype on your new
                                                         investment in</span>{" "} <span ><strong>{formData.project}</strong></span>
                                                     {" "}
                                                     that too under{" "} <span><strong>{formData.company}</strong></span>
@@ -631,7 +631,7 @@ const WelcomesPrint = () => {
                                                         to get unit at such reasonable rates along with a free Gift.</span>
                                                     <br />
                                                     <br />
-                                                    <span style={{ fontSize: '16px' }}> We at AM Realty Solutions feel privileged to be part of your
+                                                    <span style={{ fontSize: '16px' }}> We at Webkype feel privileged to be part of your
                                                         great investment.</span>
                                                     <br />
                                                     <br />
@@ -878,16 +878,16 @@ const WelcomesPrint = () => {
                                                                 </tr>
                                                                 <tr>
                                                                     <td style={{ padding: "5px 10px", width: "60%", border: "1px solid #ccc" }}>
-                                                                    Pay Rs. {formData.emi24MonthAmount} in Easy 24 Month EMI ( Rs.{formData.perMonthEMI}/-) 
+                                                                        Pay Rs. {formData.emi24MonthAmount} in Easy 24 Month EMI ( Rs.{formData.perMonthEMI}/-)
                                                                     </td>
 
 
                                                                     <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                    {formData.perMonthEmiPer}%
+                                                                        {formData.perMonthEmiPer}%
                                                                     </td>
 
                                                                     <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                        
+
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1128,8 +1128,8 @@ const WelcomesPrint = () => {
                                                     </p>
                                                 </td>
                                             </tr>
-                                           <br/>
-                                           
+                                            <br />
+
                                             <tr>
                                                 <td>
                                                     <h4 style={{ marginTop: 0, marginBottom: 10 }}>
@@ -1139,7 +1139,7 @@ const WelcomesPrint = () => {
                                                 </td>
                                             </tr>
 
-                                           
+
 
                                             <tr>
                                                 <td>
@@ -1161,7 +1161,7 @@ const WelcomesPrint = () => {
 
                                                     </p>
                                                     <br />
-                                                    
+
 
                                                 </td>
                                             </tr>
@@ -1192,7 +1192,7 @@ const WelcomesPrint = () => {
                                                         <br />
                                                         Off: 0120-4547484
                                                         <br />
-                                                        AM Realty Solutions
+                                                        Webkype
                                                         <br />
                                                         Web: www.amrealtysolutions.com
                                                         <br />

@@ -141,7 +141,7 @@ const DemandLatterView = () => {
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p>Greetings from AM Realty Solutions!!!!!</p>
+                                                <p>Greetings from Webkype!!!!!</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -162,9 +162,9 @@ const DemandLatterView = () => {
                                                 >
                                                     <tbody>
                                                         <tr>
-                                                                <td  style={{ padding: '10px', border: '1px solid black'} }>Project Name:</td>
-                                                                <td style={{ padding: '10px', border: '1px solid black'}}> <strong>{formData.projectName}</strong></td>
-                                                   </tr>
+                                                            <td style={{ padding: '10px', border: '1px solid black' }}>Project Name:</td>
+                                                            <td style={{ padding: '10px', border: '1px solid black' }}> <strong>{formData.projectName}</strong></td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </td>
@@ -272,57 +272,57 @@ const DemandLatterView = () => {
                                             </td>
                                         </tr>
                                         <tr>
-  <td>
-    <table
-      align="center"
-      width="100%"
-      border={1}
-      cellSpacing={0}
-      cellPadding={0}
-      style={{ borderCollapse: "collapse", border: "1px solid black" }}
-    >
-      <tbody>
-        <tr>
-          <td
-            style={{
-              padding: "5px 10px",
-              width: "60%",
-              border: "1px solid black",
-            }}
-          >
-            Amount Paid (Rs.):
-          </td>
-          <td
-            style={{
-              padding: "5px 10px",
-              border: "1px solid black",
-            }}
-          >
-            <strong>{formData.amountPaid} {formData.totolReceived}</strong>
-          </td>
-        </tr>
-        <tr>
-          <td
-            style={{
-              padding: "5px 10px",
-              border: "1px solid black",
-            }}
-          >
-            Payment Due (Demand) as per Payment Plan:
-          </td>
-          <td
-            style={{
-              padding: "5px 10px",
-              border: "1px solid black",
-            }}
-          >
-            <strong>{formData.paymentDue}</strong>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </td>
-</tr>
+                                            <td>
+                                                <table
+                                                    align="center"
+                                                    width="100%"
+                                                    border={1}
+                                                    cellSpacing={0}
+                                                    cellPadding={0}
+                                                    style={{ borderCollapse: "collapse", border: "1px solid black" }}
+                                                >
+                                                    <tbody>
+                                                        <tr>
+                                                            <td
+                                                                style={{
+                                                                    padding: "5px 10px",
+                                                                    width: "60%",
+                                                                    border: "1px solid black",
+                                                                }}
+                                                            >
+                                                                Amount Paid (Rs.):
+                                                            </td>
+                                                            <td
+                                                                style={{
+                                                                    padding: "5px 10px",
+                                                                    border: "1px solid black",
+                                                                }}
+                                                            >
+                                                                <strong>{formData.amountPaid} {formData.totolReceived}</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style={{
+                                                                    padding: "5px 10px",
+                                                                    border: "1px solid black",
+                                                                }}
+                                                            >
+                                                                Payment Due (Demand) as per Payment Plan:
+                                                            </td>
+                                                            <td
+                                                                style={{
+                                                                    padding: "5px 10px",
+                                                                    border: "1px solid black",
+                                                                }}
+                                                            >
+                                                                <strong>{formData.paymentDue}</strong>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
 
 
                                         <tr>
@@ -345,7 +345,7 @@ const DemandLatterView = () => {
                                                 </p>
                                                 <p style={{ marginTop: 0, marginBottom: 10 }}>
                                                     {" "}
-                                                    You are requested to make the due payment by 
+                                                    You are requested to make the due payment by
 
                                                     Demand Draft/
                                                     Cheque drawn in favour of “<strong>{formData.applicant?.project?.bankAccount?.accountName}</strong>” at the
@@ -411,17 +411,17 @@ const DemandLatterView = () => {
                                                 </td>
                                                 <br />
                                                 <p>
-                                                    <br/>
-                                                    <br/>
-                                                    <br/>
-                                                  <b>With Best Regards</b>
+                                                    <br />
+                                                    <br />
+                                                    <br />
+                                                    <b>With Best Regards</b>
                                                     <br />
                                                     Apoorva Srivastava
                                                     <br />
                                                     Accounts Manager
                                                     <br />
                                                     Landline: 0120-4547484
-                                                </p>  
+                                                </p>
                                                 <br />
                                                 <br />
                                                 <br />

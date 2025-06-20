@@ -11,7 +11,7 @@ const DemandNotice = () => {
     const [total3, setTotal3] = useState('');
     const [total4, setTotal4] = useState('');
     const [total5, setTotal5] = useState('');
-    const [total6, setTotal6] = useState(''); 
+    const [total6, setTotal6] = useState('');
     const [total7, setTotal7] = useState('');
     const [total8, setTotal8] = useState('');
     const [total9, setTotal9] = useState('');
@@ -30,11 +30,11 @@ const DemandNotice = () => {
         // Ensure the values are parsed correctly
         const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
         const priceValue = parseFloat(employee && employee.plan && employee.plan.onBookingPerFPP);
-    
+
         if (!isNaN(areaValue) && !isNaN(priceValue)) {
             // Calculate the percentage
             const percentageValue = areaValue * (priceValue / 100);
-    
+
             // Format the percentage value
             let formattedPercentageValue = percentageValue.toFixed(2);
             if (formattedPercentageValue.endsWith('.00')) {
@@ -42,16 +42,16 @@ const DemandNotice = () => {
             } else if (formattedPercentageValue.endsWith('0')) {
                 formattedPercentageValue = formattedPercentageValue.slice(0, -1);
             }
-    
+
             setTotal1(formattedPercentageValue);
         } else {
             setTotal1(null);
         }
     }, [
-        employee && employee.applicant && employee.applicant.totalCost, 
+        employee && employee.applicant && employee.applicant.totalCost,
         employee && employee.plan && employee.plan.onBookingPerFPP
     ]);
-    
+
 
     useEffect(() => {
         const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
@@ -71,9 +71,9 @@ const DemandNotice = () => {
     }, [employee && employee.applicant && employee.applicant.totalCost, total1]);
 
 
-     //DLP plan
+    //DLP plan
 
-     useEffect(() => {
+    useEffect(() => {
 
         const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
         const priceValue = parseFloat(employee && employee.plan && employee.plan.onBookingPerDLP);
@@ -97,8 +97,8 @@ const DemandNotice = () => {
 
             setTotal2(null);
         }
-    }, [employee && employee.applicant && employee.applicant.totalCost, 
-        employee && employee.plan && employee.plan.onBookingPerDLP]);
+    }, [employee && employee.applicant && employee.applicant.totalCost,
+    employee && employee.plan && employee.plan.onBookingPerDLP]);
 
     useEffect(() => {
 
@@ -150,271 +150,271 @@ const DemandNotice = () => {
 
             setTotal4(null);
         }
-    }, [employee && employee.applicant && employee.applicant.totalCost,employee && employee.plan && employee.plan.restOnRegistryPerDLP]);
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.restOnRegistryPerDLP]);
 
-//PLP Plan
+    //PLP Plan
 
-useEffect(() => {
+    useEffect(() => {
 
-    const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
-    const priceValue = parseFloat(employee && employee.plan && employee.plan.onBookingPerPLP);
+        const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
+        const priceValue = parseFloat(employee && employee.plan && employee.plan.onBookingPerPLP);
 
-    if (!isNaN(areaValue) && !isNaN(priceValue)) {
-        // Calculate the percentage
-        const percentageValue = areaValue * (priceValue / 100);
+        if (!isNaN(areaValue) && !isNaN(priceValue)) {
+            // Calculate the percentage
+            const percentageValue = areaValue * (priceValue / 100);
 
-        // Format the percentage value
-        let formattedPercentageValue = percentageValue.toFixed(2);
-        if (formattedPercentageValue.endsWith('.00')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -3);
-        } else if (formattedPercentageValue.endsWith('0')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            // Format the percentage value
+            let formattedPercentageValue = percentageValue.toFixed(2);
+            if (formattedPercentageValue.endsWith('.00')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -3);
+            } else if (formattedPercentageValue.endsWith('0')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            }
+
+            setTotal5(formattedPercentageValue);
+
+
+        } else {
+
+            setTotal5(null);
         }
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.onBookingPerPLP]);
 
-        setTotal5(formattedPercentageValue);
+    useEffect(() => {
+
+        const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
+        const priceValue = parseFloat(employee && employee.plan && employee.plan.withIn60PerPLP);
+
+        if (!isNaN(areaValue) && !isNaN(priceValue)) {
+            // Calculate the percentage
+            const percentageValue = areaValue * (priceValue / 100);
+
+            // Format the percentage value
+            let formattedPercentageValue = percentageValue.toFixed(2);
+            if (formattedPercentageValue.endsWith('.00')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -3);
+            } else if (formattedPercentageValue.endsWith('0')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            }
+
+            setTotal6(formattedPercentageValue);
 
 
-    } else {
+        } else {
 
-        setTotal5(null);
-    }
-}, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.onBookingPerPLP]);
-
-useEffect(() => {
-
-    const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
-    const priceValue = parseFloat(employee && employee.plan && employee.plan.withIn60PerPLP);
-
-    if (!isNaN(areaValue) && !isNaN(priceValue)) {
-        // Calculate the percentage
-        const percentageValue = areaValue * (priceValue / 100);
-
-        // Format the percentage value
-        let formattedPercentageValue = percentageValue.toFixed(2);
-        if (formattedPercentageValue.endsWith('.00')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -3);
-        } else if (formattedPercentageValue.endsWith('0')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            setTotal6(null);
         }
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.withIn60PerPLP]);
 
-        setTotal6(formattedPercentageValue);
+    useEffect(() => {
+
+        const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
+        const priceValue = parseFloat(employee && employee.plan && employee.plan.withIn90PerPLP);
+
+        if (!isNaN(areaValue) && !isNaN(priceValue)) {
+            // Calculate the percentage
+            const percentageValue = areaValue * (priceValue / 100);
+
+            // Format the percentage value
+            let formattedPercentageValue = percentageValue.toFixed(2);
+            if (formattedPercentageValue.endsWith('.00')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -3);
+            } else if (formattedPercentageValue.endsWith('0')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            }
+
+            setTotal7(formattedPercentageValue);
 
 
-    } else {
+        } else {
 
-        setTotal6(null);
-    }
-}, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.withIn60PerPLP]);
-
-useEffect(() => {
-
-    const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
-    const priceValue = parseFloat(employee && employee.plan && employee.plan.withIn90PerPLP);
-
-    if (!isNaN(areaValue) && !isNaN(priceValue)) {
-        // Calculate the percentage
-        const percentageValue = areaValue * (priceValue / 100);
-
-        // Format the percentage value
-        let formattedPercentageValue = percentageValue.toFixed(2);
-        if (formattedPercentageValue.endsWith('.00')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -3);
-        } else if (formattedPercentageValue.endsWith('0')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            setTotal7(null);
         }
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.withIn90PerPLP]);
 
-        setTotal7(formattedPercentageValue);
+    useEffect(() => {
+
+        const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
+        const priceValue = parseFloat(employee && employee.plan && employee.plan.withIn120PerPLP);
+
+        if (!isNaN(areaValue) && !isNaN(priceValue)) {
+            // Calculate the percentage
+            const percentageValue = areaValue * (priceValue / 100);
+
+            // Format the percentage value
+            let formattedPercentageValue = percentageValue.toFixed(2);
+            if (formattedPercentageValue.endsWith('.00')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -3);
+            } else if (formattedPercentageValue.endsWith('0')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            }
+
+            setTotal8(formattedPercentageValue);
 
 
-    } else {
+        } else {
 
-        setTotal7(null);
-    }
-}, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.withIn90PerPLP]);
-
-useEffect(() => {
-
-    const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
-    const priceValue = parseFloat(employee && employee.plan && employee.plan.withIn120PerPLP);
-
-    if (!isNaN(areaValue) && !isNaN(priceValue)) {
-        // Calculate the percentage
-        const percentageValue = areaValue * (priceValue / 100);
-
-        // Format the percentage value
-        let formattedPercentageValue = percentageValue.toFixed(2);
-        if (formattedPercentageValue.endsWith('.00')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -3);
-        } else if (formattedPercentageValue.endsWith('0')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            setTotal8(null);
         }
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.withIn120PerPLP]);
 
-        setTotal8(formattedPercentageValue);
+    useEffect(() => {
+
+        const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
+        const priceValue = parseFloat(employee && employee.plan && employee.plan.withIn150PerPLP);
+
+        if (!isNaN(areaValue) && !isNaN(priceValue)) {
+            // Calculate the percentage
+            const percentageValue = areaValue * (priceValue / 100);
+
+            // Format the percentage value
+            let formattedPercentageValue = percentageValue.toFixed(2);
+            if (formattedPercentageValue.endsWith('.00')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -3);
+            } else if (formattedPercentageValue.endsWith('0')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            }
+
+            setTotal9(formattedPercentageValue);
 
 
-    } else {
+        } else {
 
-        setTotal8(null);
-    }
-}, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.withIn120PerPLP]);
-
-useEffect(() => {
-
-    const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
-    const priceValue = parseFloat(employee && employee.plan && employee.plan.withIn150PerPLP);
-
-    if (!isNaN(areaValue) && !isNaN(priceValue)) {
-        // Calculate the percentage
-        const percentageValue = areaValue * (priceValue / 100);
-
-        // Format the percentage value
-        let formattedPercentageValue = percentageValue.toFixed(2);
-        if (formattedPercentageValue.endsWith('.00')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -3);
-        } else if (formattedPercentageValue.endsWith('0')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            setTotal9(null);
         }
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.withIn150PerPLP]);
 
-        setTotal9(formattedPercentageValue);
+    useEffect(() => {
+
+        const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
+        const priceValue = parseFloat(employee && employee.plan && employee.plan.withIn180PerPLP);
+
+        if (!isNaN(areaValue) && !isNaN(priceValue)) {
+            // Calculate the percentage
+            const percentageValue = areaValue * (priceValue / 100);
+
+            // Format the percentage value
+            let formattedPercentageValue = percentageValue.toFixed(2);
+            if (formattedPercentageValue.endsWith('.00')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -3);
+            } else if (formattedPercentageValue.endsWith('0')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            }
+
+            setTotal10(formattedPercentageValue);
 
 
-    } else {
+        } else {
 
-        setTotal9(null);
-    }
-}, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.withIn150PerPLP]);
-
-useEffect(() => {
-
-    const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
-    const priceValue = parseFloat(employee && employee.plan && employee.plan.withIn180PerPLP);
-
-    if (!isNaN(areaValue) && !isNaN(priceValue)) {
-        // Calculate the percentage
-        const percentageValue = areaValue * (priceValue / 100);
-
-        // Format the percentage value
-        let formattedPercentageValue = percentageValue.toFixed(2);
-        if (formattedPercentageValue.endsWith('.00')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -3);
-        } else if (formattedPercentageValue.endsWith('0')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            setTotal10(null);
         }
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.withIn180PerPLP]);
 
-        setTotal10(formattedPercentageValue);
+    useEffect(() => {
+
+        const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
+        const priceValue = parseFloat(employee && employee.plan && employee.plan.extraPerPLP1);
+
+        if (!isNaN(areaValue) && !isNaN(priceValue)) {
+            // Calculate the percentage
+            const percentageValue = areaValue * (priceValue / 100);
+
+            // Format the percentage value
+            let formattedPercentageValue = percentageValue.toFixed(2);
+            if (formattedPercentageValue.endsWith('.00')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -3);
+            } else if (formattedPercentageValue.endsWith('0')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            }
+
+            setTotal11(formattedPercentageValue);
 
 
-    } else {
+        } else {
 
-        setTotal10(null);
-    }
-}, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.withIn180PerPLP]);
-
-useEffect(() => {
-
-    const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
-    const priceValue = parseFloat(employee && employee.plan && employee.plan.extraPerPLP1);
-
-    if (!isNaN(areaValue) && !isNaN(priceValue)) {
-        // Calculate the percentage
-        const percentageValue = areaValue * (priceValue / 100);
-
-        // Format the percentage value
-        let formattedPercentageValue = percentageValue.toFixed(2);
-        if (formattedPercentageValue.endsWith('.00')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -3);
-        } else if (formattedPercentageValue.endsWith('0')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            setTotal11(null);
         }
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.extraPerPLP1]);
 
-        setTotal11(formattedPercentageValue);
+    useEffect(() => {
+
+        const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
+        const priceValue = parseFloat(employee && employee.plan && employee.plan.extraPerPLP2);
+
+        if (!isNaN(areaValue) && !isNaN(priceValue)) {
+            // Calculate the percentage
+            const percentageValue = areaValue * (priceValue / 100);
+
+            // Format the percentage value
+            let formattedPercentageValue = percentageValue.toFixed(2);
+            if (formattedPercentageValue.endsWith('.00')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -3);
+            } else if (formattedPercentageValue.endsWith('0')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            }
+
+            setTotal12(formattedPercentageValue);
 
 
-    } else {
+        } else {
 
-        setTotal11(null);
-    }
-}, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.extraPerPLP1]);
-
-useEffect(() => {
-
-    const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
-    const priceValue = parseFloat(employee && employee.plan && employee.plan.extraPerPLP2);
-
-    if (!isNaN(areaValue) && !isNaN(priceValue)) {
-        // Calculate the percentage
-        const percentageValue = areaValue * (priceValue / 100);
-
-        // Format the percentage value
-        let formattedPercentageValue = percentageValue.toFixed(2);
-        if (formattedPercentageValue.endsWith('.00')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -3);
-        } else if (formattedPercentageValue.endsWith('0')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            setTotal12(null);
         }
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.extraPerPLP2]);
 
-        setTotal12(formattedPercentageValue);
+    useEffect(() => {
+
+        const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
+        const priceValue = parseFloat(employee && employee.plan && employee.plan.extraPerPLP3);
+
+        if (!isNaN(areaValue) && !isNaN(priceValue)) {
+            // Calculate the percentage
+            const percentageValue = areaValue * (priceValue / 100);
+
+            // Format the percentage value
+            let formattedPercentageValue = percentageValue.toFixed(2);
+            if (formattedPercentageValue.endsWith('.00')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -3);
+            } else if (formattedPercentageValue.endsWith('0')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            }
+
+            setTotal13(formattedPercentageValue);
 
 
-    } else {
+        } else {
 
-        setTotal12(null);
-    }
-}, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.extraPerPLP2]);
-
-useEffect(() => {
-
-    const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
-    const priceValue = parseFloat(employee && employee.plan && employee.plan.extraPerPLP3);
-
-    if (!isNaN(areaValue) && !isNaN(priceValue)) {
-        // Calculate the percentage
-        const percentageValue = areaValue * (priceValue / 100);
-
-        // Format the percentage value
-        let formattedPercentageValue = percentageValue.toFixed(2);
-        if (formattedPercentageValue.endsWith('.00')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -3);
-        } else if (formattedPercentageValue.endsWith('0')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            setTotal13(null);
         }
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.extraPerPLP3]);
 
-        setTotal13(formattedPercentageValue);
+    useEffect(() => {
+
+        const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
+        const priceValue = parseFloat(employee && employee.plan && employee.plan.restOnRegistryPerPLP);
+
+        if (!isNaN(areaValue) && !isNaN(priceValue)) {
+            // Calculate the percentage
+            const percentageValue = areaValue * (priceValue / 100);
+
+            // Format the percentage value
+            let formattedPercentageValue = percentageValue.toFixed(2);
+            if (formattedPercentageValue.endsWith('.00')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -3);
+            } else if (formattedPercentageValue.endsWith('0')) {
+                formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            }
+
+            setTotal14(formattedPercentageValue);
 
 
-    } else {
+        } else {
 
-        setTotal13(null);
-    }
-}, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.extraPerPLP3]);
-
-useEffect(() => {
-
-    const areaValue = parseFloat(employee && employee.applicant && employee.applicant.totalCost);
-    const priceValue = parseFloat(employee && employee.plan && employee.plan.restOnRegistryPerPLP);
-
-    if (!isNaN(areaValue) && !isNaN(priceValue)) {
-        // Calculate the percentage
-        const percentageValue = areaValue * (priceValue / 100);
-
-        // Format the percentage value
-        let formattedPercentageValue = percentageValue.toFixed(2);
-        if (formattedPercentageValue.endsWith('.00')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -3);
-        } else if (formattedPercentageValue.endsWith('0')) {
-            formattedPercentageValue = formattedPercentageValue.slice(0, -1);
+            setTotal14(null);
         }
+    }, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.restOnRegistryPerPLP]);
 
-        setTotal14(formattedPercentageValue);
 
-
-    } else {
-
-        setTotal14(null);
-    }
-}, [employee && employee.applicant && employee.applicant.totalCost, employee && employee.plan && employee.plan.restOnRegistryPerPLP]);
-
- 
 
 
     const containerStyle = {
@@ -444,9 +444,9 @@ useEffect(() => {
         const year = date.getFullYear();
         return `${month} ${year}`;
     };
-    
 
-  
+
+
     useEffect(() => {
         async function getEmp() {
             try {
@@ -466,7 +466,7 @@ useEffect(() => {
                         formattedDatess: data.data.lastDate ? formatDateTimes(data.data.lastDate) : null,
                         bbaDate: data.data.applicant.bba && data.data.applicant.bba.length > 0 ? formatDateTimes(data.data.applicant.bba[0].bbaDate) : null,
                         registryDate: data.data.applicant.bba && data.data.applicant.bba.length > 0 ? formatDateTimess(data.data.applicant.bba[0].registryDate) : null,
-                        
+
                     };
                     setEmployee(formattedData);
                 }
@@ -522,13 +522,13 @@ useEffect(() => {
                                             <div style={containerStyle}>
 
                                                 <div style={rightSideStyle}>
-                                                    <p>Date :<span style={{ color: 'blue' }}> {employee.formattedDates} </span></p> 
+                                                    <p>Date :<span style={{ color: 'blue' }}> {employee.formattedDates} </span></p>
                                                 </div>
                                             </div>
                                             <p>
                                                 Ref: 03/2023/
                                                 <br />
-                                                Customer Code: <span  style={{ color: 'blue' }}> {employee && employee.applicant && `${employee.applicant.ticketId}`}</span>
+                                                Customer Code: <span style={{ color: 'blue' }}> {employee && employee.applicant && `${employee.applicant.ticketId}`}</span>
                                             </p>
                                             <p>
                                                 Mr. <span style={{ color: 'blue' }}>{employee.name}</span>,<br />
@@ -543,14 +543,14 @@ useEffect(() => {
                                                 sq.yds in our Project “<span style={{ color: 'blue' }}>{employee && employee.project && `${employee.project.projectName}`}</span>” situated in <span style={{ color: 'blue' }}>{employee && employee.applicant && `${employee.applicant.applicantAddress}`}</span>.
                                             </p>
                                             <p>
-                                                Ref: Builder Buyer Agreement (“Agreement”) dated <span style={{ color: 'blue' }}>{employee.bbaDate}</span> entered into between yourself and AM Realty Solutions (hereinafter “Partnership Firm”)
+                                                Ref: Builder Buyer Agreement (“Agreement”) dated <span style={{ color: 'blue' }}>{employee.bbaDate}</span> entered into between yourself and Webkype (hereinafter “Partnership Firm”)
                                             </p>
                                             <p>
                                                 Dear Sir,
                                             </p>
                                             <div style={{ fontFamily: 'Arial, sans-serif' }}>
                                                 <p>
-                                                    This refers to your booking of the above-mentioned plot in our project “<span style={{ color: 'blue' }}>{employee && employee.project && `${employee.project.projectName}`}</span>” in <span style={{ color: 'blue' }}>{employee && employee.applicant && `${employee.applicant.applicantAddress}`}</span>. Please note, the Registry was open in this 
+                                                    This refers to your booking of the above-mentioned plot in our project “<span style={{ color: 'blue' }}>{employee && employee.project && `${employee.project.projectName}`}</span>” in <span style={{ color: 'blue' }}>{employee && employee.applicant && `${employee.applicant.applicantAddress}`}</span>. Please note, the Registry was open in this
                                                     project since <span style={{ color: 'blue' }}>{employee.registryDate}</span>. Our team had intimated you regarding the opening of the Registry and had requested you to complete your registration process as per the payment plan. Ever since then, your Registration process/Pending amount is still pending. Your attention is drawn to Annexure-A of the said Agreement
                                                     vide which you are required to pay the amount as per the payment plan reproduced below that was agreed and accepted by you.
                                                 </p>
@@ -570,7 +570,7 @@ useEffect(() => {
                                                         <tbody>
                                                             <tr>
                                                                 <td style={{ padding: "5px 10px", width: "45%", border: "1px solid #ccc" }}>
-                                                                Basic price Rs.{employee && employee.plan && `${employee.plan.basicPriceFPP}`}/- per{" "}  {employee && employee.applicant && `${employee.applicant.size}`}{" "} {employee && employee.plan && `${employee.plan.areaUnitFPP}`}
+                                                                    Basic price Rs.{employee && employee.plan && `${employee.plan.basicPriceFPP}`}/- per{" "}  {employee && employee.applicant && `${employee.applicant.size}`}{" "} {employee && employee.plan && `${employee.plan.areaUnitFPP}`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
 
@@ -584,32 +584,32 @@ useEffect(() => {
                                                                     On Booking
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.onBookingPerFPP}%`}
+                                                                    {employee && employee.plan && `${employee.plan.onBookingPerFPP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total1}
+                                                                    {total1}
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ padding: "5px 10px", width: "40%", border: "1px solid #ccc" }}>
-                                                                Within 24 Months. Monthly installment Each of
-                                                                </td>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                               
-                                                                </td>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {ins}
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style={{ padding: "5px 10px", width: "40%", border: "1px solid #ccc" }}>
-                                                                   Total Value
+                                                                    Within 24 Months. Monthly installment Each of
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
 
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.applicant && `${employee.applicant.totalCost}`}
+                                                                    {ins}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style={{ padding: "5px 10px", width: "40%", border: "1px solid #ccc" }}>
+                                                                    Total Value
+                                                                </td>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+
+                                                                </td>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+                                                                    {employee && employee.applicant && `${employee.applicant.totalCost}`}
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -619,7 +619,7 @@ useEffect(() => {
                                                         <tbody>
                                                             <tr>
                                                                 <td style={{ padding: "5px 10px", width: "60%", border: "1px solid #ccc" }}>
-                                                                Basic price Rs.{employee && employee.plan && `${employee.plan.basicPricePLP}`}/- per {employee && employee.plan && `${employee.plan.areaUnitPLP}`}
+                                                                    Basic price Rs.{employee && employee.plan && `${employee.plan.basicPricePLP}`}/- per {employee && employee.plan && `${employee.plan.areaUnitPLP}`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
 
@@ -633,10 +633,10 @@ useEffect(() => {
                                                                     On Booking
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.onBookingPerPLP}%`}
+                                                                    {employee && employee.plan && `${employee.plan.onBookingPerPLP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total5}
+                                                                    {total5}
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -644,96 +644,96 @@ useEffect(() => {
                                                                     Within {employee && employee.plan && `${employee.plan.days1PLP}`} Days
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.withIn60PerPLP}%`}
+                                                                    {employee && employee.plan && `${employee.plan.withIn60PerPLP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total6}
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                Within {employee && employee.plan && `${employee.plan.days2PLP}`} Days
-                                                                </td>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.withIn90PerPLP}%`}
-                                                                </td>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total7}
+                                                                    {total6}
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                Within {employee && employee.plan && `${employee.plan.days3PLP}`} Days
+                                                                    Within {employee && employee.plan && `${employee.plan.days2PLP}`} Days
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.withIn120PerPLP}%`}
+                                                                    {employee && employee.plan && `${employee.plan.withIn90PerPLP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total8}
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                Within {employee && employee.plan && `${employee.plan.days4PLP}`} Days
-                                                                </td>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.withIn150PerPLP}%`}
-                                                                </td>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total9}
+                                                                    {total7}
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                Within {employee && employee.plan && `${employee.plan.days5PLP}`} Days
+                                                                    Within {employee && employee.plan && `${employee.plan.days3PLP}`} Days
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.withIn180PerPLP}%`}
+                                                                    {employee && employee.plan && `${employee.plan.withIn120PerPLP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total10}
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                Within {employee && employee.plan && `${employee.plan.days6PLP}`} Days
-                                                                </td>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.extraPerPLP1}%`}
-                                                                </td>
-                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total11}
+                                                                    {total8}
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                Within {employee && employee.plan && `${employee.plan.days7PLP}`} Days
+                                                                    Within {employee && employee.plan && `${employee.plan.days4PLP}`} Days
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.extraPerPLP2}%`}
+                                                                    {employee && employee.plan && `${employee.plan.withIn150PerPLP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total12}
+                                                                    {total9}
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                Within {employee && employee.plan && `${employee.plan.days8PLP}`} Days
+                                                                    Within {employee && employee.plan && `${employee.plan.days5PLP}`} Days
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.extraPerPLP3}%`}
+                                                                    {employee && employee.plan && `${employee.plan.withIn180PerPLP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total13}
+                                                                    {total10}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+                                                                    Within {employee && employee.plan && `${employee.plan.days6PLP}`} Days
+                                                                </td>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+                                                                    {employee && employee.plan && `${employee.plan.extraPerPLP1}%`}
+                                                                </td>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+                                                                    {total11}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+                                                                    Within {employee && employee.plan && `${employee.plan.days7PLP}`} Days
+                                                                </td>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+                                                                    {employee && employee.plan && `${employee.plan.extraPerPLP2}%`}
+                                                                </td>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+                                                                    {total12}
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+                                                                    Within {employee && employee.plan && `${employee.plan.days8PLP}`} Days
+                                                                </td>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+                                                                    {employee && employee.plan && `${employee.plan.extraPerPLP3}%`}
+                                                                </td>
+                                                                <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
+                                                                    {total13}
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>On Registry</td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.restOnRegistryPerPLP}%`}
+                                                                    {employee && employee.plan && `${employee.plan.restOnRegistryPerPLP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total14}
+                                                                    {total14}
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -756,30 +756,30 @@ useEffect(() => {
                                                                     On Booking
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.onBookingPerDLP}%`}
+                                                                    {employee && employee.plan && `${employee.plan.onBookingPerDLP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total2}
+                                                                    {total2}
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                Within {employee && employee.plan && `${employee.plan.daysDLP}`} Days
+                                                                    Within {employee && employee.plan && `${employee.plan.daysDLP}`} Days
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px" }}>
-                                                                {employee && employee.plan && `${employee.plan.withIn30PerDLP}%`}
+                                                                    {employee && employee.plan && `${employee.plan.withIn30PerDLP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total3}
+                                                                    {total3}
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>On Registry</td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {employee && employee.plan && `${employee.plan.restOnRegistryPerDLP}%`}
+                                                                    {employee && employee.plan && `${employee.plan.restOnRegistryPerDLP}%`}
                                                                 </td>
                                                                 <td style={{ padding: "5px 10px", border: "1px solid #ccc" }}>
-                                                                {total4}
+                                                                    {total4}
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -789,14 +789,14 @@ useEffect(() => {
                                                 <br />
                                                 <p>
                                                     Basis the Agreement, a total sum of Rs.<span style={{ color: 'blue' }}> {employee && employee.applicant && `${employee.applicant.totalCost}`}</span>/- along with Interest of Rs. 00 is due and payable on account of Plot No. <span style={{ color: 'blue' }}>{employee && employee.applicant && `${employee.applicant.unitNo}`}</span>. We request
-                                                    you to deposit the above-stated sum in the below-mentioned bank account of the Firm or pay by cheque/Demand Draft in favour 
-                                                    of <span style={{ color: 'blue' }}>{employee && employee.project && `${employee.project.projectName}`}</span>, 
+                                                    you to deposit the above-stated sum in the below-mentioned bank account of the Firm or pay by cheque/Demand Draft in favour
+                                                    of <span style={{ color: 'blue' }}>{employee && employee.project && `${employee.project.projectName}`}</span>,
                                                     payable at Noida towards the above-said by <span style={{ color: 'blue' }}>{employee.reminderDate}</span>.
                                                 </p>
                                                 <p>
                                                     <strong>Account Details:</strong><br />
-                                                    Account Name: AM Realty Solutions<br />
-                                                    Bank Name: AM Realty Solutions<br />
+                                                    Account Name: Webkype<br />
+                                                    Bank Name: Webkype<br />
                                                     Branch Name: Gurgaon<br />
                                                     Account No.: 201002718904<br />
                                                     IFSC Code: INDB0000619
@@ -806,7 +806,7 @@ useEffect(() => {
                                                 </p>
                                                 <p>
                                                     Thanking you,<br />
-                                                    For AM Realty Solutions<br />
+                                                    For Webkype<br />
                                                     (Authorised Signatory)
                                                 </p>
                                                 <p>

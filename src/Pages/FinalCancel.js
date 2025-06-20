@@ -116,7 +116,7 @@ const FinalCancel = () => {
                                             </p>
                                             <br />
                                             <div style={{ fontFamily: 'Arial, sans-serif' }}>
-                                                <p>Greetings from AM Realty Solutions!!!</p>
+                                                <p>Greetings from Webkype!!!</p>
                                                 <p>
                                                     This is to inform you that after multiple follow-ups we have still not received your payment against your <strong>
                                                         {employee.schemeType} No. B-{employee.unitNo} in {employee && employee.scheme && `${employee.scheme.schemeName}`}.

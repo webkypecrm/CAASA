@@ -1415,7 +1415,7 @@ const WldWelcomeLetter = () => {
                           />
                           {" "}
                           ,<br />
-                          Congratulations from AM Realty Solutions on your new
+                          Congratulations from Webkype on your new
                           investment in{" "}
                           <input
                             type="text"
@@ -1437,7 +1437,7 @@ const WldWelcomeLetter = () => {
                           to get unit at such reasonable rates along with a free Gift.
                           <br />
                           <br />
-                          We at AM Realty Solutions feel privileged to be part of your
+                          We at Webkype feel privileged to be part of your
                           great investment.
                           <br />
                           <br />
@@ -2414,7 +2414,7 @@ const WldWelcomeLetter = () => {
                             <br />
                             Off: 0120-4547484
                             <br />
-                            AM Realty Solutions
+                            Webkype
                             <br />
                             Web: www.amrealtysolutions.com
                             <br />
@@ -2519,7 +2519,7 @@ const WldWelcomeLetter = () => {
                                                       <span style={{ color: 'blue' }}>{`${formData.applicantFirstName} ${formData.applicantMiddleName} ${formData.applicantLastName}`}</span>
                                                       {" "}
                                                       ,<br />
-                                                      Congratulations from AM Realty Solutions on your new
+                                                      Congratulations from Webkype on your new
                                                       investment in{" "}
                                                       <span style={{ color: 'blue' }}> {formData.projectId}{" "} .</span>
 
@@ -2527,11 +2527,11 @@ const WldWelcomeLetter = () => {
                                                       to get unit at such reasonable rates along with a free Gift.
                                                       <br />
                                                       <br />
-                                                      We at AM Realty Solutions feel privileged to be part of your
+                                                      We at Webkype feel privileged to be part of your
                                                       great investment.
                                                       <br />
                                                       <br />
-                                                       We thank you for giving us an opportunity
+                                                      We thank you for giving us an opportunity
                                                       to assist you in making this very investment. We sincerely
                                                       hope that you are satisfied with our services and will refer
                                                       us in your circle.
@@ -3250,7 +3250,7 @@ const WldWelcomeLetter = () => {
                                                         <br />
                                                         Off: 0120-4547484
                                                         <br />
-                                                        AM Realty Solutions
+                                                        Webkype
                                                         <br />
                                                         Web: www.amrealtysolutions.com
                                                         <br />

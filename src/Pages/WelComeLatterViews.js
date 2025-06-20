@@ -214,7 +214,7 @@ const WelComeLatterViews = () => {
             </tr>
             <td align="center" colSpan={3}><strong>{formData.dates}</strong></td>
             <tr>
-             
+
               <td align="center" colSpan={3}>
                 <a href="">
                   <img border={0} width={150} src="https://amrealty.webkype.com/assets/img/brand/logo.png" />
@@ -240,14 +240,14 @@ const WelComeLatterViews = () => {
                         <span style={{ color: 'blue' }}>{formData.name}</span>
                         {" "}
                         ,<br />
-                        Congratulations from AM Realty Solutions on your new
+                        Congratulations from Webkype on your new
                         investment in{" "}
                         <span style={{ color: 'blue' }}>{formData.clientName}</span>{" "}
                         that too under{" "}
                         <span style={{ color: 'blue' }}>{formData.project}</span>{" "}
                         It is a perfect choice and you are one of the few lucky ones
                         to get unit at such reasonable rates along with a free Gift.
-                        We at AM Realty Solutions feel privileged to be part of your
+                        We at Webkype feel privileged to be part of your
                         great investment. We thank you for giving us an opportunity
                         to assist you in making this very investment. We sincerely
                         hope that you are satisfied with our services and will refer
@@ -619,7 +619,7 @@ const WelComeLatterViews = () => {
                         </h4>
                       </td>
                     </tr>
-                   
+
                     <tr>
                       <td style={{ height: 20 }} />
                     </tr>
@@ -671,7 +671,7 @@ const WelComeLatterViews = () => {
                           <br />
                           Off: 0120-4547484
                           <br />
-                          AM Realty Solutions
+                          Webkype
                           <br />
                           Web: www.amrealtysolutions.com
                           <br />

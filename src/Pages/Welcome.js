@@ -103,14 +103,14 @@ const Welcome = () => {
 
       setFormData(initialFormData);
       toast.success(response2.message);
-    //   navigate(`/Inventory-details/${empid}`);
+      //   navigate(`/Inventory-details/${empid}`);
 
     } catch (error) {
       toast.error(error.message);
 
     }
   };
-  
+
 
   return (
     <>
@@ -138,7 +138,7 @@ const Welcome = () => {
               <td colSpan={3} style={{ height: 20 }} />
             </tr>
             <tr>
-          {/* <td align="center" colSpan={3}><strong>{formData.createdAt}</strong></td> */}
+              {/* <td align="center" colSpan={3}><strong>{formData.createdAt}</strong></td> */}
               <td align="center" colSpan={3}>
                 <a href="">
                   <img border={0} width={150} src="https://amrealty.webkype.com/assets/img/brand/logo.png" />
@@ -173,7 +173,7 @@ const Welcome = () => {
                         />
                         {" "}
                         ,<br />
-                        Congratulations from AM Realty Solutions on your new
+                        Congratulations from Webkype on your new
                         investment in{" "}
                         <input
                           type="text"
@@ -199,7 +199,7 @@ const Welcome = () => {
                         />
                         It is a perfect choice and you are one of the few lucky ones
                         to get unit at such reasonable rates along with a free Gift.
-                        We at AM Realty Solutions feel privileged to be part of your
+                        We at Webkype feel privileged to be part of your
                         great investment. We thank you for giving us an opportunity
                         to assist you in making this very investment. We sincerely
                         hope that you are satisfied with our services and will refer
@@ -1012,7 +1012,7 @@ const Welcome = () => {
                           {" "}
                           Our team will also call you to invite you at our office
                           for Gift handover{" "}
-                         {formData.giftHangover}{" "}
+                          {formData.giftHangover}{" "}
                           .
                         </p>
                       </td>
@@ -1030,7 +1030,7 @@ const Welcome = () => {
                     </tr>
                     <tr>
                       <td>
-                      {formData.bank}
+                        {formData.bank}
                       </td>
                     </tr>
                     <tr>
@@ -1092,7 +1092,7 @@ const Welcome = () => {
                           <br />
                           Off: 0120-4547484
                           <br />
-                          AM Realty Solutions
+                          Webkype
                           <br />
                           Web: www.amrealtysolutions.com
                           <br />

@@ -663,7 +663,7 @@ const WelComelatter = () => {
 
                                                     {" "}
                                                     ,<br />
-                                                    Congratulations from AM Realty Solutions on your new
+                                                    Congratulations from Webkype on your new
                                                     investment in{" "} <span style={{ color: 'blue' }}>{formData.project}</span>
                                                     {" "}
                                                     that too under{" "} <span style={{ color: 'blue' }}>{formData.company}</span>
@@ -675,7 +675,7 @@ const WelComelatter = () => {
                                                     to get unit at such reasonable rates along with a free Gift.
                                                     <br />
                                                     <br />
-                                                    We at AM Realty Solutions feel privileged to be part of your
+                                                    We at Webkype feel privileged to be part of your
                                                     great investment.
                                                     <br />
                                                     <br />
@@ -1234,7 +1234,7 @@ const WelComelatter = () => {
                                                         <br />
                                                         Off: 0120-4547484
                                                         <br />
-                                                        AM Realty Solutions
+                                                        Webkype
                                                         <br />
                                                         Web: www.amrealtysolutions.com
                                                         <br />

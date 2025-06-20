@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import logo from "../assets/img/brand/webkype-logo.png"
 
 
 function LoginForm() {
@@ -66,18 +67,18 @@ function LoginForm() {
                 <div className="col-lg-6 col-xl-5 d-none d-lg-block text-center bg-white">
                   <div className="mt-5 pt-4 p-2 pos-absolute">
                     <img
-                      src='https://amrealty.webkype.com/assets/img/brand/logo.png'
+                      src={logo}
                       className="d-lg-none header-brand-img text-start float-start mb-4 error-logo-light"
                       alt="logo"
                     />
                     <img
-                      src='https://amrealty.webkype.com/assets/img/brand/logo.png'
+                      src={logo}
                       className=" d-lg-none header-brand-img text-start float-start mb-4 error-logo"
                       alt="logo"
                     />
                     <div className="clearfix" />
                     <img
-                      src='https://amrealty.webkype.com/assets/img/brand/logo.png'
+                      src={logo}
                       className=" mb-1"
                       alt="user"
                       style={{ width: "80%" }}
@@ -92,8 +93,7 @@ function LoginForm() {
                       <div className="card-body mt-2 mb-2">
                         <img
                           src="https://webkype.com/frontend/assets/images/logo/webkype-logo.png"
-                          // src="../assets/img/brand/logo.png"
-                          className=" d-lg-none header-brand-img text-start float-start mb-4"
+                          className="d-lg-none header-brand-img text-start float-start mb-4"
                           alt="logo"
                         />
                         <div className="clearfix" />

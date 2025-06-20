@@ -612,7 +612,7 @@ const LetterApplicants = () => {
         }
         finally {
             setLoadings(false);
-          }
+        }
     };
 
     const handleChange = (event) => {
@@ -1341,9 +1341,9 @@ const LetterApplicants = () => {
     }, [formData2.onBookingPerDLP]);
 
     useEffect(() => {
-        setFormData3(prevFormData3 => ({ ...prevFormData3, daysDLP: formData2.daysDLP}));
-    }, [formData2.daysDLP]); 
-    useEffect(() => { 
+        setFormData3(prevFormData3 => ({ ...prevFormData3, daysDLP: formData2.daysDLP }));
+    }, [formData2.daysDLP]);
+    useEffect(() => {
         setFormData3(prevFormData3 => ({ ...prevFormData3, onBookingAmount: total2 }));
     }, [total2]);
 
@@ -1444,7 +1444,7 @@ const LetterApplicants = () => {
                                                     />
                                                     {" "}
                                                     ,<br />
-                                                    Congratulations from AM Realty Solutions on your new
+                                                    Congratulations from Webkype on your new
                                                     investment in{" "}
                                                     <input
                                                         type="text"
@@ -1458,11 +1458,11 @@ const LetterApplicants = () => {
                                                             width: 250
                                                         }}
                                                     />{" "}
-                                                    that too under{" "} <span style={{color: 'blue'}}>{formData.schemeId}</span>
+                                                    that too under{" "} <span style={{ color: 'blue' }}>{formData.schemeId}</span>
                                                     {" "}
                                                     It is a perfect choice and you are one of the few lucky ones
                                                     to get unit at such reasonable rates along with a free Gift.
-                                                    We at AM Realty Solutions feel privileged to be part of your
+                                                    We at Webkype feel privileged to be part of your
                                                     great investment. We thank you for giving us an opportunity
                                                     to assist you in making this very investment. We sincerely
                                                     hope that you are satisfied with our services and will refer
@@ -1582,8 +1582,8 @@ const LetterApplicants = () => {
                                                     >
                                                         <thead>
                                                             <tr style={{ backgroundColor: "#f2f2f2" }}>
-                                                            <th style={{ padding: "5px 40px", border: "1px solid #ccc", textAlign: "center",whiteSpace: 'nowrap' }}>Client Name</th>
-                                                                <th style={{ padding: "5px 20px", border: "1px solid #ccc", textAlign: "center",whiteSpace: 'nowrap' }}>Allotted Unit</th>
+                                                                <th style={{ padding: "5px 40px", border: "1px solid #ccc", textAlign: "center", whiteSpace: 'nowrap' }}>Client Name</th>
+                                                                <th style={{ padding: "5px 20px", border: "1px solid #ccc", textAlign: "center", whiteSpace: 'nowrap' }}>Allotted Unit</th>
                                                                 <th style={{ padding: "5px 20px", border: "1px solid #ccc", textAlign: "center", whiteSpace: 'nowrap' }}>Area ({formData.schemeType})</th>
                                                                 <th style={{ padding: "5px 10px", border: "1px solid #ccc", textAlign: "center" }}>Payment Plan</th>
                                                                 <th style={{ padding: "5px 10px", border: "1px solid #ccc", textAlign: "center" }}>Basic Sales Price (Per Sq. Ft)</th>
@@ -2473,7 +2473,7 @@ const LetterApplicants = () => {
                                                         <br />
                                                         Off: 0120-4547484
                                                         <br />
-                                                        AM Realty Solutions
+                                                        Webkype
                                                         <br />
                                                         Web: www.amrealtysolutions.com
                                                         <br />
@@ -2578,14 +2578,14 @@ const LetterApplicants = () => {
                                                                                                             <span style={{ color: 'blue' }}>{`${formData.applicantFirstName} ${formData.applicantMiddleName} ${formData.applicantLastName}`}</span>
                                                                                                             {" "}
                                                                                                             ,<br />
-                                                                                                            Congratulations from AM Realty Solutions on your new
+                                                                                                            Congratulations from Webkype on your new
                                                                                                             investment in{" "}
                                                                                                             <span style={{ color: 'blue' }}> {formData.schemeId}{" "} </span>
                                                                                                             that too under{" "}
                                                                                                             <span style={{ color: 'blue' }}> {formData.projectId}</span> {" "}
                                                                                                             It is a perfect choice and you are one of the few lucky ones
                                                                                                             to get unit at such reasonable rates along with a free Gift.
-                                                                                                            We at AM Realty Solutions feel privileged to be part of your
+                                                                                                            We at Webkype feel privileged to be part of your
                                                                                                             great investment. We thank you for giving us an opportunity
                                                                                                             to assist you in making this very investment. We sincerely
                                                                                                             hope that you are satisfied with our services and will refer
@@ -3285,7 +3285,7 @@ const LetterApplicants = () => {
                                                                                                                 <br />
                                                                                                                 Off: 0120-4547484
                                                                                                                 <br />
-                                                                                                                AM Realty Solutions
+                                                                                                                Webkype
                                                                                                                 <br />
                                                                                                                 Web: www.amrealtysolutions.com
                                                                                                                 <br />

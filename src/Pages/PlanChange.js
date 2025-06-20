@@ -32,31 +32,31 @@ const PlanChange = () => {
 
     useEffect(() => {
         async function getEmp() {
-          try {
-            let response = await fetch(`${apiUrl}/applicant/getReminderLetter?applicantId=${empid}`, {
-              method: "GET",
-              headers: {
-                Authorization: `Bearer ${Token}`
-              },
-            });
-            let data = await response.json();
-    
-            if (data.status === "success") {
-              const formattedData = {
-                ...data.data,
-                formattedDates: data.data.date ? formatDateTimes(data.data.createdAt) : null,
-                formattedDatess: data.data.inventoryFollowUp.reminderDate ? formatDateTimes(data.data.inventoryFollowUp.reminderDate) : null,
-                
-              };
-              setEmployee(formattedData);
+            try {
+                let response = await fetch(`${apiUrl}/applicant/getReminderLetter?applicantId=${empid}`, {
+                    method: "GET",
+                    headers: {
+                        Authorization: `Bearer ${Token}`
+                    },
+                });
+                let data = await response.json();
+
+                if (data.status === "success") {
+                    const formattedData = {
+                        ...data.data,
+                        formattedDates: data.data.date ? formatDateTimes(data.data.createdAt) : null,
+                        formattedDatess: data.data.inventoryFollowUp.reminderDate ? formatDateTimes(data.data.inventoryFollowUp.reminderDate) : null,
+
+                    };
+                    setEmployee(formattedData);
+                }
+            } catch (error) {
+                console.error("Error fetching data: ", error);
             }
-          } catch (error) {
-            console.error("Error fetching data: ", error);
-          }
         }
         getEmp();
-      }, []);
-    
+    }, []);
+
 
     return (
         <div>
@@ -104,7 +104,7 @@ const PlanChange = () => {
                                         <div style={containerStyle}>
 
                                             <div style={rightSideStyle}>
-                                            <p>Date : {employee.formattedDates} </p>
+                                                <p>Date : {employee.formattedDates} </p>
                                             </div>
                                         </div>
                                         <tr>
@@ -115,7 +115,7 @@ const PlanChange = () => {
 
                                             <div style={{ fontFamily: 'Arial, sans-serif' }}>
                                                 <p>
-                                                    Greetings from AM Realty Solutions!!!
+                                                    Greetings from Webkype!!!
                                                 </p>
                                                 <p>
                                                     This is to inform you that after multiple follow-ups we have still not received your payment against your <strong>

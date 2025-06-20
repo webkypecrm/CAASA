@@ -32,32 +32,32 @@ const PaymentInformation = () => {
 
     useEffect(() => {
         async function getEmp() {
-          try {
-            let response = await fetch(`${apiUrl}/applicant/getReminderLetter?applicantId=${empid}`, {
-              method: "GET",
-              headers: {
-                Authorization: `Bearer ${Token}`
-              },
-            });
-            let data = await response.json();
-    
-            if (data.status === "success") {
-              const formattedData = {
-                
-                ...data.data,
-                formattedDates: data.data.date ? formatDateTimes(data.data.createdAt) : null,
-                formattedDatess: data.data.inventoryFollowUp.reminderDate ? formatDateTimes(data.data.inventoryFollowUp.reminderDate) : null,
-                
-              };
-              setEmployee(formattedData);
+            try {
+                let response = await fetch(`${apiUrl}/applicant/getReminderLetter?applicantId=${empid}`, {
+                    method: "GET",
+                    headers: {
+                        Authorization: `Bearer ${Token}`
+                    },
+                });
+                let data = await response.json();
+
+                if (data.status === "success") {
+                    const formattedData = {
+
+                        ...data.data,
+                        formattedDates: data.data.date ? formatDateTimes(data.data.createdAt) : null,
+                        formattedDatess: data.data.inventoryFollowUp.reminderDate ? formatDateTimes(data.data.inventoryFollowUp.reminderDate) : null,
+
+                    };
+                    setEmployee(formattedData);
+                }
+            } catch (error) {
+                console.error("Error fetching data: ", error);
             }
-          } catch (error) {
-            console.error("Error fetching data: ", error);
-          }
         }
         getEmp();
-      }, []);
-    
+    }, []);
+
 
     return (
         <div>
@@ -117,7 +117,7 @@ const PaymentInformation = () => {
 
                                             <div style={{ fontFamily: 'Arial, sans-serif' }}>
                                                 <p>
-                                                    Greetings from AM Realty Solutions!!!
+                                                    Greetings from Webkype!!!
                                                 </p>
                                                 <p>
                                                     This is to inform you that after multiple follow-ups we have still not received your payment against your <strong>
@@ -130,13 +130,13 @@ const PaymentInformation = () => {
                                                     As it has already been informed to you that payment delay under India’s Smart City & Tourism Development Plan is not allowed as the property allotted to you is on subsidized rate.
                                                 </p>
                                                 <p>
-                                                    Company will still give a last chance to make the payment on or 
+                                                    Company will still give a last chance to make the payment on or
                                                     before <b>{employee.formattedDatess} </b>, Otherwise due to non-payment your Payment Plan will be changed into a market payment plan as per allotment terms & conditions.
                                                 </p>
                                                 <br />
                                                 <br />
                                                 <br />
-                                                <p> 
+                                                <p>
                                                     Thanks & Regards
                                                     <br />
                                                     CRM Department.

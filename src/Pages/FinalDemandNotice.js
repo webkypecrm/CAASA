@@ -112,14 +112,14 @@ const FinalDemandNotice = () => {
                                         <td>
                                             <div style={containerStyle}>
 
-                                            <div style={rightSideStyle}>
-                                                    <p>Date :<span style={{ color: 'blue' }}> {employee.formattedDates} </span></p> 
+                                                <div style={rightSideStyle}>
+                                                    <p>Date :<span style={{ color: 'blue' }}> {employee.formattedDates} </span></p>
                                                 </div>
                                             </div>
                                             <p>
                                                 Ref: 01/2023/
                                                 <br />
-                                                Customer Code: <span  style={{ color: 'blue' }}> {employee && employee.applicant && `${employee.applicant.ticketId}`}</span>
+                                                Customer Code: <span style={{ color: 'blue' }}> {employee && employee.applicant && `${employee.applicant.ticketId}`}</span>
 
                                             </p>
 
@@ -137,7 +137,7 @@ const FinalDemandNotice = () => {
                                                 sq.yds in our Project “<span style={{ color: 'blue' }}>{employee && employee.project && `${employee.project.projectName}`}</span>” situated in <span style={{ color: 'blue' }}>{employee && employee.applicant && `${employee.applicant.applicantAddress}`}</span>.
                                             </p>
                                             <p>
-                                                Ref: Builder Buyer Agreement (“Agreement”) dated <span style={{ color: 'blue' }}>{employee.bbaDate}</span> entered into between yourself and AM Realty Solutions (hereinafter “Partnership Firm”)
+                                                Ref: Builder Buyer Agreement (“Agreement”) dated <span style={{ color: 'blue' }}>{employee.bbaDate}</span> entered into between yourself and Webkype (hereinafter “Partnership Firm”)
                                             </p>
                                             <p>
                                                 Dear Sir,
@@ -145,8 +145,8 @@ const FinalDemandNotice = () => {
                                             <div style={{ fontFamily: 'Arial, sans-serif' }}>
                                                 <p>
                                                     This refers to your booking of the above-mentioned plot in our project “<span style={{ color: 'blue' }}>{employee && employee.project && `${employee.project.projectName}`} </span>” in <span style={{ color: 'blue' }}>
-                                                    {employee && employee.applicant && `${employee.applicant.applicantAddress}`}
-                                                </span>. Our team had intimated you on <span style={{ color: 'blue' }}>{employee.fa}</span> through Registered Post and email regarding the opening of Registry and had requested you to complete your registration process as per the payment plan.
+                                                        {employee && employee.applicant && `${employee.applicant.applicantAddress}`}
+                                                    </span>. Our team had intimated you on <span style={{ color: 'blue' }}>{employee.fa}</span> through Registered Post and email regarding the opening of Registry and had requested you to complete your registration process as per the payment plan.
                                                 </p>
                                                 <p>
                                                     Basis the Agreement, a total sum of Rs. <span style={{ color: 'blue' }}>{employee && employee.applicant && `${employee.applicant.totalCost}`}</span>/- along with Interest of Rs. 00/- was due and payable on account of Plot No.: <span style={{ color: 'blue' }}>{employee && employee.applicant && `${employee.applicant.unitNo}`}</span>. We have still not received the pending payment till date and neither have you initiated the registration process of your plot.
@@ -161,8 +161,8 @@ const FinalDemandNotice = () => {
                                                     The payment is to be made in the below-mentioned bank account of the Firm either by cheque/Demand Draft in favour of <span style={{ color: 'blue' }}>{employee && employee.project && `${employee.project.projectName}`}</span>, payable at Noida towards the above-said by <span style={{ color: 'blue' }}>{employee.reminderDate}</span>.
                                                 </p>
                                                 <p>
-                                                    Account Name: AM Realty Solutions<br />
-                                                    Bank Name: AM Realty Solutions<br />
+                                                    Account Name: Webkype<br />
+                                                    Bank Name: Webkype<br />
                                                     Branch Name: Gurgaon<br />
                                                     Account No.: 201002718904<br />
                                                     IFSC Code: INDB0000619
@@ -172,14 +172,14 @@ const FinalDemandNotice = () => {
                                                 </p>
                                                 <p>
                                                     Thanking you,<br />
-                                                    For AM Realty Solutions<br />
+                                                    For Webkype<br />
                                                     (Authorised Signatory)
                                                 </p>
                                                 <p>
                                                     Note:
                                                 </p>
                                                 <ol>
-                                                <li>
+                                                    <li>
                                                         Kindly ensure to indicate your name, customer code <span style={{ color: 'blue' }}>({employee && employee.applicant && `${employee.applicant.ticketId}`})</span> and mobile number <span style={{ color: 'blue' }}>{employee.mobileNo} </span>on the reverse of the cheque/draft.
                                                     </li>
                                                     <li>

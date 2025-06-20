@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { EmployeeContext } from "../Components/EmployeeContext";
+import logoWebkype  from "../assets/img/brand/webkype-logo.png";
 
 
 
@@ -429,7 +430,7 @@ function TopHeader() {
         <div className="navbar-container" >
           <div className="navbar-logo m-2">
             <img
-              src={logoSrc}
+              src={logoWebkype}
               style={{ marginRight: '80px' }}
               className="header-brand-img text-start float-start mb-2 error-logo-light"
               alt="logo"

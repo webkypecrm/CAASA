@@ -114,13 +114,13 @@ const FinalPaymentIntimation = () => {
 
                                                 <div style={{ fontFamily: 'Arial, sans-serif' }}>
                                                     <p>
-                                                        Greetings from AM Realty Solutions!!!
+                                                        Greetings from Webkype!!!
                                                     </p>
                                                     <p>
-                                                    This is to inform you that after multiple follow-ups we have still not received your payment against your <strong>
-                                                        {employee.schemeType} No. B-{employee.unitNo} in {employee && employee.scheme && `${employee.scheme.schemeName}`}.
-                                                    </strong>
-                                                </p>
+                                                        This is to inform you that after multiple follow-ups we have still not received your payment against your <strong>
+                                                            {employee.schemeType} No. B-{employee.unitNo} in {employee && employee.scheme && `${employee.scheme.schemeName}`}.
+                                                        </strong>
+                                                    </p>
                                                     <p>
                                                         We would like to inform you that your payment plan has already been changed to the Market Payment Plan, which is reflected in your app as well.
                                                     </p>

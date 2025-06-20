@@ -4827,10 +4827,10 @@ const Dashboard = () => {
                   <div className="col-sm-12 col-lg-12 col-xl-4 mt-xl-0">
                     <div className="card custom-card card-dashboard-calendar pb-0">
                       <label className="main-content-label mb-2 pt-1">
-                        AM Realty Updates
+                        Webkype Updates
                       </label>
                       <span className="d-block tx-12 mb-2 text-muted">
-                        What's new today in AM Realty
+                        What's new today in Webkype
                       </span>
                       <table className="table table-hover m-b-0 transcations mt-2">
                         <tbody>
@@ -5050,7 +5050,7 @@ const Dashboard = () => {
 
                     <div className="card custom-card card-dashboard-calendar pb-0">
                       <label className="main-content-label mb-2 pt-1">
-                        AM Realty Updates( Birthday)
+                        Webkype Updates( Birthday)
                       </label>
                       {/* <span className="d-block tx-12 mb-2 text-muted">
                         Birthday
@@ -5116,7 +5116,7 @@ const Dashboard = () => {
 
                     <div className="card custom-card card-dashboard-calendar pb-0">
                       <label className="main-content-label mb-2 pt-1">
-                        AM Realty Updates(Anniversary)
+                        Webkype Updates(Anniversary)
                       </label>
                       {/* <span className="d-block tx-12 mb-2 text-muted">
                         Anniversary

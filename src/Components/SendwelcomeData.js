@@ -1522,7 +1522,7 @@ const SendwelcomeData = () => {
                                                     />
                                                     {" "}
                                                     ,<br />
-                                                    Congratulations from AM Realty Solutions on your new
+                                                    Congratulations from Webkype on your new
                                                     investment in{" "}
                                                     <input
                                                         type="text"
@@ -1544,7 +1544,7 @@ const SendwelcomeData = () => {
                                                     to get unit at such reasonable rates along with a free Gift.
                                                     <br />
                                                     <br />
-                                                    We at AM Realty Solutions feel privileged to be part of your
+                                                    We at Webkype feel privileged to be part of your
                                                     great investment.
                                                     <br />
                                                     <br />
@@ -2570,7 +2570,7 @@ const SendwelcomeData = () => {
                                                         <br />
                                                         Off: 0120-4547484
                                                         <br />
-                                                        AM Realty Solutions
+                                                        Webkype
                                                         <br />
                                                         Web: www.amrealtysolutions.com
                                                         <br />
@@ -2675,7 +2675,7 @@ const SendwelcomeData = () => {
                                                                                                             <span style={{ color: 'blue' }}>{`${formData.applicantFirstName} ${formData.applicantMiddleName} ${formData.applicantLastName}`}</span>
                                                                                                             {" "}
                                                                                                             ,<br />
-                                                                                                            Congratulations from AM Realty Solutions on your new
+                                                                                                            Congratulations from Webkype on your new
                                                                                                             investment in{" "}
                                                                                                             {formData.projectId}{" "} that too under{" "}
                                                                                                             <span style={{ color: 'blue' }}> {formData.schemeId}{" "} </span>
@@ -2687,7 +2687,7 @@ const SendwelcomeData = () => {
                                                                                                             to get unit at such reasonable rates along with a free Gift.
                                                                                                             <br />
                                                                                                             <br />
-                                                                                                            We at AM Realty Solutions feel privileged to be part of your
+                                                                                                            We at Webkype feel privileged to be part of your
                                                                                                             great investment.
                                                                                                             <br />
                                                                                                             <br />
@@ -3422,7 +3422,7 @@ const SendwelcomeData = () => {
                                                                                                                 <br />
                                                                                                                 Off: 0120-4547484
                                                                                                                 <br />
-                                                                                                                AM Realty Solutions
+                                                                                                                Webkype
                                                                                                                 <br />
                                                                                                                 Web: www.amrealtysolutions.com
                                                                                                                 <br />

@@ -842,7 +842,7 @@ const EOIWelcomeLetter = () => {
 
                                                     <br />
 
-                                                    We at AM Realty Solutions feel privileged to be part of your
+                                                    We at Webkype feel privileged to be part of your
                                                     great investment.
 
                                                     <br />

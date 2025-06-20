@@ -598,7 +598,7 @@ const DemandLetter = () => {
             <tr>
               <td align="center" colSpan={3}>
                 <a href="">
-                <img border={0} width={150} src={formData?.project?.company?.profilePhoto || 'https://amrealty.webkype.com/assets/img/brand/logo.png'} />
+                  <img border={0} width={150} src={formData?.project?.company?.profilePhoto || 'https://amrealty.webkype.com/assets/img/brand/logo.png'} />
 
                   {/* <img border={0} width={150} src="https://amrealty.webkype.com/assets/img/brand/logo.png" alt='' /> */}
                 </a>
@@ -656,7 +656,7 @@ const DemandLetter = () => {
                     </tr>
                     <tr>
                       <td>
-                        <p>Greetings from AM Realty Solutions!!!!!</p>
+                        <p>Greetings from Webkype!!!!!</p>
                       </td>
                     </tr>
                     <tr>
@@ -1012,9 +1012,9 @@ const DemandLetter = () => {
                       </td>
                     </tr>
 
-                    
 
-                   
+
+
                     <tr>
                       <td>
                         <p>
@@ -1187,7 +1187,7 @@ const DemandLetter = () => {
                                                   </tr>
                                                   <tr>
                                                     <td>
-                                                      <p>Greetings from AM Realty Solutions!!!!!</p>
+                                                      <p>Greetings from Webkype!!!!!</p>
                                                     </td>
                                                   </tr>
                                                   <tr>

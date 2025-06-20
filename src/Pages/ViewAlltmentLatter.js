@@ -1049,7 +1049,7 @@ const ViewAlltmentLatter = () => {
                     refunded after deducting 50% of the total Cost..
                   </li>
                   <li>
-                    Cheque/DD/Payorder to be in the name of AM Realty Solutions.
+                    Cheque/DD/Payorder to be in the name of Webkype.
                   </li>
                   <li>
                     Cheque bouncing will be charged Rs.1000/- as penalty, and delay in
