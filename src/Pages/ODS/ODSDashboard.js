@@ -48,6 +48,13 @@ const ODSDashboard = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const token = localStorage.getItem('Token');
+    if (!token) {
+      navigate('/');
+    }
+  }, [navigate]);
+
   // Formatting dates for API query
   const formattedDate = selectedDate ? selectedDate.format("MM-YYYY") : ""; // Month and Year
   const formattedDates = selectedDate2 ? selectedDate2.format("YYYY") : ""; // Year only
@@ -437,10 +444,10 @@ const ODSDashboard = () => {
                         (e.target.style.backgroundColor = "#0056b3")
                       }
                       onMouseLeave={(e) =>
-                        (e.target.style.backgroundColor =
-                          location.pathname === "/Dashboard"
-                            ? "#0056b3"
-                            : "#007bff")
+                      (e.target.style.backgroundColor =
+                        location.pathname === "/Dashboard"
+                          ? "#0056b3"
+                          : "#007bff")
                       }
                       onMouseDown={(e) =>
                         (e.target.style.transform = "scale(0.95)")
@@ -474,10 +481,10 @@ const ODSDashboard = () => {
                         (e.target.style.backgroundColor = "#0056b3")
                       }
                       onMouseLeave={(e) =>
-                        (e.target.style.backgroundColor =
-                          location.pathname === "/sales-dashboard"
-                            ? "#0056b3"
-                            : "#007bff")
+                      (e.target.style.backgroundColor =
+                        location.pathname === "/sales-dashboard"
+                          ? "#0056b3"
+                          : "#007bff")
                       }
                       onMouseDown={(e) =>
                         (e.target.style.transform = "scale(0.95)")
@@ -512,10 +519,10 @@ const ODSDashboard = () => {
                         (e.target.style.backgroundColor = "#0056b3")
                       }
                       onMouseLeave={(e) =>
-                        (e.target.style.backgroundColor =
-                          location.pathname === "/inventory-dashboard"
-                            ? "#0056b3"
-                            : "#007bff")
+                      (e.target.style.backgroundColor =
+                        location.pathname === "/inventory-dashboard"
+                          ? "#0056b3"
+                          : "#007bff")
                       }
                       onMouseDown={(e) =>
                         (e.target.style.transform = "scale(0.95)")
@@ -550,10 +557,10 @@ const ODSDashboard = () => {
                         (e.target.style.backgroundColor = "#0056b3")
                       }
                       onMouseLeave={(e) =>
-                        (e.target.style.backgroundColor =
-                          location.pathname === "/ods-dashboard"
-                            ? "#0056b3"
-                            : "#007bff")
+                      (e.target.style.backgroundColor =
+                        location.pathname === "/ods-dashboard"
+                          ? "#0056b3"
+                          : "#007bff")
                       }
                       onMouseDown={(e) =>
                         (e.target.style.transform = "scale(0.95)")
@@ -632,8 +639,8 @@ const ODSDashboard = () => {
                         <select
                           className="form-control select2"
                           name="status"
-                          //   value={filterByObj.status || "Pending"}
-                          //   onChange={handleInputChange2}
+                        //   value={filterByObj.status || "Pending"}
+                        //   onChange={handleInputChange2}
                         >
                           <option value="">Select</option>
                           {/* <option value="Pending">Pending</option>
@@ -759,8 +766,8 @@ const ODSDashboard = () => {
                                 {filterByObj.status === "Pending"
                                   ? "Assigned To"
                                   : filterByObj.status === "Approved"
-                                  ? "Approved By"
-                                  : "Rejected By"}
+                                    ? "Approved By"
+                                    : "Rejected By"}
                               </th>
                               <th>Client Details</th>
                               <th>ODS Details</th>
@@ -781,13 +788,13 @@ const ODSDashboard = () => {
                                     On:{" "}
                                     {user.createdAt
                                       ? new Intl.DateTimeFormat("en-US", {
-                                          day: "2-digit",
-                                          month: "long",
-                                          year: "numeric",
-                                          hour: "2-digit",
-                                          minute: "2-digit",
-                                          hour12: true,
-                                        }).format(new Date(user.createdAt))
+                                        day: "2-digit",
+                                        month: "long",
+                                        year: "numeric",
+                                        hour: "2-digit",
+                                        minute: "2-digit",
+                                        hour12: true,
+                                      }).format(new Date(user.createdAt))
                                       : "N/A"}
                                   </span>
                                 </td>
@@ -804,20 +811,20 @@ const ODSDashboard = () => {
                                         user.status === "Approved"
                                           ? "green"
                                           : user.status === "Rejected"
-                                          ? "red"
-                                          : "#FED16A",
+                                            ? "red"
+                                            : "#FED16A",
                                       borderColor:
                                         user.status === "Approved"
                                           ? "green"
                                           : user.status === "Rejected"
-                                          ? "#F72C5B"
-                                          : "yellow",
+                                            ? "#F72C5B"
+                                            : "yellow",
                                       color:
                                         user.status === "Approved"
                                           ? "white"
                                           : user.status === "Rejected"
-                                          ? "white"
-                                          : "black",
+                                            ? "white"
+                                            : "black",
                                       width: "30px",
                                     }}
                                   >
@@ -826,21 +833,18 @@ const ODSDashboard = () => {
                                   <br />
 
                                   {filterByObj.status === "Pending"
-                                    ? `Assigned To: ${
-                                        user?.applicant?.approvedByName ||
-                                        "Apurva"
-                                      }`
+                                    ? `Assigned To: ${user?.applicant?.approvedByName ||
+                                    "Apurva"
+                                    }`
                                     : filterByObj.status === "Approved"
-                                    ? `Approved By: ${
-                                        user?.applicant?.approvedByName ||
-                                        "Apurva"
+                                      ? `Approved By: ${user?.applicant?.approvedByName ||
+                                      "Apurva"
                                       }`
-                                    : filterByObj.status === "Rejected"
-                                    ? `Rejected By: ${
-                                        user?.applicant?.approvedByName ||
+                                      : filterByObj.status === "Rejected"
+                                        ? `Rejected By: ${user?.applicant?.approvedByName ||
                                         "Apurva"
-                                      }`
-                                    : null}
+                                        }`
+                                        : null}
 
                                   <br />
                                   {filterByObj.status !== "Pending" ? (
@@ -848,13 +852,13 @@ const ODSDashboard = () => {
                                       On:{" "}
                                       {user.createdAt
                                         ? new Intl.DateTimeFormat("en-US", {
-                                            day: "2-digit",
-                                            month: "long",
-                                            year: "numeric",
-                                            hour: "2-digit",
-                                            minute: "2-digit",
-                                            hour12: true,
-                                          }).format(new Date(user.createdAt))
+                                          day: "2-digit",
+                                          month: "long",
+                                          year: "numeric",
+                                          hour: "2-digit",
+                                          minute: "2-digit",
+                                          hour12: true,
+                                        }).format(new Date(user.createdAt))
                                         : "N/A"}
                                     </span>
                                   ) : null}
@@ -883,13 +887,13 @@ const ODSDashboard = () => {
                                     From:{" "}
                                     {user.camEndDate
                                       ? new Intl.DateTimeFormat("en-US", {
-                                          day: "2-digit",
-                                          month: "long",
-                                          year: "numeric",
-                                          hour: "2-digit",
-                                          minute: "2-digit",
-                                          hour12: true,
-                                        }).format(new Date(user.camEndDate))
+                                        day: "2-digit",
+                                        month: "long",
+                                        year: "numeric",
+                                        hour: "2-digit",
+                                        minute: "2-digit",
+                                        hour12: true,
+                                      }).format(new Date(user.camEndDate))
                                       : "N/A"}
                                   </span>
                                   <br />
@@ -897,23 +901,22 @@ const ODSDashboard = () => {
                                     To:{" "}
                                     {user.camStartDate
                                       ? new Intl.DateTimeFormat("en-US", {
-                                          day: "2-digit",
-                                          month: "long",
-                                          year: "numeric",
-                                          hour: "2-digit",
-                                          minute: "2-digit",
-                                          hour12: true,
-                                        }).format(new Date(user.camStartDate))
+                                        day: "2-digit",
+                                        month: "long",
+                                        year: "numeric",
+                                        hour: "2-digit",
+                                        minute: "2-digit",
+                                        hour12: true,
+                                      }).format(new Date(user.camStartDate))
                                       : "N/A"}
                                   </span>
                                   <br />
                                   <span style={{ whiteSpace: "nowrap" }}>
                                     Size: {user?.applicant?.size || "N/A"}{" "}
-                                    {`${
-                                      user?.applicant?.schemeType === "Shop"
+                                    {`${user?.applicant?.schemeType === "Shop"
                                         ? "SQ (FT)"
                                         : "SQ (YD)"
-                                    }`}
+                                      }`}
                                   </span>
                                   <br />
                                   <span style={{ whiteSpace: "nowrap" }}>
@@ -1159,33 +1162,31 @@ const ODSDashboard = () => {
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Project: {userDetails?.applicant?.projectName}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Unit Number:{" "}
-                            {`${userDetails?.applicant?.unitNo} / ${
-                              userDetails?.applicant?.schemeType
-                            } / ${userDetails?.applicant?.size} (${
-                              ["plot", "farmhouse"].includes(
+                            {`${userDetails?.applicant?.unitNo} / ${userDetails?.applicant?.schemeType
+                              } / ${userDetails?.applicant?.size} (${["plot", "farmhouse"].includes(
                                 userDetails?.applicant?.schemeType?.toLowerCase()
                               )
                                 ? "SQ YD"
                                 : "SQ FT"
-                            })`}
-                            {}
+                              })`}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Total Cost: Rs.{" "}
                             {Math.floor(userDetails?.applicant?.totalCost)}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Discount: Rs.{" "}
                             {Math.floor(userDetails?.applicant?.discountAmount)}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
@@ -1194,16 +1195,16 @@ const ODSDashboard = () => {
                               Final Cost: Rs.{" "}
                               {Math.floor(
                                 userDetails?.applicant?.totalCost -
-                                  userDetails?.applicant?.discountAmount
+                                userDetails?.applicant?.discountAmount
                               )}
-                              {}
+                              { }
                             </strong>
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Received: Rs.{" "}
                             {Math.floor(userDetails?.totolReceived)}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13">
                             <i className="fe fe-chevrons-right me-1" />
@@ -1211,8 +1212,8 @@ const ODSDashboard = () => {
                             <span style={{ color: "red" }}>
                               {Math.floor(
                                 userDetails?.applicant?.totalCost -
-                                  (userDetails?.applicant?.discountAmount +
-                                    userDetails?.totolReceived)
+                                (userDetails?.applicant?.discountAmount +
+                                  userDetails?.totolReceived)
                               )}
                               {""} (To be collected)
                             </span>
@@ -1230,13 +1231,13 @@ const ODSDashboard = () => {
                             <i className="fe fe-chevrons-right me-1" />
                             Name on Registry:{" "}
                             {userDetails?.nameOnRegistry || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Name Change Charges: Rs.{" "}
                             {userDetails?.nameChangeCharges || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
@@ -1257,7 +1258,7 @@ const ODSDashboard = () => {
                                 ></i>
                               )}
                             </span>
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
@@ -1278,7 +1279,7 @@ const ODSDashboard = () => {
                                 ></i>
                               )}
                             </span>
-                            {}
+                            { }
                           </p>
                           -----------------------------------------------------------------------------------------------------
                           <p className="mb-0 tx-13 text-dark">
@@ -1288,34 +1289,34 @@ const ODSDashboard = () => {
                               // comment?.maintenanceCharges[0]?.camStartDate || ''
                               userDetails?.camStartDate
                                 ? new Date(
-                                    userDetails?.camStartDate
-                                  ).toLocaleString("en-US", {
-                                    day: "numeric",
-                                    month: "short",
-                                    year: "numeric",
-                                  })
+                                  userDetails?.camStartDate
+                                ).toLocaleString("en-US", {
+                                  day: "numeric",
+                                  month: "short",
+                                  year: "numeric",
+                                })
                                 : ""
                             }
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Total Month: {userDetails?.totalMonth || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             CAM End Date:{" "}
                             {userDetails?.camEndDate
                               ? new Date(
-                                  userDetails?.camEndDate
-                                ).toLocaleString("en-US", {
-                                  day: "numeric",
-                                  month: "short",
-                                  year: "numeric",
-                                })
+                                userDetails?.camEndDate
+                              ).toLocaleString("en-US", {
+                                day: "numeric",
+                                month: "short",
+                                year: "numeric",
+                              })
                               : ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
@@ -1323,7 +1324,7 @@ const ODSDashboard = () => {
                             {userDetails?.schemeType === "Shop"
                               ? " SQFT"
                               : " SQ YD"}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
@@ -1332,7 +1333,7 @@ const ODSDashboard = () => {
                               ? "SQFT"
                               : "SQ YD"}
                             ): {userDetails?.camRate || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
@@ -1340,22 +1341,22 @@ const ODSDashboard = () => {
                             <strong>
                               {Math.floor(
                                 +userDetails?.camRate *
-                                  +userDetails?.unitSize *
-                                  +userDetails?.totalMonth
+                                +userDetails?.unitSize *
+                                +userDetails?.totalMonth
                               ) || ""}{" "}
                             </strong>
-                            {}
+                            { }
                           </p>
                           -----------------------------------------------------------------------------------------------------
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Reference Given: {userDetails?.refrenceGiven || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Months Waiver : {userDetails?.waveOffMonth || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
@@ -1367,61 +1368,61 @@ const ODSDashboard = () => {
                             >
                               {Math.floor(userDetails?.discountCam) || ""}
                             </span>
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Payable CAM Without GST :{" "}
                             {userDetails?.totalCam || 0}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Gst : {userDetails?.gst || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Payable CAM With GST : Rs.{" "}
                             {Math.floor(userDetails?.payableCam) || ""}
-                            {}
+                            { }
                           </p>
                           -----------------------------------------------------------------------------------------------------
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Cheque Bounce: {userDetails?.chequeBounce || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Cheque Bounce Penalty: Rs.{" "}
                             {Math.floor(userDetails?.chequePenalty) || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Cheque Bounce Charges: Rs.{" "}
                             {Math.floor(userDetails?.chequeBounceCharges) || ""}
-                            {}
+                            { }
                           </p>
                           -----------------------------------------------------------------------------------------------------
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Stamp Duty : Rs.{" "}
                             {Math.floor(userDetails?.stampDuty) || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Lawyer Fees : Rs.{" "}
                             {Math.floor(userDetails?.lawyerFees) || ""}
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Interest Amount: Rs.{" "}
                             {Math.floor(userDetails?.intrestAmount) || ""}
-                            {}
+                            { }
                           </p>
                           -----------------------------------------------------------------------------------------------------
                           <p className="mb-0 tx-13 text-dark">
@@ -1435,12 +1436,12 @@ const ODSDashboard = () => {
                               {" "}
                               {Math.floor(userDetails?.waiverCharges) || ""}
                             </span>
-                            {}
+                            { }
                           </p>
                           <p className="mb-0 tx-13 text-dark">
                             <i className="fe fe-chevrons-right me-1" />
                             Remark ( Waiver) : {userDetails?.remark || ""}
-                            {}
+                            { }
                           </p>
                           -----------------------------------------------------------------------------------------------------
                           <p className="mb-0 tx-13 text-dark">
@@ -1451,7 +1452,7 @@ const ODSDashboard = () => {
                               {Math.floor(+userDetails?.finalNocAmount) ||
                                 ""}{" "}
                             </strong>
-                            {}
+                            { }
                           </p>
                         </div>
                       </div>

@@ -44,6 +44,15 @@ const SalesDashboardss = () => {
 
   const location = useLocation();
 
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('Token');
+    if (!token) {
+      navigate('/');
+    }
+  }, [navigate]);
+
   // Format date for API query
   const formattedDate = selectedDate
     ? selectedDate.format("MM-YYYY")

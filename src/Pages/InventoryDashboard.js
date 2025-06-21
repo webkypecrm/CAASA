@@ -38,6 +38,17 @@ const InventoryDashboard = () => {
   const apiUrl = process.env.REACT_APP_URL;
   const Token = localStorage.getItem("Token");
 
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('Token');
+    if (!token) {
+      navigate('/');
+    }
+  }, [navigate]);
+
+
+
   // Formatting dates for API query
   const formattedDate = selectedDate ? selectedDate.format("MM-YYYY") : ""; // Month and Year
   const formattedDates = selectedDate2 ? selectedDate2.format("YYYY") : ""; // Year only

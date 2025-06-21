@@ -219,7 +219,7 @@ const WldApplicant = () => {
     const [ids, setIds] = useState('')
     const [profilePic, setProfilePic] = useState(null);
     const [profilePics, setProfilePics] = useState(null);
-    const [scame2, setScame2] = useState([]);
+    // const [scame2, setScame2] = useState([]);
     const [disableInput2, setDisableInput2] = useState(true);
     const [contentPrinted, setContentPrinted] = useState(false);
     const [size2, setSize2] = useState([])
