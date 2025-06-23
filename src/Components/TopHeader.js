@@ -433,7 +433,7 @@ function TopHeader() {
               src={logoWebkype}
               style={{
                 marginRight: '80px',
-                width: '150px', 
+                width: '150px',
                 height: 'auto'
               }}
               className="header-brand-img text-start float-start mb-2 error-logo-light"
@@ -518,6 +518,19 @@ function TopHeader() {
                       Date: {ipAddress.startDate}
                     </span>
                   </span>
+
+                  <div >
+                    <img
+                      src="https://res.cloudinary.com/drj0uehgx/image/upload/v1750656145/ai_logo-removebg-preview_ighzp6.png"
+                      alt="logo"
+                      // style={{ marginRight: '0px !impotant', width: '120px', height: 'auto' }}
+                      // style={{ width: "120px"}}
+                      style={{ marginTop: "-7px", marginLeft: "10px" }}
+                      className="header-brand-img"
+                      role="button"
+                    />
+                  </div>
+
 
                   <div className="dropdown">
                     <button className="nav-link icon full-screen-link" onClick={toggleFullScreen}>
@@ -908,6 +921,29 @@ function TopHeader() {
                       Date: {ipAddress.startDate}
                     </span>
                   </span> */}
+
+                  <div className="navbar-logo m-2">
+                    <img
+                      src="https://res.cloudinary.com/drj0uehgx/image/upload/v1750655314/ai_logo_urqoci.jpg"
+                      style={{ marginRight: '80px' }}
+                      className="header-brand-img text-start float-start mb-2 error-logo-light"
+                      alt="logo"
+
+                      role='button'
+                    />
+
+                  </div>
+
+                  <div className="navbar-logo m-2">
+                    <img
+                      src="https://res.cloudinary.com/drj0uehgx/image/upload/v1750655314/ai_logo_urqoci.jpg"
+                      alt="logo"
+                      style={{ marginRight: '20px', width: '120px', height: 'auto' }}
+                      className="header-brand-img"
+                      role="button"
+                    />
+                  </div>
+
 
                   <div className="dropdown">
                     <button className="nav-link icon full-screen-link" onClick={toggleFullScreen}>

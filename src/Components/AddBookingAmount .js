@@ -2966,7 +2966,7 @@ const AddBookingAmount = () => {
                                                         <th className="fixed-width">Payment Mode</th>
                                                         <th className="fixed-width">Method</th>
                                                         <th className="fixed-width">Bank Name</th>
-                                                        <th className="fixed-width-large">Webkype Account</th>
+                                                        <th className="fixed-width-large">Caasaa Account</th>
                                                         <th className="fixed-width-large">CHQ/TRN No</th>
                                                         <th className="fixed-width">Cheque Date</th>
                                                         <th className="fixed-width">Payment Date</th>
