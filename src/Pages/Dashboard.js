@@ -4839,7 +4839,7 @@ const Dashboard = () => {
                         Caasaa Updates
                       </label>
                       <span className="d-block tx-12 mb-2 text-muted">
-                        What's new today in Webkype
+                        What's new today in Caasaa
                       </span>
                       <table className="table table-hover m-b-0 transcations mt-2">
                         <tbody>
